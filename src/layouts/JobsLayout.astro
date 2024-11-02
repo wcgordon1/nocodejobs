@@ -1,0 +1,280 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import ApplicationModal from "../components/jobs/ApplicationModal.astro";
+const { frontmatter } = Astro.props;
+
+// Create dynamic SEO title and description
+const seoTitle = `${frontmatter.position} in ${frontmatter.location}`;
+const seoDescription = frontmatter.description.length > 160 
+  ? `${frontmatter.description.substring(0, 157)}...`
+  : frontmatter.description;
+
+// Create JSON-LD schema
+const jobSchema = {
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": frontmatter.position,
+  "description": frontmatter.description,
+  "identifier": {
+    "@type": "PropertyValue",
+    ...frontmatter.identifier
+  },
+  "datePosted": frontmatter.datePosted,
+  "validThrough": frontmatter.validThrough,
+  "employmentType": frontmatter.employmentType,
+  "hiringOrganization": {
+    "@type": "Organization",
+    ...frontmatter.hiringOrganization
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      ...frontmatter.jobLocation
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": frontmatter.baseSalary.currency,
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": frontmatter.baseSalary.minValue,
+      "maxValue": frontmatter.baseSalary.maxValue,
+      "value": frontmatter.baseSalary.value,
+      "unitText": frontmatter.baseSalary.unitText
+    }
+  },
+  "experienceRequirements": frontmatter.experienceRequirements,
+  "occupationalCategory": frontmatter.occupationalCategory
+};
+---
+
+<BaseLayout title={seoTitle} description={seoDescription}>
+  <script type="application/ld+json" set:html={JSON.stringify(jobSchema)} />
+  
+  <section>
+    <div
+      class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 lg:flex py-24">
+      <div class="lg:w-1/2 lg:pl-12 lg:ml-auto">
+        <div class="lg:sticker lg:sticky pb-16 pt-8 top-0">
+          <div class="lg:pl-36 md:pl-12">
+            <nav
+              aria-label="Sidebar"
+              class="bg-slate-50 rounded-3xl divide-y space-y-3 p-4 lg:p-8">
+              <div>
+                <h3 class="text-2xl font-medium text-purple-900 pt-2">
+                  {frontmatter.position}
+                </h3>
+              </div>
+              <div>
+                <h3 class="text-lg font-medium text-purple-900 pt-2">
+                  {frontmatter.hiringOrganization.name}
+                </h3>
+                <a 
+                  href={frontmatter.hiringOrganization.sameAs}
+                  target="_blank"
+                  rel="noopener noreferrer" 
+                  class="text-blue-500 hover:text-blue-600 text-sm mt-1 inline-flex items-center gap-1"
+                >
+                  Visit company website
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+                    <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                    <path d="M11 13l9 -9" />
+                    <path d="M15 4h5v5" />
+                  </svg>
+                </a>
+              </div>
+
+            
+
+              <div>
+                <h3 class="text-lg font-medium text-purple-900 pt-2">
+                  Posted
+                </h3>
+                <p class="text-slate-500 mt-1">
+                  {new Date(frontmatter.datePosted).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-medium text-purple-900 pt-2">
+                  Location
+                </h3>
+                <p class="text-slate-500 mt-1">{frontmatter.location}</p>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-medium text-purple-900 pt-2">
+                  Salary Range
+                </h3>
+                <p class="text-slate-500 mt-1">
+                  {new Intl.NumberFormat('en-US', {
+                    style: 'currency',
+                    currency: frontmatter.baseSalary.currency,
+                    maximumFractionDigits: 0
+                  }).format(frontmatter.baseSalary.minValue)} - {new Intl.NumberFormat('en-US', {
+                    style: 'currency',
+                    currency: frontmatter.baseSalary.currency,
+                    maximumFractionDigits: 0
+                  }).format(frontmatter.baseSalary.maxValue)} / {frontmatter.baseSalary.unitText.toLowerCase()}
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-medium text-purple-900 pt-2">
+                  Industry
+                </h3>
+                <p class="text-slate-500 mt-1">{frontmatter.occupationalCategory}</p>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-medium text-purple-900 pt-2">
+                  Role
+                </h3>
+                <p class="text-slate-500 mt-1">{frontmatter.team}</p>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-medium text-purple-900 pt-2">
+                  Share
+                </h3>
+                <div class="flex items-center gap-4 mt-2">
+                  <a
+                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`Check out this ${frontmatter.position} role at ${frontmatter.hiringOrganization.name}`)}&url=${encodeURIComponent(Astro.url)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-slate-500 hover:text-slate-700 transition-colors"
+                    aria-label="Share on Twitter"
+                  >
+                    <svg class="size-6" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                  </a>
+                  <a
+                    href={`mailto:?subject=${encodeURIComponent(`Job Opportunity: ${frontmatter.position} at ${frontmatter.hiringOrganization.name}`)}&body=${encodeURIComponent(`Check out this job opportunity:\n\n${frontmatter.position} at ${frontmatter.hiringOrganization.name}\n\n${Astro.url}`)}`}
+                    class="text-slate-500 hover:text-slate-700 transition-colors"
+                    aria-label="Share via Email"
+                  >
+                    <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                  </a>
+                  <button
+                    id="copyLink"
+                    class="text-slate-500 hover:text-slate-700 transition-colors"
+                    aria-label="Copy link"
+                  >
+                    <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pt-4 flex">
+                <button
+                  id="openModal"
+                  class="text-white items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-500 hover:bg-blue-600 w-full"
+                >
+                  Apply now
+                </button>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/2 lg:order-first">
+        <div class="flex-shrink-0">
+          <p
+            class="text-purple-900 font-semibold mt-6 text-3xl tracking-tight lg:text-balance">
+            {frontmatter.position}
+          </p>
+          <div class="prose-styles">
+            <slot />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white">
+    <div class="lg:p-8">
+      <div class="bg-purple-900 max-w-7xl mx-auto lg:rounded-3xl">
+        <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
+          <div>
+            <h2
+              class="text-white font-semibold tracking-tighter lg:text-5xl text-3xl">
+              We look forward to hearing from you
+            </h2>
+            <p class="text-slate-300 mt-5 lg:text-balance">
+              At Tustin Recruiting, we're looking for people with passion, grit, and
+              integrity. You're encouraged to apply even if your experience
+              doesn't precisely match the job description. Your skills and
+              passion will stand out—and set you apart—especially if your career
+              has taken some extraordinary twists and turns. At Tustin Recruiting,
+              we welcome diverse perspectives and people who think rigorously
+              and aren't afraid to challenge assumptions. Join us.
+            </p>
+            <div class="mt-10 flex">
+              <button
+                class="text-white items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-500 hover:bg-blue-600 w-auto"
+                id="openModalBottom"
+              >
+                Apply Now - {frontmatter.position}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <ApplicationModal 
+    jobTitle={frontmatter.position}
+    company={frontmatter.hiringOrganization.name}
+    location={frontmatter.location}
+    jobId={frontmatter.identifier.value}
+    emails={frontmatter.email}
+  />
+</BaseLayout>
+
+<script>
+  // Add modal triggers
+  const openButton = document.getElementById('openModal');
+  const openBottomButton = document.getElementById('openModalBottom');
+  const modal = document.getElementById('applicationModal') as HTMLDialogElement;
+
+  // Handle top button click
+  openButton?.addEventListener('click', () => {
+    modal.showModal();
+  });
+
+  // Handle bottom button click
+  openBottomButton?.addEventListener('click', () => {
+    modal.showModal();
+  });
+
+  // Copy link functionality
+  const copyButton = document.getElementById('copyLink');
+  copyButton?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      
+      // Optional: Show feedback
+      const originalIcon = copyButton.innerHTML;
+      copyButton.innerHTML = `
+        <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 13l4 4L19 7"/>
+        </svg>
+      `;
+      
+      setTimeout(() => {
+        copyButton.innerHTML = originalIcon;
+      }, 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  });
+</script>

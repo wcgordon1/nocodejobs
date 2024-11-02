@@ -1,0 +1,193 @@
+---
+interface Props {
+  url: string;
+  position: string;
+  location: string;
+  team: string;
+  company: string;
+  companyLogo: string;
+  salary: string;
+  type: string;
+  description: string;
+  category: string;
+}
+
+const { 
+  url, 
+  position, 
+  location, 
+  team, 
+  company, 
+  companyLogo,
+  salary,
+  type,
+  description,
+  category
+} = Astro.props;
+---
+
+<li 
+  class="job-item"
+  data-position={position}
+  data-location={location}
+  data-team={team}
+  data-description={description}
+  data-category={category}
+  data-salary={salary.replace(/[^0-9]/g, '')}
+>
+  <div class="group relative py-6 sm:rounded-2xl">
+    <div
+      class="absolute -inset-x-4 -inset-y-px bg-slate-50 opacity-0 group-hover:opacity-100 sm:-inset-x-6 rounded-2xl lg:-inset-x-8 duration-200">
+    </div>
+    <div class="relative flex items-center">
+      <div class="relative size-12 sm:size-14 flex-none">
+        <img
+          class="absolute inset-0 size-full object-contain"
+          src={companyLogo}
+          alt={`${company} logo`}
+        />
+        <div class="absolute inset-0 rounded-full ring-1 ring-inset ring-slate-200/10">
+        </div>
+      </div>
+      <dl class="ml-4 flex flex-auto flex-wrap gap-y-1 gap-x-2 overflow-hidden sm:ml-6 sm:grid sm:grid-cols-[auto_1fr_auto_auto] sm:items-center">
+        <div class="col-span-2 mr-2.5 flex-none sm:mr-0">
+          <dt class="sr-only">Company</dt>
+          <dd class="text-xs font-medium tracking-wide text-blue-600 uppercase" data-company>
+            {company}
+          </dd>
+        </div>
+        <div class="col-start-3 row-start-2 -ml-2.5 flex-auto sm:ml-0 sm:pl-6">
+          <dt class="sr-only">Location</dt>
+          <dd class="flex items-center text-sm text-slate-500" data-location>
+            <svg
+              viewBox="0 0 2 2"
+              aria-hidden="true"
+              class="mr-2 size-1 flex-none fill-slate-400 sm:hidden">
+              <circle cx="1" cy="1" r="1"></circle>
+            </svg>
+            {location}
+          </dd>
+        </div>
+        <div class="col-span-2 col-start-1 w-full flex-none">
+          <dt class="sr-only">Position</dt>
+          <dd class="text-purple-900 font-semibold text-lg" data-position>
+            <a href={url} class="hover:text-blue-600">
+              <span class="absolute -inset-x-4 inset-y-[calc(-1*(theme(spacing.6)+1px))] sm:-inset-x-6 sm:rounded-2xl lg:-inset-x-8">
+              </span>
+              {position}
+            </a>
+          </dd>
+        </div>
+        <div class="col-start-1 mr-2.5 flex-none">
+          <dt class="sr-only">Type</dt>
+          <dd class="text-sm text-slate-500" data-type>
+            {type}
+          </dd>
+        </div>
+        <div class="col-span-3 -ml-2.5 flex-none">
+          <dt class="sr-only">Salary</dt>
+          <dd class="flex items-center text-sm text-slate-500">
+            <svg
+              viewBox="0 0 2 2"
+              aria-hidden="true"
+              class="mr-2 size-1 flex-none fill-slate-400">
+              <circle cx="1" cy="1" r="1"></circle>
+            </svg>
+            {salary}
+          </dd>
+        </div>
+        <div class="col-span-2 mr-2.5 flex-none sm:mr-0">
+          <dt class="sr-only">Team</dt>
+          <dd class="text-xs font-medium tracking-wide text-blue-600 uppercase" data-team>
+            {team}
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</li>
+
+<!-- No Results Message -->
+<div id="noResults" class="hidden">
+  <div class="text-center py-12 px-4 bg-slate-50 rounded-3xl">
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      class="size-12 mx-auto text-slate-400 mb-4" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      stroke-width="2" 
+      stroke-linecap="round" 
+      stroke-linejoin="round"
+    >
+      <circle cx="11" cy="11" r="8" />
+      <path d="m21 21-4.3-4.3" />
+    </svg>
+    <h3 class="text-lg font-medium text-purple-900 mb-2">No jobs match your search</h3>
+    <p class="text-slate-500 text-sm mb-4">Try adjusting your search or filters to find what you're looking for.</p>
+    <button
+      onclick="window.resetAllFilters()"
+      class="text-white items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-2 rounded-full active:bg-blue-800 active:text-white bg-blue-500 hover:bg-blue-600"
+    >
+      Reset Search
+    </button>
+  </div>
+</div>
+
+<script>
+  // Function to check if any jobs are visible and show/hide the no results message
+  function checkForResults() {
+    const jobItems = document.querySelectorAll('.job-item');
+    const noResults = document.getElementById('noResults');
+    if (!noResults) return;
+
+    let hasVisibleJobs = false;
+    jobItems.forEach(item => {
+      if (item instanceof HTMLElement && item.style.display !== 'none') {
+        hasVisibleJobs = true;
+      }
+    });
+
+    noResults.style.display = hasVisibleJobs ? 'none' : 'block';
+  }
+
+  // Add the check after any search or filter changes
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+        checkForResults();
+      }
+    });
+  });
+
+  // Observe all job items for style changes
+  document.querySelectorAll('.job-item').forEach(item => {
+    observer.observe(item, { attributes: true });
+  });
+
+  // Make resetAllFilters available globally
+  window.resetAllFilters = () => {
+    // Reset search input
+    const searchInput = document.getElementById('searchInput') as HTMLInputElement;
+    if (searchInput) searchInput.value = '';
+
+    // Reset radio buttons
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+      (radio as HTMLInputElement).checked = false;
+    });
+
+    // Show all job items
+    document.querySelectorAll('.job-item').forEach(item => {
+      if (item instanceof HTMLElement) {
+        item.style.display = '';
+      }
+    });
+
+    // Hide no results message
+    const noResults = document.getElementById('noResults');
+    if (noResults) noResults.style.display = 'none';
+  };
+
+  // Initial check
+  checkForResults();
+</script>

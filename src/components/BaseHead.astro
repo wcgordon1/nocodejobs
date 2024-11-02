@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+import Metas from "./seo/Metas.astro";
+import Favicons from "./seo/Favicons.astro";
+
+const {
+  title = "Tustin Recruiting",
+  description = "Tustin Recruiting is a boutique recruiting firm specializing in the placement of top talent in Orange County, California.",
+  socialImage = "/social-preview-image.png",
+  twitterImage = "/twitter-preview-image.png",
+  author = "Tustin Recruiting",
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<Metas
+  title={title}
+  description={description}
+  url={canonicalURL}
+  socialImage={socialImage}
+  author={author}
+  twitterImage={twitterImage}
+/>
+<Favicons />
+
+<!-- Keep all your existing scripts and links below -->
+<link href="https://api.fontshare.com/v2/css?f[]=jet-brains-mono@1,2&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://rsms.me/" />
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+<script defer src="https://unpkg.com/@alpinejs/focus@3.10.3/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
+<script src="https://unpkg.com/mailgo@0.12.2/dist/mailgo.min.js"></script>

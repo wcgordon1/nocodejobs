@@ -1,0 +1,147 @@
+---
+import { getCollection } from "astro:content";
+
+const allJobs = await getCollection("jobs");
+
+// Get unique teams and categories
+const teams = [...new Set(allJobs.map(job => job.data.team))].sort();
+const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory))].sort();
+---
+
+<div class="lg:sticky lg:top-8">
+  <div class="bg-slate-50 rounded-3xl p-4 space-y-2">
+    <!-- Salary Sort -->
+    <div class="pl-3">
+      <h3 class="text-sm font-medium text-purple-900 mb-2">Salary</h3>
+      <div class="flex lg:flex-col flex-wrap gap-3 lg:gap-1">
+        <label class="flex items-center space-x-2">
+          <input 
+            type="radio" 
+            name="salary-sort" 
+            value="high-low" 
+            class="text-blue-600 focus:ring-blue-500 size-3"
+          >
+          <span class="text-xs text-slate-500">Highest to Lowest</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input 
+            type="radio" 
+            name="salary-sort" 
+            value="low-high" 
+            class="text-blue-600 focus:ring-blue-500 size-3"
+          >
+          <span class="text-xs text-slate-500">Lowest to Highest</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Teams Filter -->
+    <div class="pl-3">
+      <h3 class="text-sm font-medium text-purple-900 mb-2">Roles</h3>
+      <div class="flex lg:flex-col flex-wrap gap-3 lg:gap-1">
+        {teams.map((team) => (
+          <label class="flex items-center space-x-2">
+            <input 
+              type="radio" 
+              name="team-filter" 
+              value={team.toString()} 
+              class="text-blue-600 focus:ring-blue-500 size-3"
+            >
+            <span class="text-xs text-slate-500">{team}</span>
+          </label>
+        ))}
+      </div>
+    </div>
+
+    <!-- Categories Filter -->
+    <div class="pl-3">
+      <h3 class="text-sm font-medium text-purple-900 mb-2">Industries</h3>
+      <div class="flex lg:flex-col flex-wrap gap-3 lg:gap-1">
+        {categories.map((category) => (
+          <label class="flex items-center space-x-2">
+            <input 
+              type="radio" 
+              name="category-filter" 
+              value={category.toString()} 
+              class="text-blue-600 focus:ring-blue-500 size-3"
+            >
+            <span class="text-xs text-slate-500">{category}</span>
+          </label>
+        ))}
+      </div>
+    </div>
+
+    <!-- Reset Button -->
+    <button
+      id="resetFilters"
+      class="w-full text-xs text-slate-500 hover:text-slate-600 font-medium mt-2 bg-white rounded-full py-1.5 ring-1 ring-slate-200 hover:ring-slate-300"
+    >
+      Reset Filters
+    </button>
+  </div>
+</div>
+
+<script>
+  interface Filters {
+    salary: string | null;
+    team: string | null;
+    category: string | null;
+  }
+
+  let activeFilters: Filters = {
+    salary: null,
+    team: null,
+    category: null
+  };
+
+  function filterJobs() {
+    const jobItems = document.querySelectorAll<HTMLElement>('.job-item');
+
+    jobItems.forEach(item => {
+      const team = item.dataset.team || '';
+      const category = item.dataset.category || '';
+      const salary = parseInt(item.dataset.salary || '0');
+
+      const matchesTeam = !activeFilters.team || team === activeFilters.team;
+      const matchesCategory = !activeFilters.category || category === activeFilters.category;
+
+      item.style.display = (matchesTeam && matchesCategory) ? '' : 'none';
+
+      // Handle salary sorting
+      if (activeFilters.salary) {
+        const jobList = document.querySelector<HTMLElement>('.job-list');
+        if (!jobList) return;
+
+        const items = Array.from(jobList.children) as HTMLElement[];
+        items.sort((a, b) => {
+          const salaryA = parseInt(a.dataset.salary || '0');
+          const salaryB = parseInt(b.dataset.salary || '0');
+          return activeFilters.salary === 'high-low' ? salaryB - salaryA : salaryA - salaryB;
+        });
+
+        items.forEach(item => jobList.appendChild(item));
+      }
+    });
+  }
+
+  // Event Listeners
+  const radioGroups = ['salary-sort', 'team-filter', 'category-filter'];
+  
+  radioGroups.forEach(group => {
+    document.querySelectorAll<HTMLInputElement>(`input[name="${group}"]`).forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        const target = e.target as HTMLInputElement;
+        const filterType = group.split('-')[0] as keyof Filters;
+        activeFilters[filterType] = target.value;
+        filterJobs();
+      });
+    });
+  });
+
+  document.getElementById('resetFilters')?.addEventListener('click', () => {
+    activeFilters = { salary: null, team: null, category: null };
+    document.querySelectorAll<HTMLInputElement>('input[type="radio"]')
+      .forEach(radio => radio.checked = false);
+    filterJobs();
+  });
+</script> 

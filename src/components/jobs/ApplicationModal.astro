@@ -1,0 +1,183 @@
+---
+interface Props {
+  jobTitle: string;
+  company: string;
+  location: string;
+  jobId: string;
+  emails: string[];
+}
+
+const { jobTitle, company, location, jobId, emails } = Astro.props;
+---
+
+<dialog id="applicationModal" class="bg-transparent relative">
+  <div class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm" id="modalOverlay">
+    <div 
+      class="bg-white rounded-3xl max-w-2xl mx-auto mt-20 p-8 relative"
+      id="modalContent"
+    >
+      <button
+        id="closeModal"
+        class="absolute top-4 right-4 text-slate-400 hover:text-slate-600"
+        aria-label="Close modal"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M18 6l-12 12" />
+          <path d="M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="text-center mb-8">
+        <span class="text-sm font-medium tracking-wide text-blue-600 uppercase">
+          {company}
+        </span>
+        <h2 class="text-purple-900 font-semibold text-2xl mt-2">
+          Apply for {jobTitle}
+        </h2>
+        <p class="text-slate-500 mt-2">Please fill out the form below to apply</p>
+      </div>
+
+      <form id="applicationForm" class="space-y-4">
+        <input type="hidden" name="jobTitle" value={jobTitle} />
+        <input type="hidden" name="company" value={company} />
+        <input type="hidden" name="location" value={location} />
+        <input type="hidden" name="jobId" value={jobId} />
+        <input type="hidden" name="emails" value={JSON.stringify(emails)} />
+        
+        <div>
+          <label for="name" class="sr-only">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            placeholder="Full name *"
+            class="block w-full rounded-full border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+          />
+        </div>
+
+        <div>
+          <label for="email" class="sr-only">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="Email address *"
+            class="block w-full rounded-full border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+          />
+        </div>
+
+        <div>
+          <label for="phone" class="sr-only">Phone</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            required
+            placeholder="Phone number *"
+            class="block w-full rounded-full border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+          />
+        </div>
+
+        <div>
+          <label for="linkedin" class="sr-only">LinkedIn URL</label>
+          <input
+            id="linkedin"
+            name="linkedin"
+            type="url"
+            placeholder="LinkedIn URL (optional)"
+            class="block w-full rounded-full border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+          />
+        </div>
+
+        <div>
+          <label for="resume" class="sr-only">Resume</label>
+          <input
+            type="file"
+            id="resume"
+            name="resume"
+            required
+            accept=".pdf,.doc,.docx"
+            class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-medium file:bg-blue-50 file:text-blue-600 hover:file:bg-blue-100"
+          />
+        </div>
+
+        <div>
+          <label for="coverLetter" class="sr-only">Cover Letter</label>
+          <textarea
+            id="coverLetter"
+            name="coverLetter"
+            rows="4"
+            placeholder="Cover letter or additional information"
+            class="block w-full rounded-2xl border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full text-white items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-500 hover:bg-blue-600"
+        >
+          Submit Application
+        </button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const modal = document.getElementById('applicationModal') as HTMLDialogElement;
+  const closeModal = document.getElementById('closeModal');
+  const modalOverlay = document.getElementById('modalOverlay');
+  const modalContent = document.getElementById('modalContent');
+  const form = document.getElementById('applicationForm') as HTMLFormElement;
+
+  // Close modal when clicking close button
+  closeModal?.addEventListener('click', () => {
+    modal.close();
+  });
+
+  // Prevent closing when clicking inside the modal content
+  modalContent?.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  // Only close when clicking the overlay (outside the form)
+  modalOverlay?.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) {
+      modal.close();
+    }
+  });
+
+  // Close modal when pressing Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.open) {
+      modal.close();
+    }
+  });
+
+  // Handle form submission
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('/api/apply', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        alert('Application submitted successfully!');
+        modal.close();
+        form.reset();
+      } else {
+        alert(`Error: ${result.error}`);
+      }
+    } catch (error) {
+      alert('There was an error submitting your application. Please try again later.');
+    }
+  });
+</script>

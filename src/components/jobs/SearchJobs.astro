@@ -1,0 +1,83 @@
+---
+// No props needed as we'll handle everything client-side
+---
+
+<div class="lg:-mt-24 mx-auto md:px-32 py-6 max-w-7xl">
+  <div class="mx-auto rounded-3xl p-4 lg:p-8 mt-4 bg-white/20 backdrop-blur-xl shadow-2xl shadow-purple-500/10">
+    <div class="flex-grow relative">
+      <input
+        id="searchInput"
+        class="leading-none text-left block w-full rounded-2xl border-0 py-3.5 pl-4 pr-24 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-blue-600 sm:text-sm sm:leading-6 duration-200 outline-none"
+        type="text"
+        placeholder="Search jobs..."
+        aria-label="Search jobs"
+      />
+      <button
+        id="clearButton"
+        class="absolute right-12 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-sm font-medium hidden"
+        aria-label="Clear search">
+        Clear
+      </button>
+      <svg
+        class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('searchInput') as HTMLInputElement;
+    const clearButton = document.getElementById('clearButton');
+    
+    function filterJobs() {
+      const jobItems = document.querySelectorAll('.job-item');
+      const searchTerm = searchInput?.value.toLowerCase() || '';
+
+      // Show/hide clear button based on search length
+      if (clearButton) {
+        clearButton.classList.toggle('hidden', searchTerm.length < 2);
+      }
+
+      jobItems.forEach(item => {
+        if (!(item instanceof HTMLElement)) return;
+        
+        const jobData = {
+          position: item.dataset.position,
+          location: item.dataset.location,
+          team: item.dataset.team,
+          description: item.dataset.description,
+          category: item.dataset.category
+        };
+
+        const matchesSearch = !searchTerm || Object.values(jobData).some(value => 
+          value && value.toLowerCase().includes(searchTerm)
+        );
+
+        item.style.display = matchesSearch ? '' : 'none';
+      });
+    }
+
+    function clearSearch() {
+      if (searchInput) {
+        searchInput.value = '';
+        filterJobs();
+      }
+    }
+
+    searchInput?.addEventListener('input', filterJobs);
+    clearButton?.addEventListener('click', clearSearch);
+  });
+</script>

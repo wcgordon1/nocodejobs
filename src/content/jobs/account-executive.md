@@ -30,7 +30,7 @@ identifier:
   name: "Tustin Recruiting"
   value: "AR-MGR-2024"
 featured: false
-email: ['wcgordon1@gmail.com', 'will.nft.works@gmail.com', 'john@tustinrecruiting.com']
+email: ['will@tustinrecruiting.com', 'wcgordon1@gmail.com']
 ---
 **Position Description:**
 

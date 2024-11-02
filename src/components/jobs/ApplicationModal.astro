@@ -115,12 +115,22 @@ const { jobTitle, company, location, jobId, emails } = Astro.props;
           ></textarea>
         </div>
 
-        <button
-          type="submit"
-          class="w-full text-white items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-500 hover:bg-blue-600"
-        >
-          Submit Application
-        </button>
+        <div class="space-y-4">
+          <button
+            type="submit"
+            id="submitButton"
+            class="w-full text-white items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-500 hover:bg-blue-600"
+          >
+            Submit Application
+          </button>
+
+          <div 
+            id="statusMessage" 
+            class="hidden rounded-lg p-4 text-sm"
+          >
+            <!-- Status message will be inserted here -->
+          </div>
+        </div>
       </form>
     </div>
   </div>
@@ -161,23 +171,61 @@ const { jobTitle, company, location, jobId, emails } = Astro.props;
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const formData = new FormData(form);
+    const submitButton = document.getElementById('submitButton');
+    const statusMessage = document.getElementById('statusMessage');
 
     try {
+      // Update button state
+      submitButton.disabled = true;
+      submitButton.innerHTML = 'Sending...';
+      statusMessage.classList.add('hidden');
+
       const response = await fetch('/api/apply', {
         method: 'POST',
         body: formData,
       });
 
       const result = await response.json();
+      
       if (result.success) {
-        alert('Application submitted successfully!');
-        modal.close();
-        form.reset();
+        statusMessage.classList.remove('hidden');
+        statusMessage.classList.add('bg-green-50', 'text-green-800');
+        statusMessage.innerHTML = `
+          <div class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M5 12l5 5l10 -10" />
+            </svg>
+            <span>Application submitted successfully! We'll be in touch soon.</span>
+          </div>
+        `;
+        
+        // Reset form after 2 seconds
+        setTimeout(() => {
+          form.reset();
+          modal.close();
+        }, 2000);
       } else {
-        alert(`Error: ${result.error}`);
+        throw new Error(result.error);
       }
     } catch (error) {
-      alert('There was an error submitting your application. Please try again later.');
+      statusMessage.classList.remove('hidden');
+      statusMessage.classList.add('bg-red-50', 'text-red-800');
+      statusMessage.innerHTML = `
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+            <path d="M12 9v4" />
+            <path d="M12 16v.01" />
+          </svg>
+          <span>Error: ${error.message || 'There was an error submitting your application. Please try again.'}</span>
+        </div>
+      `;
+    } finally {
+      // Reset button state
+      submitButton.disabled = false;
+      submitButton.innerHTML = 'Submit Application';
     }
   });
 </script>

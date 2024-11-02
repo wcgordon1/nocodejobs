@@ -18,22 +18,38 @@ export async function POST({ request }) {
     const file = formData.get('file');
     const phone = formData.get('phone');
 
-    const fileArrayBuffer = await file.arrayBuffer();
-    const fileContent = Buffer.from(fileArrayBuffer).toString('base64');
-
-    const data = await resend.emails.send({
-      from: 'hey@tustinjobalert.com',
-      to: ['will@tustinrecruiting.com', 'john@tustinrecruiting.com'],
+    // Base email config
+    const emailConfig = {
+      from: 'contact@bestelectricianmail.com',
+      to: ['will@bestelectricianjobs.com'],
       subject: `New Contact Form Submission from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}\nPhone: ${phone}`,
-      attachments: [
-        {
-          filename: file.name,
-          content: fileContent,
-          contentType: file.type,
-        },
-      ],
-    });
+      text: `
+Contact Form Details:
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+
+Message:
+${message}
+
+Thank you!
+      `
+    };
+
+    // Only add attachment if file is present
+    if (file && file.size > 0) {
+      const fileArrayBuffer = await file.arrayBuffer();
+      const fileContent = Buffer.from(fileArrayBuffer).toString('base64');
+      
+      emailConfig.attachments = [{
+        filename: file.name,
+        content: fileContent,
+        contentType: file.type,
+      }];
+    }
+
+    const data = await resend.emails.send(emailConfig);
 
     return new Response(
       JSON.stringify({

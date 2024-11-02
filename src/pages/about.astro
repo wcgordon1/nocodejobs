@@ -1,19 +1,23 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import AboutOne from "@/components/about/About.astro";
+import HeaderAbout from "@/components/headers/HeaderAbout.astro";
 import FeatureEleven from "@/components/features/FeatureEleven.astro";
 import TestimonialFour from "@/components/testimonials/TestimonialFour.astro";
 import FeatureTwelve from "@/components/features/FeatureTwelve.astro";
 import FeatureFive from "@/components/features/FeatureFive.astro";
 import StatsTwo from "@/components/stats/StatsTwo.astro";
 import CtaThree from "@/components/cta/CtaThree.astro";
+import FaqTwo from "@/components/faqs/FaqTwo.astro";
+import FaqOne from "@/components/faqs/FaqOne.astro";
 ---
 <BaseLayout>
-  <AboutOne />
-  <FeatureEleven />
+  <HeaderAbout />
+  <FeatureFive />
   <TestimonialFour />
   <FeatureTwelve />
-  <FeatureFive />
+  <FeatureEleven />
+  <FaqOne />
+  <TestimonialFour />
   <StatsTwo />
   <CtaThree />
 </BaseLayout>

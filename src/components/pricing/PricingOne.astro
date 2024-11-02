@@ -1,51 +1,66 @@
 ---
 const pricingPlans = [
   {
-    name: "Hobby",
-    monthlyPrice: "15",
-    annualPrice: "8",
+    name: "Basic",
+    monthlyPrice: "199",
+    annualPrice: "149",
     description:
-      "This plan suits individual users and hobbyists needing basic  support",
-    cardBgClass: "bg-white",
+      "Perfect for small businesses looking to hire their first electrician",
+    cardBgClass: "bg-white", 
     descriptionColor: "text-slate-500",
     buttonClass: "bg-blue-100 hover:bg-blue-50 text-blue-600",
-    features: ["5 mb/PDF", "75 pages/PDF", "10 messages/Day", "Up to 3 PDFs"],
-    unavailableFeatures: ["Gpt-3.5-turbo model", "Test mode", "Doc summary"],
+    features: [
+      "1 job posting",
+      "30-day listing",
+      "Basic candidate dashboard",
+      "Email support"
+    ],
+    unavailableFeatures: [
+      "Featured job listing",
+      "Resume database access",
+      "Applicant tracking system",
+      "Dedicated account manager"
+    ],
   },
   {
-    name: "Pro",
-    monthlyPrice: "25",
-    annualPrice: "20",
-    description: "This plan is tailored for small businesses and startups",
+    name: "Growth",
+    monthlyPrice: "399",
+    annualPrice: "349",
+    description: "Ideal for growing electrical contractors and mid-size companies",
     cardBgClass: "bg-white",
-    descriptionColor: "text-slate-500",
+    descriptionColor: "text-slate-500", 
     buttonClass: "bg-blue-500 hover:bg-blue-600 text-white",
     features: [
-      "10 mb/PDF",
-      "150 pages/PDF",
-      "25 messages/Day",
-      "Up to 5 PDFs",
-      "Gpt-3.5-turbo model",
+      "5 active job postings",
+      "60-day listings",
+      "Featured job listings",
+      "Resume database access",
+      "Basic applicant tracking",
+      "Phone & email support"
     ],
-    unavailableFeatures: ["Test mode", "Doc summary"],
+    unavailableFeatures: [
+      "Dedicated account manager",
+      "Custom hiring workflows"
+    ],
   },
   {
-    name: "Team",
-    monthlyPrice: "50",
-    annualPrice: "40",
+    name: "Enterprise",
+    monthlyPrice: "899",
+    annualPrice: "799", 
     description:
-      "This plan is for medium businesses, providing advanced tools.",
+      "For large electrical companies with ongoing hiring needs",
     cardBgClass: "bg-white",
     descriptionColor: "text-slate-500",
     buttonClass: "bg-blue-100 hover:bg-blue-50 text-blue-600",
     features: [
-      "32 mb/PDF",
-      "1500 pages/PDF",
-      "1000 messages/Day",
-      "Up to 50 PDFs",
-      "Gpt-3.5-turbo-16k model",
-      "Test mode",
-      "Doc summary",
+      "Unlimited job postings",
+      "90-day listings",
+      "Premium featured placement",
+      "Unlimited resume downloads",
+      "Advanced ATS integration",
+      "Custom hiring workflows",
+      "Dedicated account manager",
+      "Priority support 24/7"
     ],
     unavailableFeatures: [],
   },
@@ -53,51 +68,51 @@ const pricingPlans = [
 
 const extended = [
   {
-    title: "Tools for crafting optimal sign-up",
+    title: "Targeted Job Distribution",
     benefits: [
-      "Customizable forms",
-      "UI toolkit for email design",
-      "Support for automated responses",
+      "Post to multiple job boards",
+      "Social media promotion",
+      "SEO optimization for listings"
     ],
   },
   {
-    title: "Corldwide reach with single integration",
+    title: "Candidate Management",
     benefits: [
-      "Global email templates",
-      "Localization tools",
-      "Compliance and regulation support",
+      "Applicant tracking system",
+      "Resume parsing & screening",
+      "Candidate communication tools"
     ],
   },
   {
-    title: "In-depth security protocols",
+    title: "Advanced Search Features",
     benefits: [
-      "Encryption for email data",
-      "Anti-spam filters",
-      "User authentication processes",
+      "Resume database access",
+      "Skills-based filtering",
+      "Location-based matching"
     ],
   },
   {
-    title: "detailed analytics and reporting",
+    title: "Recruitment Analytics",
     benefits: [
-      "Real-time open rates",
-      "Click-through rate analysis",
-      "Subscriber growth tracking",
+      "Application tracking metrics",
+      "Source effectiveness reports",
+      "Hiring funnel analytics"
     ],
   },
   {
-    title: "Reliable, scheduled email delivery",
+    title: "Employer Branding",
     benefits: [
-      "Time zone optimization",
-      "Batch send features",
-      "Performance insights",
+      "Custom company profiles",
+      "Media-rich job postings",
+      "Branded career pages"
     ],
   },
   {
-    title: "Round-the-clock customer support",
+    title: "Premium Support",
     benefits: [
-      "Live chat assistance",
-      "Email query resolutions",
-      "Comprehensive help center",
+      "Dedicated account manager",
+      "24/7 customer service",
+      "Recruitment strategy consulting"
     ],
   },
 ];
@@ -111,11 +126,10 @@ const extended = [
       >
       <h2
         class="text-purple-900 font-semibold tracking-tight lg:text-4xl mt-6 text-3xl text-balance md:text-balance md:w-1/2 mx-auto">
-        Always know what you'll pay, transparent pricing for everyone.
+        Simple, transparent pricing to find your perfect electrician
       </h2>
       <p class="text-slate-500 mt-5 md:text-balance md:w-1/2 mx-auto">
-        Choose a plan that works the best for you and your team. Start small,
-        upgrade when you need.
+        Post jobs and find qualified electricians faster. Choose the plan that works best for your hiring needs.
       </p>
       <div class="md:max-w-sm mx-auto mt-12">
         <div
@@ -171,13 +185,13 @@ const extended = [
                 </div>
               </div>
               <div class="flex mt-6">
-                <button
-                  type="button"
+                <a
+                  href="mailto:will@bestelectricianjobs.com"
+                  class={`inline-flex items-center justify-center px-6 py-3.5 rounded-full w-full font-medium ${plan.buttonClass}`}
                   title={plan.name}
-                  aria-label="get started"
-                  class={`inline-flex items-center justify-center px-6 py-3.5 rounded-full w-full font-medium ${plan.buttonClass}`}>
+                  aria-label="get started">
                   Get started
-                </button>
+                </a>
               </div>
               <ul
                 class={`flex flex-col order-last mt-8 text-sm ${plan.descriptionColor} gap-y-3`}>
@@ -240,16 +254,15 @@ const extended = [
 
     <div class="mt-24">
       <span class="text-sm uppercase font-medium tracking-wide text-blue-600"
-        >explanation</span
+        >features</span
       >
       <h2
         class="text-purple-900 font-semibold tracking-tight lg:text-5xl mt-6 text-3xl">
-        What's included in our pricing
+        Everything you need to hire electricians
       </h2>
       <div class="max-w-xl mt-6">
         <p class="text-slate-500">
-          Build quicker and don't waste time building your website. Combine
-          layouts and customize them as you wish.
+          Our comprehensive hiring platform gives you all the tools needed to find, evaluate and hire qualified electricians efficiently.
         </p>
       </div>
     </div>

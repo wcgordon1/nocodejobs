@@ -292,6 +292,20 @@ declare module 'astro:content' {
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
+"software-engineer.md": {
+	id: "software-engineer.md";
+  slug: "software-engineer";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"vp-of-sales.md": {
+	id: "vp-of-sales.md";
+  slug: "vp-of-sales";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
 };
 "posts": {
 "1.md": {

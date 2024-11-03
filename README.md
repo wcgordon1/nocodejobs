@@ -3,6 +3,12 @@
 ## SO SICKKKKKKKKKKKKKKKK
 
 
+# commit: 0aa7041c9c921d77fddb680d73bb62390d526e83
+- going to add company pages content, can always revert back to here
+- If i mess this up copy the repo from here
+
+
+### Original Meta/SEO Stuff
 
 Basehead.astro
 

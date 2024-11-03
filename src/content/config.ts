@@ -99,6 +99,16 @@ const postsCollection = defineCollection({
     tags: z.array(z.string()),
   }),
 });
+const companyCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    name: z.string(),
+    website: z.string().url(),
+    logo: z.string(),
+    description: z.string(),
+    location: z.string(),
+  })
+});
 
 export const collections = {
   integrations: integrations,
@@ -107,4 +117,5 @@ export const collections = {
   infopages: infopages,
   jobs: jobsCollection,
   posts: postsCollection,
+  company: companyCollection,
 };

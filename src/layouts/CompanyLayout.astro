@@ -1,0 +1,99 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import CompanyJobs from "../components/company/CompanyJobs.astro";
+import CtaWack from "@/components/cta/CtaWack.astro";
+
+const { frontmatter, jobs } = Astro.props;
+
+function formatSalary(baseSalary) {
+  const { currency, minValue, maxValue, unitText } = baseSalary;
+  return `${currency} ${minValue.toLocaleString()}-${maxValue.toLocaleString()} per ${unitText.toLowerCase()}`;
+}
+---
+
+<BaseLayout>
+  <section>
+    <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 lg:flex pt-24">
+      <div class="lg:w-1/2 lg:pl-12 lg:ml-auto">
+        <div class="lg:sticky lg:top-8">
+          <div class="lg:pl-36 md:pl-12">
+            <nav class="bg-slate-50 rounded-3xl p-4 lg:p-8">
+              <img
+                src={frontmatter.logo}
+                alt={`${frontmatter.name} logo`}
+                class="h-12 w-auto object-contain"
+              />
+              <div class="mt-6 space-y-6">
+                <div>
+                  <p class="text-base font-medium leading-6 text-purple-900">
+                    Location
+                  </p>
+                  <p class="text-slate-400 text-sm">{frontmatter.location}</p>
+                </div>
+                <div>
+                  <p class="text-base font-medium leading-6 text-purple-900">
+                    Website
+                  </p>
+                  <a 
+                    href={frontmatter.website}
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    class="text-blue-500 hover:text-blue-600 text-sm"
+                  >
+                    {frontmatter.website}
+                  </a>
+                </div>
+                <div>
+                  <p class="text-base font-medium leading-6 text-purple-900">
+                    Open Positions
+                  </p>
+                  <p class="text-slate-400 text-sm">{jobs.length} positions</p>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/2 lg:order-first">
+        <div class="flex-shrink-0">
+          <div>
+            <p class="text-purple-900 font-semibold mt-6 text-4xl tracking-tight">
+              {frontmatter.name}
+            </p>
+            <p class="text-slate-500 mt-5 lg:text-balance">
+              {frontmatter.description}
+            </p>
+            
+            <!-- Company Content -->
+            <div class="prose-styles mt-10">
+              <slot />
+            </div>
+
+            <!-- Job Listings using CompanyJobs component -->
+            <div class="mt-12">
+              <h2 class="text-purple-900 font-semibold text-2xl tracking-tight mb-8">
+                Current Openings
+              </h2>
+              <ul class="divide-y divide-slate-100">
+                {jobs.map(job => (
+                  <CompanyJobs
+                    url={`/jobs/${job.slug}`}
+                    position={job.data.position}
+                    location={job.data.location}
+                    team={job.data.team}
+                    companyLogo={job.data.hiringOrganization.logo}
+                    salary={formatSalary(job.data.baseSalary)}
+                    type={job.data.employmentType}
+                    description={job.data.description}
+                    category={job.data.occupationalCategory}
+                  />
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <CtaWack />
+</BaseLayout> 

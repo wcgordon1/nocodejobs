@@ -150,27 +150,36 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"customers": {
+		"company": {
+"salt-n-light-electric.md": {
+	id: "salt-n-light-electric.md";
+  slug: "salt-n-light-electric";
+  body: string;
+  collection: "company";
+  data: any
+} & { render(): Render[".md"] };
+};
+"customers": {
 "1.md": {
 	id: "1.md";
   slug: "1";
   body: string;
   collection: "customers";
-  data: InferEntrySchema<"customers">
+  data: any
 } & { render(): Render[".md"] };
 "2.md": {
 	id: "2.md";
   slug: "2";
   body: string;
   collection: "customers";
-  data: InferEntrySchema<"customers">
+  data: any
 } & { render(): Render[".md"] };
 "3.md": {
 	id: "3.md";
   slug: "3";
   body: string;
   collection: "customers";
-  data: InferEntrySchema<"customers">
+  data: any
 } & { render(): Render[".md"] };
 };
 "helpcenter": {
@@ -179,35 +188,35 @@ declare module 'astro:content' {
   slug: "1";
   body: string;
   collection: "helpcenter";
-  data: InferEntrySchema<"helpcenter">
+  data: any
 } & { render(): Render[".md"] };
 "2.md": {
 	id: "2.md";
   slug: "2";
   body: string;
   collection: "helpcenter";
-  data: InferEntrySchema<"helpcenter">
+  data: any
 } & { render(): Render[".md"] };
 "3.md": {
 	id: "3.md";
   slug: "3";
   body: string;
   collection: "helpcenter";
-  data: InferEntrySchema<"helpcenter">
+  data: any
 } & { render(): Render[".md"] };
 "4.md": {
 	id: "4.md";
   slug: "4";
   body: string;
   collection: "helpcenter";
-  data: InferEntrySchema<"helpcenter">
+  data: any
 } & { render(): Render[".md"] };
 "5.md": {
 	id: "5.md";
   slug: "5";
   body: string;
   collection: "helpcenter";
-  data: InferEntrySchema<"helpcenter">
+  data: any
 } & { render(): Render[".md"] };
 };
 "infopages": {
@@ -216,28 +225,28 @@ declare module 'astro:content' {
   slug: "bug-bounty";
   body: string;
   collection: "infopages";
-  data: InferEntrySchema<"infopages">
+  data: any
 } & { render(): Render[".md"] };
 "dpa.md": {
 	id: "dpa.md";
   slug: "dpa";
   body: string;
   collection: "infopages";
-  data: InferEntrySchema<"infopages">
+  data: any
 } & { render(): Render[".md"] };
 "privacy.md": {
 	id: "privacy.md";
   slug: "privacy";
   body: string;
   collection: "infopages";
-  data: InferEntrySchema<"infopages">
+  data: any
 } & { render(): Render[".md"] };
 "terms.md": {
 	id: "terms.md";
   slug: "terms";
   body: string;
   collection: "infopages";
-  data: InferEntrySchema<"infopages">
+  data: any
 } & { render(): Render[".md"] };
 };
 "integrations": {
@@ -246,42 +255,42 @@ declare module 'astro:content' {
   slug: "1";
   body: string;
   collection: "integrations";
-  data: InferEntrySchema<"integrations">
+  data: any
 } & { render(): Render[".md"] };
 "2.md": {
 	id: "2.md";
   slug: "2";
   body: string;
   collection: "integrations";
-  data: InferEntrySchema<"integrations">
+  data: any
 } & { render(): Render[".md"] };
 "3.md": {
 	id: "3.md";
   slug: "3";
   body: string;
   collection: "integrations";
-  data: InferEntrySchema<"integrations">
+  data: any
 } & { render(): Render[".md"] };
 "4.md": {
 	id: "4.md";
   slug: "4";
   body: string;
   collection: "integrations";
-  data: InferEntrySchema<"integrations">
+  data: any
 } & { render(): Render[".md"] };
 "5.md": {
 	id: "5.md";
   slug: "5";
   body: string;
   collection: "integrations";
-  data: InferEntrySchema<"integrations">
+  data: any
 } & { render(): Render[".md"] };
 "6.md": {
 	id: "6.md";
   slug: "6";
   body: string;
   collection: "integrations";
-  data: InferEntrySchema<"integrations">
+  data: any
 } & { render(): Render[".md"] };
 };
 "jobs": {
@@ -290,21 +299,28 @@ declare module 'astro:content' {
   slug: "fire-alarm-installer-irvine-id-fsdf9";
   body: string;
   collection: "jobs";
-  data: InferEntrySchema<"jobs">
+  data: any
 } & { render(): Render[".md"] };
 "journeyman-electrician-resi-fsaf.md": {
 	id: "journeyman-electrician-resi-fsaf.md";
   slug: "journeyman-electrician-resi-fsaf";
   body: string;
   collection: "jobs";
-  data: InferEntrySchema<"jobs">
+  data: any
 } & { render(): Render[".md"] };
 "residential-journeyman-electrician-jrn-elec.md.md": {
 	id: "residential-journeyman-electrician-jrn-elec.md.md";
   slug: "residential-journeyman-electrician-jrn-elecmd";
   body: string;
   collection: "jobs";
-  data: InferEntrySchema<"jobs">
+  data: any
+} & { render(): Render[".md"] };
+"service-electrician-irvine-id-23452.md": {
+	id: "service-electrician-irvine-id-23452.md";
+  slug: "service-electrician-irvine-id-23452";
+  body: string;
+  collection: "jobs";
+  data: any
 } & { render(): Render[".md"] };
 };
 "posts": {
@@ -313,28 +329,28 @@ declare module 'astro:content' {
   slug: "1";
   body: string;
   collection: "posts";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "2.md": {
 	id: "2.md";
   slug: "2";
   body: string;
   collection: "posts";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "3.md": {
 	id: "3.md";
   slug: "3";
   body: string;
   collection: "posts";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "4.md": {
 	id: "4.md";
   slug: "4";
   body: string;
   collection: "posts";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -346,5 +362,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }

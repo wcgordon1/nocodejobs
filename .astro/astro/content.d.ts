@@ -285,23 +285,23 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "jobs": {
-"account-executive.md": {
-	id: "account-executive.md";
-  slug: "account-executive";
+"fire-alarm-installer-irvine-id-fsdf9.md": {
+	id: "fire-alarm-installer-irvine-id-fsdf9.md";
+  slug: "fire-alarm-installer-irvine-id-fsdf9";
   body: string;
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
-"software-engineer.md": {
-	id: "software-engineer.md";
-  slug: "software-engineer";
+"journeyman-electrician-resi-fsaf.md": {
+	id: "journeyman-electrician-resi-fsaf.md";
+  slug: "journeyman-electrician-resi-fsaf";
   body: string;
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
-"vp-of-sales.md": {
-	id: "vp-of-sales.md";
-  slug: "vp-of-sales";
+"residential-journeyman-electrician-jrn-elec.md.md": {
+	id: "residential-journeyman-electrician-jrn-elec.md.md";
+  slug: "residential-journeyman-electrician-jrn-elecmd";
   body: string;
   collection: "jobs";
   data: InferEntrySchema<"jobs">

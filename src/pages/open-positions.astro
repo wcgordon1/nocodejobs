@@ -4,6 +4,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Entries from "@/components/jobs/Entries.astro";
 import SearchJobs from "@/components/jobs/SearchJobs.astro";
 import JobFilters from "@/components/jobs/JobFilters.astro";
+import CtaWack from "@/components/cta/CtaWack.astro";
 
 const allPosts = await getCollection("jobs");
 
@@ -70,8 +71,8 @@ function formatSalary(baseSalary) {
           <div class="lg:sticky lg:top-8">
             <div class="bg-slate-50 rounded-3xl p-4 lg:p-6">
               <div>
-                <h3 class="text-lg font-medium text-purple-900">Tustin Recruiting</h3>
-                <p class="text-slate-500 text-sm mt-2">Orange County's Best Job Board.</p>
+                <h3 class="text-lg font-medium text-purple-900">Electrician Jobs</h3>
+                <p class="text-slate-500 text-sm mt-2">Where Electricians Find Jobs.</p>
                 <p class="text-slate-500 text-sm mt-2">Indeed & ZipRecruiter not working? Give us a try.</p>
               </div>
               <div class="mt-6">
@@ -83,4 +84,5 @@ function formatSalary(baseSalary) {
       </div>
     </div>
   </section>
+  <CtaWack />
 </BaseLayout>

@@ -142,6 +142,10 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
     activeFilters = { salary: null, team: null, category: null };
     document.querySelectorAll<HTMLInputElement>('input[type="radio"]')
       .forEach(radio => radio.checked = false);
+    
+    // Dispatch custom event for search reset
+    document.dispatchEvent(new CustomEvent('resetSearch'));
+    
     filterJobs();
   });
 </script> 

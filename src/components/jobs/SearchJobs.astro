@@ -42,6 +42,13 @@
     const searchInput = document.getElementById('searchInput') as HTMLInputElement;
     const clearButton = document.getElementById('clearButton');
     
+    document.addEventListener('resetSearch', () => {
+      if (searchInput) {
+        searchInput.value = '';
+        filterJobs();
+      }
+    });
+
     function filterJobs() {
       const jobItems = document.querySelectorAll('.job-item');
       const searchTerm = searchInput?.value.toLowerCase() || '';

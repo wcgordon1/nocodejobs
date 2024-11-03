@@ -1,1 +1,36 @@
- 
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import CompanyEntries from "@/components/company/CompanyEntries.astro";
+
+// Get all companies from the content collection
+const companies = await getCollection("company");
+---
+
+<BaseLayout>
+  <section>
+    <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
+      <div>
+        <h2 class="text-purple-900 font-semibold tracking-tight lg:text-5xl text-3xl">
+          Featured Electrical Contractors
+        </h2>
+        <p class="text-slate-500 mt-5">
+          Browse our network of trusted electrical contractors and their open positions.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8 mt-24">
+        {companies.map((company) => (
+          <CompanyEntries
+            name={company.data.name}
+            logo={company.data.logo}
+            description={company.data.description}
+            location={company.data.location}
+            website={company.data.website}
+            slug={company.slug}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout> 

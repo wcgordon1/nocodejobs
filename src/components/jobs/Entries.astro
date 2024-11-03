@@ -6,6 +6,7 @@ interface Props {
   team: string;
   company: string;
   companyLogo: string;
+  companySlug: string;
   salary: string;
   type: string;
   description: string;
@@ -19,6 +20,7 @@ const {
   team, 
   company, 
   companyLogo,
+  companySlug,
   salary,
   type,
   description,
@@ -53,7 +55,7 @@ const {
         <div class="col-span-2 mr-2.5 flex-none sm:mr-0">
           <dt class="sr-only">Company</dt>
           <dd class="text-xs font-medium tracking-wide text-blue-600 uppercase">
-            <a href={`/company/${company.toLowerCase().replace(/\s+/g, '-')}`} class="hover:text-blue-700">
+            <a href={`/company/${companySlug}`} class="hover:text-blue-700">
               {company}
             </a>
           </dd>

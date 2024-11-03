@@ -103,10 +103,10 @@ const companyCollection = defineCollection({
   type: 'content',
   schema: z.object({
     name: z.string(),
-    website: z.string().url(),
     logo: z.string(),
     description: z.string(),
     location: z.string(),
+    website: z.string().url(),
   })
 });
 

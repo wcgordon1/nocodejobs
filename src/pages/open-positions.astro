@@ -18,7 +18,7 @@ function formatSalary(baseSalary) {
   <section>
     <header class="px-8 mx-auto max-w-7xl lg:px-16 xl:px-24 pt-8">
       <div
-        class="p-8 lg:px-20 lg:py-32 rounded-3xl bg-gradient-to-tr from-purple-700 via-purple-400 to-blue-500">
+        class="p-8 lg:px-20 lg:py-32 rounded-3xl bg-gradient-to-tr from-purple-900 via-purple-800 to-blue-700">
         <div class="text-center max-w-xl mx-auto">
           <span
             class="text-white text-sm leading-6 px-4 py-2 relative bg-white/10 ring-1 ring-white/20 rounded-full"
@@ -57,6 +57,7 @@ function formatSalary(baseSalary) {
                   team={post.data.team}
                   company={post.data.hiringOrganization.name}
                   companyLogo={post.data.hiringOrganization.logo}
+                  companySlug={post.data.hiringOrganization.slug}
                   salary={formatSalary(post.data.baseSalary)}
                   type={post.data.employmentType}
                   description={post.data.description}

@@ -9,10 +9,10 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
 ---
 
 <div class="lg:sticky lg:top-8">
-  <div class="bg-slate-50 rounded-3xl p-4 space-y-2">
+  <div class="bg-slate-50 rounded-3xl p-4 lg:p-6">
     <!-- Salary Sort -->
     <div class="pl-3">
-      <h3 class="text-sm font-medium text-purple-900 mb-2">Salary</h3>
+      <h3 class="text-lg font-medium text-purple-900 mb-2">Pay</h3>
       <div class="flex lg:flex-col flex-wrap gap-3 lg:gap-1">
         <label class="flex items-center space-x-2">
           <input 
@@ -21,7 +21,7 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
             value="high-low" 
             class="text-blue-600 focus:ring-blue-500 size-3"
           >
-          <span class="text-xs text-slate-500">Highest to Lowest</span>
+          <span class="text-slate-500 text-sm">Highest to Lowest</span>
         </label>
         <label class="flex items-center space-x-2">
           <input 
@@ -30,14 +30,14 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
             value="low-high" 
             class="text-blue-600 focus:ring-blue-500 size-3"
           >
-          <span class="text-xs text-slate-500">Lowest to Highest</span>
+          <span class="text-slate-500 text-sm">Lowest to Highest</span>
         </label>
       </div>
     </div>
 
     <!-- Teams Filter -->
     <div class="pl-3">
-      <h3 class="text-sm font-medium text-purple-900 mb-2">Setting</h3>
+      <h3 class="text-lg font-medium text-purple-900 mt-2 mb-2">Setting</h3>
       <div class="flex lg:flex-col flex-wrap gap-3 lg:gap-1">
         {teams.map((team) => (
           <label class="flex items-center space-x-2">
@@ -47,7 +47,7 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
               value={team.toString()} 
               class="text-blue-600 focus:ring-blue-500 size-3"
             >
-            <span class="text-xs text-slate-500">{team}</span>
+            <span class="text-slate-500 text-sm">{team}</span>
           </label>
         ))}
       </div>
@@ -55,7 +55,7 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
 
     <!-- Categories Filter -->
     <div class="pl-3">
-      <h3 class="text-sm font-medium text-purple-900 mb-2">Experience</h3>
+      <h3 class="text-lg font-medium text-purple-900 mt-2 mb-2">Experience</h3>
       <div class="flex lg:flex-col flex-wrap gap-3 lg:gap-1">
         {categories.map((category) => (
           <label class="flex items-center space-x-2">
@@ -65,7 +65,7 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
               value={category.toString()} 
               class="text-blue-600 focus:ring-blue-500 size-3"
             >
-            <span class="text-xs text-slate-500">{category}</span>
+            <span class="text-slate-500 text-sm">{category}</span>
           </label>
         ))}
       </div>
@@ -74,7 +74,7 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
     <!-- Reset Button -->
     <button
       id="resetFilters"
-      class="w-full text-xs text-slate-500 hover:text-slate-600 font-medium mt-2 bg-white rounded-full py-1.5 ring-1 ring-slate-200 hover:ring-slate-300"
+      class="w-full text-white bg-blue-500 hover:bg-blue-600 font-medium py-2 rounded-full mt-6"
     >
       Reset Filters
     </button>

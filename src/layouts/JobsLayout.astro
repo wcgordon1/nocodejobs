@@ -55,11 +55,11 @@ const jobSchema = {
     <div
       class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 lg:flex py-24">
       <div class="lg:w-1/2 lg:pl-12 lg:ml-auto">
-        <div class="lg:sticker lg:sticky pb-16 pt-8 top-0">
+        <div class="lg:sticky lg:top-8">
           <div class="lg:pl-36 md:pl-12">
             <nav
               aria-label="Sidebar"
-              class="bg-slate-50 rounded-3xl divide-y space-y-3 p-4 lg:p-8">
+              class="bg-slate-50 rounded-3xl divide-y space-y-3 p-4 lg:p-8 w-full lg:w-auto">
               <div>
                 <h3 class="text-2xl font-medium text-purple-900 pt-2">
                   {frontmatter.position}
@@ -206,16 +206,10 @@ const jobSchema = {
           <div>
             <h2
               class="text-white font-semibold tracking-tighter lg:text-5xl text-3xl">
-              We look forward to hearing from you
+              Best Electrician Jobs: {frontmatter.position}
             </h2>
             <p class="text-slate-300 mt-5 lg:text-balance">
-              At Tustin Recruiting, we're looking for people with passion, grit, and
-              integrity. You're encouraged to apply even if your experience
-              doesn't precisely match the job description. Your skills and
-              passion will stand out—and set you apart—especially if your career
-              has taken some extraordinary twists and turns. At Tustin Recruiting,
-              we welcome diverse perspectives and people who think rigorously
-              and aren't afraid to challenge assumptions. Join us.
+              At Best Electrician Jobs, we're looking for passionate individuals to fill the role of <strong>{frontmatter.position}</strong> at <strong>{frontmatter.hiringOrganization.name}</strong>. You're encouraged to apply even if your experience doesn't precisely match the job description. Your skills and passion will stand out—and set you apart—especially if your career has taken some extraordinary twists and turns. At Best Electrician Jobs, we welcome diverse perspectives and people who think rigorously and aren't afraid to challenge assumptions. Join us in shaping the future of the electrical industry.
             </p>
             <div class="mt-10 flex">
               <button

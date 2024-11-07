@@ -30,5 +30,5 @@ identifier:
   name: "Salt n Light Electric"
   value: "JRN-ELEC-2024"
 featured: false
-email: ['will@bestelecricianjobs.com']
+email: ['will@bestelectricianjobs.com']
 ---

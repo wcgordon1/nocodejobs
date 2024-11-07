@@ -30,7 +30,7 @@ identifier:
   name: "West Coast Fire Inc."
   value: "FIRE-WCFI-2024"
 featured: false
-email: ['will@bestelecricianjobs.com']
+email: ['will@bestelectricianjobs.com']
 ---
 **Position Description:**
 

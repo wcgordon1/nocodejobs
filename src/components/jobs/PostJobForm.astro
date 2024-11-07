@@ -1,0 +1,227 @@
+---
+---
+
+<div class="max-w-2xl mx-auto p-8">
+  <div class="text-center mb-8">
+    <h2 class="text-purple-900 font-semibold text-2xl">Post a New Job</h2>
+    <p class="text-slate-500 mt-2">Fill out the form below to post your job listing</p>
+  </div>
+
+  <form id="jobPostForm" class="space-y-4">
+    <!-- Company Details Section -->
+    <div class="space-y-4">
+      <h3 class="text-lg font-medium text-purple-900">Company Details</h3>
+      
+      <div>
+        <label for="companyName" class="sr-only">Company Name</label>
+        <input
+          id="companyName"
+          name="companyName"
+          type="text"
+          required
+          placeholder="Company Name *"
+          class="block w-full rounded-full border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+        />
+      </div>
+
+      <div>
+        <label for="contactEmail" class="sr-only">Contact Email</label>
+        <input
+          id="contactEmail"
+          name="contactEmail"
+          type="email"
+          required
+          placeholder="Contact Email *"
+          class="block w-full rounded-full border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+        />
+      </div>
+
+      <div>
+        <label for="phoneNumber" class="sr-only">Phone Number</label>
+        <input
+          id="phoneNumber"
+          name="phoneNumber"
+          type="tel"
+          required
+          placeholder="Phone Number *"
+          class="block w-full rounded-full border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+        />
+      </div>
+    </div>
+
+    <!-- Job Details Section -->
+    <div class="space-y-4 mt-8">
+      <h3 class="text-lg font-medium text-purple-900">Job Details</h3>
+      
+      <div>
+        <label for="jobTitle" class="sr-only">Job Title</label>
+        <input
+          id="jobTitle"
+          name="jobTitle"
+          type="text"
+          required
+          placeholder="Job Title *"
+          class="block w-full rounded-full border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+        />
+      </div>
+
+      <div>
+        <label for="jobDescription" class="sr-only">Job Description</label>
+        <textarea
+          id="jobDescription"
+          name="jobDescription"
+          required
+          rows="4"
+          placeholder="Job Description *"
+          class="block w-full rounded-2xl border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="experience" class="sr-only">Experience Needed</label>
+        <input
+          id="experience"
+          name="experience"
+          type="text"
+          required
+          placeholder="Experience Needed *"
+          class="block w-full rounded-full border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+        />
+      </div>
+
+      <div>
+        <label for="payRate" class="sr-only">Pay Rate</label>
+        <input
+          id="payRate"
+          name="payRate"
+          type="text"
+          required
+          placeholder="Pay Rate *"
+          class="block w-full rounded-full border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+        />
+      </div>
+
+      <div>
+        <label for="location" class="sr-only">Location</label>
+        <input
+          id="location"
+          name="location"
+          type="text"
+          required
+          placeholder="Location *"
+          class="block w-full rounded-full border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+        />
+      </div>
+
+      <div>
+        <label for="jobUrl" class="sr-only">Job URL</label>
+        <input
+          id="jobUrl"
+          name="jobUrl"
+          type="url"
+          placeholder="Link to Job Description (optional)"
+          class="block w-full rounded-full border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+        />
+      </div>
+
+      <div>
+        <label for="comments" class="sr-only">Additional Comments</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="3"
+          placeholder="Additional Comments (optional)"
+          class="block w-full rounded-2xl border-0 px-4 py-3.5 text-slate-500 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-purple-500 sm:text-sm sm:leading-6 duration-200 outline-none"
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="attachments" class="sr-only">Attachments</label>
+        <input
+          type="file"
+          id="attachments"
+          name="attachments"
+          accept=".pdf,.doc,.docx"
+          class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-medium file:bg-blue-50 file:text-blue-600 hover:file:bg-blue-100"
+        />
+      </div>
+    </div>
+
+    <div class="space-y-4 pt-4">
+      <button
+        type="submit"
+        id="submitButton"
+        class="w-full text-white items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-500 hover:bg-blue-600"
+      >
+        Post Job
+      </button>
+
+      <div 
+        id="statusMessage" 
+        class="hidden rounded-lg p-4 text-sm"
+      >
+        <!-- Status message will be inserted here -->
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+  const form = document.getElementById('jobPostForm') as HTMLFormElement;
+  const submitButton = document.getElementById('submitButton') as HTMLButtonElement;
+  const statusMessage = document.getElementById('statusMessage');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    try {
+      submitButton.disabled = true;
+      submitButton.innerHTML = 'Posting...';
+      statusMessage?.classList.add('hidden');
+
+      const response = await fetch('/api/jobdescription', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+      
+      if (result.success) {
+        statusMessage?.classList.remove('hidden');
+        statusMessage?.classList.add('bg-green-50', 'text-green-800');
+        statusMessage!.innerHTML = `
+          <div class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M5 12l5 5l10 -10" />
+            </svg>
+            <span>Job posted successfully!</span>
+          </div>
+        `;
+        
+        // Reset form after successful submission
+        form.reset();
+      } else {
+        throw new Error(result.error);
+      }
+    } catch (error) {
+      statusMessage?.classList.remove('hidden');
+      statusMessage?.classList.add('bg-red-50', 'text-red-800');
+      statusMessage!.innerHTML = `
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+            <path d="M12 9v4" />
+            <path d="M12 16v.01" />
+          </svg>
+          <span>Error: ${error instanceof Error ? error.message : 'Failed to post job. Please try again.'}</span>
+        </div>
+      `;
+    } finally {
+      submitButton.disabled = false;
+      submitButton.innerHTML = 'Post Job';
+    }
+  });
+</script>

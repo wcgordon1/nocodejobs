@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 
 export default defineConfig({
-  output: 'server',
+  output: 'hybrid',
   adapter: vercel({
     analytics: true,
     webAnalytics: true,

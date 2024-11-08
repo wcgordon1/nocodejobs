@@ -31,7 +31,7 @@ occupationalCategory: "Level 2"
 identifier:
     name: "Nexus Alarm & Suppression"
     value: "FIRE-ALARM-TECHNICIAN-fdsae42"
-featured: false
+featured: true
 email: ['will@bestelectricianjobs.com', 'support@primepartners.info']
 ---
 **Company:** Nexus Alarm and Suppression  

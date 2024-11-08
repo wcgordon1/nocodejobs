@@ -29,7 +29,7 @@ occupationalCategory: "Journeyman"
 identifier:
   name: "Salt n Light Electric"
   value: "JRN-ELEC-2024"
-featured: true
+featured: false
 email: ['will@bestelectricianjobs.com']
 ---
 

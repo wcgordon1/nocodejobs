@@ -7,11 +7,14 @@ import JobFilters from "@/components/jobs/JobFilters.astro";
 import CtaWack from "@/components/cta/CtaWack.astro";
 
 const allPosts = await getCollection("jobs");
-// Sort posts to show featured ones first
+// Sort posts by featured status first, then by date
 const sortedPosts = allPosts.sort((a, b) => {
+  // First sort by featured status
   if (a.data.featured && !b.data.featured) return -1;
   if (!a.data.featured && b.data.featured) return 1;
-  return 0;
+  
+  // If featured status is the same, sort by date (most recent first)
+  return new Date(b.data.datePosted).getTime() - new Date(a.data.datePosted).getTime();
 });
 
 function formatSalary(baseSalary) {

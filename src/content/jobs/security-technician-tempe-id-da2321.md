@@ -31,7 +31,7 @@ occupationalCategory: "Level 3"
 identifier:
   name: "Convergint Technologies"
   value: "SECURITY-TECH-fdsae42"
-featured: false
+featured: true
 email: ['will@bestelectricianjobs.com', 'support@primepartners.info']
 ---
 **Location:** Tempe, Arizona  

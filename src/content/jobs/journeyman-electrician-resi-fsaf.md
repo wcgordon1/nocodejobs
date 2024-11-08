@@ -29,8 +29,8 @@ occupationalCategory: "Journeyman"
 identifier:
   name: "Hal Hayes Electric"
   value: "JRN-HAL-2024"
-featured: false
 email: ['will@tustinrecruiting.com', 'wcgordon1@gmail.com']
+featured: false
 ---
 
 As a **Residential Journeyman Electrician** at Hal Hayes Electric, you will be responsible for installing, maintaining, and repairing electrical systems and equipment in residential settings. Your role involves ensuring compliance with local and national electrical codes while providing excellent customer service.

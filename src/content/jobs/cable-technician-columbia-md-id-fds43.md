@@ -31,7 +31,7 @@ occupationalCategory: "Level 3"
 identifier:
   name: "Kane Communications"
   value: "CABLE-TECHNICIAN-fdsae42"
-featured: false
+featured: true
 email: ['will@bestelectricianjobs.com', 'support@primepartners.info']
 ---
 

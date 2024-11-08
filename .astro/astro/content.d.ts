@@ -338,30 +338,16 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "posts": {
-"1.md": {
-	id: "1.md";
-  slug: "1";
+"Journeyman-Electrician-Job-Description.md": {
+	id: "Journeyman-Electrician-Job-Description.md";
+  slug: "journeyman-electrician-job-description";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"2.md": {
-	id: "2.md";
-  slug: "2";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"3.md": {
-	id: "3.md";
-  slug: "3";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"4.md": {
-	id: "4.md";
-  slug: "4";
+"best-paying-electrician-jobs.md": {
+	id: "best-paying-electrician-jobs.md";
+  slug: "best-paying-electrician-jobs";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">

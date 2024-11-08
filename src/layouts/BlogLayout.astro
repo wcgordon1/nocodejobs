@@ -1,52 +1,636 @@
----
-import BaseLayout from "./BaseLayout.astro";
-const { frontmatter } = Astro.props;
----
-
-<BaseLayout>
-  <section>
-    <div
-      class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24 items-start">
-      <div>
-        <div class="items-center grid gap-12">
-          <div>
-            <h2
-              class="text-purple-900 font-semibold text-3xl lg:text-7xl tracking-tight lg:text-balance">
-              {frontmatter.title}
-            </h2><p class="text-xl text-slate-500 mt-12 lg:text-balance">
-              {frontmatter.description}
-            </p>
-            <div class="mt-6">
-              <div class="flex items-center">
-                <div>
-                  <img
-                    class="inline-block h-9 w-9 rounded-full"
-                    src={frontmatter.image.url}
-                    alt={frontmatter.image.alt}
-                  />
-                </div>
-                <div class="ml-3">
-                  <p
-                    class="text-sm font-medium text-slate-500 group-hover:text-purple-900">
-                    {frontmatter.author}
-                  </p>
-                  <p class="text-xs text-slate-500 uppercase">
-                    {frontmatter.pubDate.toString().slice(0, 10)}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="px-8 max-w-7xl lg:px-24 mx-auto py-12">
-      <div
-        class="max-w-[40rem] prose-lg hover:prose-a:text-blue-500 prose prose-a:font-semibold prose-a:text-blue-300 prose-blockquote:text-blue-600 prose-h3:text-purple-900 text-slate-500">
-        <slot />
-      </div>
-    </div>
-  </section>
-</BaseLayout>
+---
+
+
+
+import BaseLayout from "./BaseLayout.astro";
+
+
+
+import CtaWack from "@/components/cta/CtaWack.astro";
+
+
+
+const { frontmatter } = Astro.props;
+
+
+
+
+
+
+
+// Get the current URL for mainEntityOfPage
+
+
+
+const currentUrl = Astro.url;
+
+
+
+
+
+
+
+// Convert the content to plain text for articleBody
+
+
+
+const articleBody = await Astro.slots.render('default');
+
+
+
+const plainTextContent = articleBody.replace(/<[^>]*>/g, '');
+
+
+
+
+
+
+
+// Create the JSON-LD data
+
+
+
+const jsonLd = {
+
+
+
+  "@context": "https://schema.org",
+
+
+
+  "@type": "BlogPosting",
+
+
+
+  "mainEntityOfPage": {
+
+
+
+    "@type": "WebPage",
+
+
+
+    "@id": currentUrl
+
+
+
+  },
+
+
+
+  "headline": frontmatter.title,
+
+
+
+  "datePublished": frontmatter.pubDate.toISOString(),
+
+
+
+  "dateModified": frontmatter.modDate,
+
+
+
+  "author": {
+
+
+
+    "@type": "Person",
+
+
+
+    "name": frontmatter.author,
+
+
+
+    "url": "https://bestelectricianjobs.com/about"
+
+
+
+  },
+
+
+
+  "publisher": {
+
+
+
+    "@type": "Organization",
+
+
+
+    "name": "Best Electrician Jobs",
+
+
+
+    "logo": {
+
+
+
+      "@type": "ImageObject",
+
+
+
+      "url": "https://bestelectricianjobs.com/logo.png"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "description": frontmatter.description,
+
+
+
+  "articleBody": plainTextContent,
+
+
+
+  "keywords": frontmatter.tags,
+
+
+
+  "inLanguage": "en-US",
+
+
+
+  "isAccessibleForFree": true,
+
+
+
+  "image": {
+
+
+
+    "@type": "ImageObject",
+
+
+
+    "url": frontmatter.image.url,
+
+
+
+    "height": "800",
+
+
+
+    "width": "1200"
+
+
+
+  },
+
+
+
+  "mainEntity": {
+
+
+
+    "@type": "Thing",
+
+
+
+    "name": frontmatter.title
+
+
+
+  }
+
+
+
+};
+
+
+
+---
+
+
+
+
+
+
+
+<BaseLayout>
+
+
+
+  <Fragment slot="head">
+
+
+
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd, null, 2)} />
+
+
+
+  </Fragment>
+
+
+
+
+
+
+
+  <!-- Rest of your template -->
+
+
+
+  <section>
+
+
+
+    <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
+
+
+
+      <div class="items-center grid gap-12">
+
+
+
+        <!-- Author Info and Dates -->
+
+
+
+        <div class="text-center">
+
+
+
+          <img
+
+
+
+            class="size-20 rounded-full mx-auto object-cover"
+
+
+
+            src={frontmatter.avatar.url}
+
+
+
+            alt={frontmatter.avatar.alt}
+
+
+
+          />
+
+
+
+          <div class="mt-4 flex items-center justify-center gap-2 text-sm">
+
+
+
+            <span class="font-medium text-purple-900">{frontmatter.author}</span>
+
+
+
+            <span class="text-slate-400">·</span>
+
+
+
+            <time class="text-slate-500" datetime={frontmatter.pubDate}>
+
+
+
+              {frontmatter.pubDate.toString().slice(0, 10)}
+
+
+
+            </time>
+
+
+
+            <span class="text-slate-400">·</span>
+
+
+
+            <time class="text-slate-500" datetime={frontmatter.modDate}>
+
+
+
+              Updated: {frontmatter.modDate.slice(0, 10)}
+
+
+
+            </time>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Title and Description -->
+
+
+
+        <div class="text-center">
+
+
+
+          <h1 class="text-purple-900 font-semibold tracking-tight lg:text-5xl mt-6 text-3xl lg:text-balance">
+
+
+
+            {frontmatter.title}
+
+
+
+          </h1>
+
+
+
+          <p class="text-slate-500 mt-5 lg:text-pretty max-w-2xl mx-auto">
+
+
+
+            {frontmatter.description}
+
+
+
+          </p>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Tags -->
+
+
+
+        <div class="flex flex-wrap justify-center gap-2">
+
+
+
+          {
+
+
+
+            frontmatter.tags.map((tag) => (
+
+
+
+              <a
+
+
+
+                href={`/tags/${tag}`}
+
+
+
+                class="px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors"
+
+
+
+              >
+
+
+
+                {tag}
+
+
+
+              </a>
+
+
+
+            ))
+
+
+
+          }
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Featured Image -->
+
+
+
+        {frontmatter.image && (
+
+
+
+          <img
+
+
+
+            src={frontmatter.image.url}
+
+
+
+            alt={frontmatter.image.alt}
+
+
+
+            class="rounded-2xl w-full max-w-4xl mx-auto object-cover aspect-video shadow-lg"
+
+
+
+          />
+
+
+
+        )}
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+
+
+  <!-- Content -->
+
+
+
+  <section>
+
+
+
+    <div class="mx-auto max-w-4xl lg:px-16 md:px-12 px-8 xl:px-24 py-12">
+
+
+
+      <div class="prose prose-lg prose-slate max-w-none">
+
+
+
+        <slot />
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+
+
+  <CtaWack />
+
+
+
+</BaseLayout>
+
+
+
+
+
+
+
+<style>
+
+
+
+  .prose {
+
+
+
+    --tw-prose-body: theme(colors.slate.600);
+
+
+
+    --tw-prose-headings: theme(colors.purple.900);
+
+
+
+    --tw-prose-links: theme(colors.blue.600);
+
+
+
+    --tw-prose-links-hover: theme(colors.blue.700);
+
+
+
+    --tw-prose-underline: theme(colors.blue.500 / 0.2);
+
+
+
+    --tw-prose-underline-hover: theme(colors.blue.500);
+
+
+
+    --tw-prose-bold: theme(colors.slate.900);
+
+
+
+    --tw-prose-counters: theme(colors.slate.900);
+
+
+
+    --tw-prose-bullets: theme(colors.slate.900);
+
+
+
+    --tw-prose-hr: theme(colors.slate.200);
+
+
+
+    --tw-prose-quote-borders: theme(colors.slate.200);
+
+
+
+    --tw-prose-captions: theme(colors.slate.500);
+
+
+
+    --tw-prose-code: theme(colors.slate.900);
+
+
+
+    --tw-prose-pre-code: theme(colors.slate.200);
+
+
+
+    --tw-prose-pre-bg: theme(colors.slate.800);
+
+
+
+    --tw-prose-th-borders: theme(colors.slate.300);
+
+
+
+    --tw-prose-td-borders: theme(colors.slate.200);
+
+
+
+  }
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

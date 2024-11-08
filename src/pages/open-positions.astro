@@ -7,6 +7,12 @@ import JobFilters from "@/components/jobs/JobFilters.astro";
 import CtaWack from "@/components/cta/CtaWack.astro";
 
 const allPosts = await getCollection("jobs");
+// Sort posts to show featured ones first
+const sortedPosts = allPosts.sort((a, b) => {
+  if (a.data.featured && !b.data.featured) return -1;
+  if (!a.data.featured && b.data.featured) return 1;
+  return 0;
+});
 
 function formatSalary(baseSalary) {
   const { currency, minValue, maxValue, unitText } = baseSalary;
@@ -49,7 +55,7 @@ function formatSalary(baseSalary) {
         <div class="lg:w-2/4 mt-8 lg:mt-0 mb-24">
           <ul role="list" class="job-list divide-y divide-slate-100">
             {
-              allPosts.map((post) => (
+              sortedPosts.map((post) => (
                 <Entries
                   url={"/jobs/" + post.slug}
                   position={post.data.position}
@@ -57,11 +63,12 @@ function formatSalary(baseSalary) {
                   team={post.data.team}
                   company={post.data.hiringOrganization.name}
                   companyLogo={post.data.hiringOrganization.logo}
-                  companySlug={post.data.hiringOrganization.slug}
+                  companySlug={post.data.hiringOrganization.name.toLowerCase().replace(/\s+/g, '-')}
                   salary={formatSalary(post.data.baseSalary)}
                   type={post.data.employmentType}
                   description={post.data.description}
                   category={post.data.occupationalCategory}
+                  featured={post.data.featured}
                 />
               ))
             }

@@ -322,9 +322,9 @@ declare module 'astro:content' {
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
-"residential-journeyman-electrician-jrn-elec.md.md": {
-	id: "residential-journeyman-electrician-jrn-elec.md.md";
-  slug: "residential-journeyman-electrician-jrn-elecmd";
+"residential-journeyman-electrician-jrn-elec.md": {
+	id: "residential-journeyman-electrician-jrn-elec.md";
+  slug: "residential-journeyman-electrician-jrn-elec";
   body: string;
   collection: "jobs";
   data: InferEntrySchema<"jobs">

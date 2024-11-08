@@ -1,90 +1,87 @@
 ---
 page: Privacy
-pubDate: 2024-01-01
+pubDate: 2024-10-21
 ---
-If you are a California resident, the California Consumer Privacy Act, as amended by the California Privacy Rights Act of 2020 (“**CCPA**”), requires us to provide some additional information to California residents. This Section only applies to you if you are a California resident, although please note that this information and the rights afforded herein are the same as offered to our other users in our main Privacy Policy. This Section does not apply to personal information we collect from our employees and job applicants in their capacity as employees and job applicants, as such information practices are described in separate policies.
+# Privacy Policy
 
-The following chart details these activities:
+**Last Updated:** November 7, 2024
 
-**Category of personal information**
+Welcome to **bestelectricianjobs.com** (the "Website"). We value your privacy and are committed to protecting your personal data. This Privacy Policy outlines the types of information we collect, how we use it, and the measures we take to safeguard it.
 
-**Purposes of use**
+## 1. **Information We Collect**
 
-**Categories of Third Parties Information**
+- **For Job Seekers:**
+  - When you apply for a job through our Website, you may provide your name, email address, resume, and other relevant application details. We do **not** store your resume on our servers. Your resume and contact information are forwarded directly to the employer who posted the job.
 
-**Categories of Third Parties**
+- **For Employers:**
+  - When you post a job on our Website, we collect information about your business, including company name, contact details, and payment information (processed securely through third-party payment processors).
 
-Contact information (such as your full name, phone number, email address)
+- **Analytics Data:**
+  - We use **Pirsch.io** for website analytics. Pirsch is a GDPR-, CCPA-, PECR-, and Schrems II-compliant analytics service that operates under strict European privacy laws. It does not collect any personally identifiable information (PII) and anonymizes data by default.
 
-Provide the Services; Communicate with you; Analyze use of and improve the services; With your consent; Comply with law or defend our legal rights; Security/fraud prevention
+## 2. **Cookies and Tracking**
 
-Affiliated entities; Service providers; Entities for legal purposes
+- We use **Pirsch.io** for analytics, which does **not use cookies**.
+- We do **not** use any other cookies or tracking mechanisms on our Website.
 
-We do not share/sell
+## 3. **How We Use Your Information**
 
-Customer service interaction information (including optional surveys and when you ask for help)
+- **Job Seekers:**
+  - Your personal information and resume are shared only with the employers you choose to apply to. We do not retain, store, or process your resume data beyond forwarding it to the employer.
 
-Provide the Services; Communicate with you; Analyze use of and improve the services; With your consent; Comply with law or defend our legal rights; Security/fraud prevention
+- **Employers:**
+  - Your business information is used to facilitate job postings and communicate with potential candidates. We may use your contact details to notify you of new applicants or updates related to your job post.
 
-Affiliated entities; Service providers; Entities for legal purposes
+- **Analytics:**
+  - We use non-identifiable, anonymized data provided by Pirsch.io to understand website usage and improve the user experience. No personal data is collected or stored for analytics purposes.
 
-We do not share/sell
+## 4. **Data Retention**
 
-Product interaction information
+- We do **not collect** any personal data outside of what is processed by Pirsch.io for analytics.
+- We do **not store any personal data** or resumes on our servers.
 
-Provide the Services; Communicate with you; Analyze use of and improve the services; With your consent; Comply with law or defend our legal rights; Security/fraud prevention
+## 5. **Data Deletion**
 
-Affiliated entities; Service providers; Entities for legal purposes
+- Since we do **not store** any personal data or resumes, we do not have a data deletion policy for such information. All resumes and contact details are forwarded directly to employers and are not retained by us.
 
-We do not share/sell
+## 6. **International Users**
 
-Internet network and device information (such as mobile device information, IP address, and information about your interaction with the services)
+- This Website is intended for users **within the United States**. We do not offer services to users outside of the USA and do not process international data requests.
 
-Provide the Services; Analyze use of and improve the services; With your consent; Comply with law or defend our legal rights; Security/fraud prevention
+## 7. **Children’s Privacy**
 
-Affiliated entities; Service providers; Entities for legal purposes;
+- Our Website is **not intended for users under the age of 18**. We do not knowingly collect personal data from individuals under 18 years old. If we become aware that we have collected data from someone under 18, we will take steps to delete that information.
 
-We do not share/sell
+## 8. **Data Sharing and Disclosure**
 
-Login information (such as your username and password)
+- We do **not sell, trade, or otherwise transfer** your personal information to third parties, except as required for service functionality (e.g., sharing your resume with the employer you applied to).
+- We may disclose information when legally required, such as in response to a court order or government request.
 
-Provide the Services; Comply with law or defend our legal rights; Security/fraud prevention; Comply with law or defend our legal rights
+## 9. **Data Security**
 
-Affiliated entities; Service providers; Entities for legal purposes
+We implement appropriate technical and organizational measures to protect your data from unauthorized access, disclosure, or misuse. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
 
-We do not share/sell
+## 10. **Your Rights**
 
-Professional or employment information (such as the name and address of the company you work for and your title)
+- **For Job Seekers and Employers:**
+  - You have the right to access, correct, or delete your personal data. If you wish to exercise these rights, please contact us at [support@bestelectricianjobs.com](mailto:support@bestelectricianjobs.com).
+- **Analytics Data:**
+  - Since we use Pirsch.io, which is compliant with GDPR and other privacy regulations, you have the right to opt out of analytics tracking. Pirsch.io does not use cookies or other tracking methods that require user consent under GDPR.
 
-Provide the Services; Communicate with you; Analyze use of and improve the services; With your consent; Comply with law or defend our legal rights; Security/fraud prevention
+## 11. **Third-Party Links**
 
-Affiliated entities; Service providers; Entities for legal purposes;
+Our Website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites. We encourage you to review their privacy policies before providing any personal information.
 
-We do not share/sell
+## 12. **Changes to This Privacy Policy**
 
-Other information (any other information you choose to provide directly to us, including optional profile photos)
+We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically to stay informed about how we are protecting your information.
 
-Provide the Services; Communicate with you; Analyze use of and improve the services; With your consent; Comply with law or defend our legal rights; Security/fraud prevention
+## 13. **Contact Us**
 
-Affiliated entities; Service providers; Entities for legal purposes;
+If you have any questions or concerns about this Privacy Policy, please contact us at:
 
-We do not sell/share
+**Email:** [support@bestelectricianjobs.com](mailto:support@bestelectricianjobs.com)  
+**Address:** Best Electrician Jobs, 123 Main Street, Anytown, USA
 
-For more information about each category of personal information, purpose of use, and third parties to which we disclose personal information, please see the "What we collect and why," and "When we access or disclose you information" sections of our Privacy Policy.
-
-**Your Choices Regarding “Sharing” and “Selling”**: You have the right to opt out of our sale/sharing of your personal information for purposes of online analytics and advertising. Currently, we do not sell or share your data as defined by the CCPA and we have not done so over the past 12 months from the effective date of this Privacy Policy.
-
-**Other CCPA Rights.** If we ever offer any financial incentives in exchange for your personal information, we will provide you with appropriate information about such incentives.
-
-The CCPA also allows you to limit the use or disclosure of your “sensitive personal information” (as defined in the CCPA) if your sensitive personal information is used for certain purposes. Please note that we do not use or disclose sensitive personal information other than for business purposes for which you cannot opt out under the CCPA.
-
-Please see the “Your rights with respect to your information” section of our Policy above for information about the additional rights you have with respect to your personal information under California law and how to exercise them.
-
-Retention of Your Personal Information. Please see the “Retention Of Your Information” section belowof our Privacy Policy for more information.
-
-Shine the Light Disclosure
---------------------------
-
-The California "Shine the Light" law gives residents of California the right under certain circumstances to request information from us regarding the manner in which we disclose certain categories of personal information (as defined in the Shine the Light law) with third parties for their direct marketing purposes. We currently do not disclose your personal information to third parties for their own direct marketing purposes.
-
+---
 

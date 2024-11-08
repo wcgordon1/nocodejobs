@@ -1,77 +1,77 @@
 ---
 page: Terms
-pubDate: 2024-01-01
+pubDate: 2024-10-21
 ---
-This privacy policy sets out how Unwrapped AB collects, processes and uses your Personal Information through your use of our Services.
+# Terms and Conditions
 
-### Definitions
+**Last Updated:** November 7, 2024
 
-### DPO
+Welcome to **bestelectricianjobs.com** (the "Website"). By using our Website, you agree to these Terms and Conditions. Please read them carefully before accessing or using any services provided by us.
 
-DPO means Data Protection Officer, and is the person specifically appointed by us to deal with your enquiries with respect to this privacy policy and your Personal Information.
+## 1. **Service Overview**
 
-Personal Information means any identifying information about you. This includes, but is not limited to, the following: cookies and usage data.
+bestelectricianjobs.com is a job board connecting employers with potential candidates in the electrician industry. We offer paid job posting services for employers and provide job listings for job seekers.
 
-Services means all services provided by Michael Alexander Web Agency to you, including (but not limited to) this Website.
+## 2. **Payment Terms**
 
-Website means this website and all websites, applications and communications that post a link to this Privacy Policy.
+- Employers can pay for job postings through **Stripe**, a secure payment processing service.
+- We do **not store any payment information** on our servers.
+- All payments are handled securely through Stripe's PCI-compliant system.
 
-### Personal Information Collection
+## 3. **Refund and Cancellation Policy**
 
-We only collect and use Personal Information to the extent necessary to provide you with the Services. We collect Personal Information for the Website to provide you with a better online experience.
+- You can **cancel** your job posting at any time.
+- If no applicants have applied within the first **14 days**, you are eligible for a **full refund** upon request.
+- Job postings remain active on the Website for **30 days** unless cancelled earlier.
 
-### Personal Information Retention
+## 4. **User Responsibilities**
 
-We keep Personal Information for the shortest time necessary to provide you with Services and to meet all our legal and compliance obligations. To determine this retention period, we take into account (i) the nature of the Personal Information gathered; and (ii) the nature of our legal and compliance obligations. All Personal Information no longer required by us is destroyed and/or erased.
+- **Accuracy of Information**: Both employers and job seekers are expected to provide accurate information to the best of their ability.
+- **Prohibited Activities**:
+  - No spamming or unsolicited promotions.
+  - No posting of fake or misleading job advertisements.
+  - Any abuse of the system may result in a ban from the Website.
 
-### Personal Data from Third Parties
+## 5. **Account Registration**
 
-We may, from time to time, obtain Personal Information from third parties to enable us to better tailor our Services to you (Third Party Personal Information). When we obtain Third Party Personal Information, we will notify you within one month. If we use or share Third Party Personal Information, we will notify you immediately.
+- There is **no account registration or login** required for using our Website features.
+- We do not require email verification or identity verification from users.
 
-### Your Rights
+## 6. **Ownership of Content**
 
-With respect to Personal Information we hold, you have the following rights:
+- All content posted on the Website, including job listings and blog articles, is owned by **bestelectricianjobs.com**.
+- Users are **not permitted** to use any content from the Website for commercial purposes without explicit permission.
 
-*   Access: You may request from us access to your data that we hold on you.
+## 7. **Intellectual Property**
 
-    li
-*   Rectification: If the data we hold on you is inaccurate, you may request that we correct it. If the data we hold is incomplete, you may request that we complete it.
-*   Erasure: Subject to certain conditions, you may request that we erase all of the data we hold on you. li Restrictions: Subject to certain conditions, you may request that we restrict the processing of data we hold on you.
-*   Portability: Subject to certain conditions, you may request that we transfer all the data we hold on you to a third party (including yourself).
-*   Objections: Subject to certain conditions, you may object to us processing the data we hold on you.
+- The Website, its content, features, and functionality are and will remain the exclusive property of **bestelectricianjobs.com**.
+- Unauthorized use of our content may result in legal action.
 
-### Social Media
+## 8. **Liability and Disclaimers**
 
-You may choose to engage with our Services through a variety of social media sites and platforms, for example Facebook, Instagram and Twitter. When you interact with our Services through these social media platforms, you may allow us to receive Personal Information on how you are interacting with our Services. This will depend on your privacy settings on each social media site and platform. The data we are provided by you through your interaction with our Services on social media sites and platforms will be used by us subject to the terms of this privacy policy. Depending on your social media site’s privacy settings, your Personal Information may become public to a community of users if you choose to engage with our Services through these platforms. For further information on how you can customize your privacy settings on social media sites and how those sites handle your privacy, please refer to the privacy policy of each particular social media site.
+- The Website provides a platform for employers to post job listings and for job seekers to find opportunities. We do **not guarantee** job placements or the accuracy of job listings.
+- We are **not liable** for any false information provided by employers or job seekers. Users are encouraged to verify the details independently before making any decisions.
+- We do not endorse any employer or job seeker using the Website.
 
-### Minors
+## 9. **Termination of Services**
 
-We do not knowingly collect information on children under the age of 16 (“Child”). If you become aware that a Child has provided us with Personal Information, please contact us. If we become aware that we have collected Personal Information from a Child without their parent's verifiable authorization to access our Services, we will take steps to remove that information from our servers.
+- We reserve the right to suspend or terminate access to the Website at our discretion if we believe a user has violated these Terms and Conditions.
+- In the event of termination, users will be notified via the email provided (if applicable).
 
-### Third Party Links
+## 10. **Changes to These Terms**
 
-Our website contains links to other third-party websites not owned or managed by Unwrapped. This privacy policy applies to this website only. If you click a link to a third-party website, the privacy policy of that website will apply. We highly recommend that you read the privacy policies of other websites as they may be different from ours.
+- We may update these Terms and Conditions from time to time. Any changes will be posted on this page with an updated revision date.
+- By continuing to use the Website after changes are posted, you accept the revised Terms and Conditions.
 
-### Payment Vendors
+## 11. **Governing Law**
 
-You can make payments via our website. Our vendors are listed below:
+- These Terms and Conditions are governed by and construed in accordance with the laws of the State of California, USA. Any disputes arising out of or related to these Terms will be subject to the exclusive jurisdiction of the courts located in California.
 
-*   Paypal
+## 12. **Contact Us**
 
-Their privacy policy can be viewed [here](https://www.paypal.com/webapps/mpp/ua/privacy-full)
+If you have any questions or concerns about these Terms and Conditions, please contact us at:
 
-### Merger, acquisition or asset sale
+**Email:** [hello@bestelectricianjobs.com](mailto:hello@bestelectricianjobs.com)  
 
-If we or our subsidiaries are involved in a merger, acquisition, or asset sale, your Personal Information may be transferred.
+---
 
-### Updates
-
-We are constantly reviewing our privacy policy and procedures to ensure that they meet best practices. This policy was last updated on August 21, 2021.
-
-### Contact us
-
-If you have any questions or suggestions about our privacy policy or want to know more information about Personal Information we hold, please contact us at support@unwrapped.design or write to us at Mariehamn, Åland Islands..
-
-### Complaints
-
-If you believe that we have breached our obligations to you under this privacy policy or relevant privacy laws, please contact us at email@example If you are not satisfied with our response, you have the right to lodge a complaint at any time to your relevant authority.

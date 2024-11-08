@@ -1,33 +1,92 @@
----
-import { getCollection } from "astro:content";
-import BaseLayout from "@/layouts/BaseLayout.astro";
-import EntriesOne from "@/components/blog/EntriesOne.astro";
-
-const allPosts = await getCollection("posts");
-const sortedPosts = allPosts.sort((a, b) => 
-  new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
-);
----
-
-<BaseLayout>
-  <section>
-    <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
-      <div class="space-y-24">
-        {
-          sortedPosts.map((post) => (
-            <EntriesOne
-              url={"/posts/" + post.slug}
-              title={post.data.title}
-              description={post.data.description}
-              alt={post.data.title}
-              pubDate={post.data.pubDate.toString().slice(0, 10)}
-              author={post.data.author}
-              image={post.data.image.url}
-            />
-          ))
-        }
-      </div>
-    </div>
-  </section>
-</BaseLayout>
-
+---
+
+import { getCollection } from "astro:content";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+import EntriesOne from "@/components/blog/EntriesOne.astro";
+import CtaOne from "@/components/cta/CtaOne.astro";
+
+
+
+const allPosts = await getCollection("posts");
+
+const sortedPosts = allPosts.sort((a, b) => 
+
+  new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+
+);
+
+---
+
+
+
+<BaseLayout>
+
+  <section>
+
+    <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
+      <span class="text-sm uppercase font-medium tracking-wide text-blue-600 "
+          >Best Electrician Jobs</span
+        >
+        <h1
+          class="text-purple-900 font-semibold mt-6 text-4xl lg:text-5xl tracking-tight">
+          The Best Electrician Jobs Articles
+        </h1>
+        <p class="text-slate-500 mt-5 lg:text-pretty">
+          Commercial, Residential, and Industrial Electricians. Fire Alarm, Controls, Security, Solar, Voice/Data, and Audio/Visual Jobs.
+        </p>
+        <div class="mt-10 flex gap-4 mb-24">
+          <a
+            class="text-white items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-500 hover:bg-blue-600 w-auto"
+            title="Best Electrician Jobs Open Positions"
+            aria-label="Best Electrician Jobs Open Positions"
+            href="/open-positions">
+            View Jobs
+          </a>
+          <a
+            class="text-blue-600 items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-50 hover:bg-blue-100 w-auto"
+            title="Post a Job" 
+            aria-label="Post a Job"
+            href="/contact">
+            Post a Job
+          </a>
+        </div>
+
+      <div class="space-y-24">
+
+        {
+
+          sortedPosts.map((post) => (
+
+            <EntriesOne
+
+              url={"/posts/" + post.slug}
+
+              title={post.data.title}
+
+              description={post.data.description}
+
+              alt={post.data.title}
+
+              pubDate={post.data.pubDate.toString().slice(0, 10)}
+
+              author={post.data.author}
+
+              image={post.data.image.url}
+
+            />
+
+          ))
+
+        }
+
+      </div>
+
+    </div>
+
+  </section>
+  <CtaOne />
+</BaseLayout>
+
+

@@ -6,7 +6,9 @@ title: Journeyman Electrician Job Description
 description: "Electricians are essential professionals who ensure that homes, businesses, and industrial facilities remain powered and safe. For those looking to advance their careers, becoming a Journeyman Electrician offers the opportunity to work independently in specialized fields such as commercial, industrial, and residential environments. In this blog, we'll break down the job descriptions for each specialization and highlight the benefits, responsibilities, and reasons why these roles are highly rewarding."
 avatar: { url: "/images/me.png", alt: "Will Gordon" }
 image: { url: "https://i.pinimg.com/564x/8b/fa/f7/8bfaf7b7e43584e1d311a6a08b7fdde6.jpg", alt: "alt text goes here" }
-tags: ["job description", "commercial electrician", "industrial electrician", "residential electrician"]
+# Start of Selection
+tags: ["Job Description", "Commercial Electrician", "Industrial Electrician", "Residential Electrician"]
+# End of Selection
 ---
 
 ## Introduction

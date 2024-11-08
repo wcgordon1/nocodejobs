@@ -112,6 +112,7 @@ const companyCollection = defineCollection({
     description: z.string(),
     location: z.string(),
     website: z.string().url(),
+    featured: z.boolean().default(false)
   })
 });
 

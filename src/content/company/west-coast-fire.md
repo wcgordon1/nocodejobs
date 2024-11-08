@@ -5,6 +5,7 @@ description: "XYY West Coast Fire Inc. is a leading fire alarm service provider 
 location: "Irvine, CA"
 website: "https://westcoastfireinc.com"
 slug: "west-coast-fire"
+featured: true
 ---
 
-## In Business Since 1989
+West Coast Fire Inc. is a leading fire alarm service provider in the Southern California area. They offer a wide range of services, including commercial, residential, and industrial fire alarm systems.

@@ -151,6 +151,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"company": {
+"convergint.md": {
+	id: "convergint.md";
+  slug: "convergint";
+  body: string;
+  collection: "company";
+  data: InferEntrySchema<"company">
+} & { render(): Render[".md"] };
 "hal-hayes-electric.md": {
 	id: "hal-hayes-electric.md";
   slug: "hal-hayes-electric";
@@ -308,9 +315,37 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "jobs": {
+"cable-technician-columbia-md-id-fds43.md": {
+	id: "cable-technician-columbia-md-id-fds43.md";
+  slug: "cable-technician-columbia-md-id-fds43";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"fire-alarm-designer-scottsdale-id-dfs321.md": {
+	id: "fire-alarm-designer-scottsdale-id-dfs321.md";
+  slug: "fire-alarm-designer-scottsdale-id-dfs321";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
 "fire-alarm-installer-irvine-id-fsdf9.md": {
 	id: "fire-alarm-installer-irvine-id-fsdf9.md";
   slug: "fire-alarm-installer-irvine-id-fsdf9";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"fire-alarm-technician-scottsdale-id-fds2.md": {
+	id: "fire-alarm-technician-scottsdale-id-fds2.md";
+  slug: "fire-alarm-technician-scottsdale-id-fds2";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"fire-sprinkler-designer-mesa-id-fds23.md": {
+	id: "fire-sprinkler-designer-mesa-id-fds23.md";
+  slug: "fire-sprinkler-designer-mesa-id-fds23";
   body: string;
   collection: "jobs";
   data: InferEntrySchema<"jobs">
@@ -322,9 +357,30 @@ declare module 'astro:content' {
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
+"lead-cable-tech-chantilly-id-fds24.md": {
+	id: "lead-cable-tech-chantilly-id-fds24.md";
+  slug: "lead-cable-tech-chantilly-id-fds24";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
 "residential-journeyman-electrician-jrn-elec.md": {
 	id: "residential-journeyman-electrician-jrn-elec.md";
   slug: "residential-journeyman-electrician-jrn-elec";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"security-tech-reston-id-df243.md": {
+	id: "security-tech-reston-id-df243.md";
+  slug: "security-tech-reston-id-df243";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"security-technician-tempe-id-da2321.md": {
+	id: "security-technician-tempe-id-da2321.md";
+  slug: "security-technician-tempe-id-da2321";
   body: string;
   collection: "jobs";
   data: InferEntrySchema<"jobs">

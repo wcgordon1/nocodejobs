@@ -5,6 +5,7 @@ description: "Hal Hayes Electric is a leading electrical service provider in the
 location: "Irvine, CA"
 website: "https://halhayes.com"
 slug: "hal-hayes-electric"
+featured: false
 ---
 
 Hal Hayes Electric is a leading electrical service provider in the Southern California area. They offer a wide range of services, including commercial, residential, and industrial electrical work.

@@ -1,12 +1,12 @@
 ---
-position: "Lead Cable Technician"
+position: "Voice Data Installer"
 # Start of Selection
-description: "Kane Communications is seeking a skilled Lead Cable Technician to join our dynamic team. In this role, you will be responsible for overseeing the installation of a wide variety of cables, including twisted pair, coaxial, power-limited tray, and low voltage cables, as well as CAT-5, CAT-6, and both single-mode and multi-mode fiber optic cables."
+description: "Kane Communications is seeking a skilled Voice Data Installer to join our dynamic team. In this role, you will be responsible for installing and terminating voice and data cables, including twisted pair, coaxial, power-limited tray, and low voltage cables, as well as CAT-5, CAT-6, and both single-mode and multi-mode fiber optic cables."
 # End of Selection
-location: "Chantilly, VA"
+location: "Fairfax, VA"
 team: "Commercial"
-datePosted: "2024-11-07T00:00:00Z"
-validThrough: "2025-01-27T00:00"
+datePosted: "2024-11-10T00:00:00Z"
+validThrough: "2025-01-30T00:00"
 employmentType: "FULL_TIME"
 hiringOrganization: 
   name: "Kane Communications"
@@ -15,10 +15,10 @@ hiringOrganization:
 jobLocation:
   streetAddress: "123 Main Street"
     # City
-  addressLocality: "Chantilly"
+  addressLocality: "Fairfax"
   # State   
-  addressRegion: "VA"
-  postalCode: "20151"
+  addressRegion: "VA"   
+  postalCode: "22030"
   addressCountry: "USA"
 baseSalary:
   currency: "USD"
@@ -30,7 +30,7 @@ experienceRequirements: "seniorLevel"
 occupationalCategory: "Level 3"
 identifier:
   name: "Kane Communications"
-  value: "LEAD-CABLE-TECHNICIAN-fdsae42"
+  value: "VOICE-DATA-INSTALLER-fdsae42"
 featured: false
 email: ['will@bestelectricianjobs.com', 'support@primepartners.info']
 ---
@@ -39,11 +39,11 @@ email: ['will@bestelectricianjobs.com', 'support@primepartners.info']
 
 Join a rapidly growing company that's redefining the construction industry through exceptional craftsmanship and integrity. We are committed to our employees, partners, clients, and the communities we serve. We foster a supportive and innovative work environment that values growth and success. Our benefits include paid time off, comprehensive health coverage, a 401K match, flexible work arrangements, and top-tier industry training. We are looking for driven individuals who want to be a part of our journey and make an impact.
 
-## Position: Lead Technician
+## Position: Voice Data Installer
 
-The Lead Technician will oversee the installation of a wide variety of cables, including **twisted pair**, **coaxial**, **power-limited tray**, and **low voltage** cables, as well as **CAT-5**, **CAT-6**, and both **single-mode and multi-mode fiber optic cables**. The role involves physical installation, termination, testing, labeling, and thorough documentation of all cabling work.
+The Voice Data Installer will install and terminate voice and data cables, including **twisted pair**, **coaxial**, **power-limited tray**, and **low voltage** cables, as well as **CAT-5**, **CAT-6**, and both **single-mode and multi-mode fiber optic cables**. The role involves physical installation, termination, testing, labeling, and thorough documentation of all cabling work.
 
-## Key Responsibilities
+## Key Responsibilities for Voice Data Installer
 
 - Lead, train, and supervise technicians to ensure safe and efficient installation, adhering to the Scope of Work (SoW) guidelines.
 - Escalate complex or high-risk tasks to ensure adequate support and resolution.
@@ -56,7 +56,7 @@ The Lead Technician will oversee the installation of a wide variety of cables, i
 - Handle change requests (RFC) and field change orders (FCO) as needed.
 - Engage with clients to assess satisfaction and identify areas for improvement.
 
-## Required Skills and Qualifications
+## Required Skills and Qualifications for Voice Data Installer
 
 - Proficient in the installation, termination, and testing of low voltage and fiber optic cables, including twisted pair, coaxial, power-limited tray, stranded and solid conductors, and single-mode/multi-mode fiber optics.
 - Strong mechanical aptitude and experience with hand tools and power tools.
@@ -65,7 +65,7 @@ The Lead Technician will oversee the installation of a wide variety of cables, i
 - **2-5 years** of hands-on experience in installing telecom systems, TCP/IP networks, CCTV, security systems, access control, and wireless solutions.
 - In-depth knowledge of **ANSI/TIA/EIA cabling standards** and the **National Electric Code (NEC)**.
 
-## Compensation and Benefits
+## Compensation and Benefits for Voice Data Installer
 
 - **Pay Range:** $28 - $35 per hour, based on experience and qualifications.
 - **Health Benefits:** Comprehensive medical, dental, and vision insurance.
@@ -74,13 +74,13 @@ The Lead Technician will oversee the installation of a wide variety of cables, i
 - **Professional Development:** Access to industry-leading training and career growth opportunities.
 - **Team Culture:** Regular team-building activities, community engagement programs, and annual holiday events to promote a positive work environment.
 
-## Schedule
+## Schedule for Voice Data Installer
 
 - Full-time position with flexible scheduling options.
 - 8-hour or 10-hour shifts available, Monday to Friday.
 - Overtime and weekend availability as needed.
 
-## How to Apply
+## How to Apply for Voice Data Installer
 
 If you're a motivated and skilled technician ready to take on a leadership role, we encourage you to apply. Submit your resume and references, and qualified candidates will be contacted for an interview.
 

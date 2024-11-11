@@ -10,7 +10,7 @@ validThrough: "2025-01-27T00:00"
 employmentType: "FULL_TIME"
 hiringOrganization: 
   name: "Kane Communications"
-  sameAs: "https://www.nexusfire.com/"
+  sameAs: "https://kanecommgroup.com/"
   logo: "https://kane.com/wp-content/uploads/2020/05/Kane-logo-1.png"
 jobLocation:
   streetAddress: "123 Main Street"

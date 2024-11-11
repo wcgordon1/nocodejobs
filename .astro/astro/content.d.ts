@@ -315,6 +315,20 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "jobs": {
+"apprentice-electrician-berg-morgan-hill-id23121.md": {
+	id: "apprentice-electrician-berg-morgan-hill-id23121.md";
+  slug: "apprentice-electrician-berg-morgan-hill-id23121";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"apprentice-electrician-berg-sf-id-fg212.md": {
+	id: "apprentice-electrician-berg-sf-id-fg212.md";
+  slug: "apprentice-electrician-berg-sf-id-fg212";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
 "cable-technician-columbia-md-id-fds43.md": {
 	id: "cable-technician-columbia-md-id-fds43.md";
   slug: "cable-technician-columbia-md-id-fds43";

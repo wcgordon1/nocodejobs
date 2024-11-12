@@ -2,13 +2,13 @@
 import { Code } from "astro/components";
 const features = [
   {
-    title: "Commercial Electricians",
+    title: "Visual Development",
     description:
-      "Experts in office buildings, retail spaces, and industrial facilities.",
+      "Experts in Bubble.io, Webflow, and other visual development platforms.",
   },
   {
-    title: "Residential Electricians",
-    description: "Specialists in home wiring, panel upgrades, and smart home installations.",
+    title: "CMS Development",
+    description: "Specialists in WordPress, Shopify, and content management systems.",
   },
 ];
 ---
@@ -18,19 +18,19 @@ const features = [
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-start">
       <div>
         <span class="text-sm font-medium tracking-wide text-blue-600 uppercase"
-          >Electrical Skills</span
+          >No Code Skills</span
         >
         <h2
           class="text-purple-900 font-semibold tracking-tight lg:text-5xl mt-6 text-3xl">
-          Commercial and Residential Electricians
+          Visual Development & CMS Platforms
         </h2>
         <p class="text-slate-500 mt-5">
-          Electricians need deep technical knowledge and hands-on experience in their specialty.
-          Commercial and residential work requires different skills and certifications.
+          No Code developers need deep platform knowledge and design experience in their specialty.
+          Visual development and CMS work requires different skills and approaches.
           <br />
           <br />
-          From industrial control systems to home automation, modern electricians combine
-          traditional electrical knowledge with cutting-edge technology.
+          From complex web applications to e-commerce stores, modern no-code developers combine
+          visual design skills with technical platform expertise.
         </p>
         <ul
           role="list"
@@ -79,14 +79,14 @@ const features = [
                 @click="tabButtonClicked($el);"
                 type="button"
                 class="relative z-20 inline-flex items-center justify-center w-full h-8 px-3 text-sm font-medium transition-all rounded-full cursor-pointer whitespace-nowrap"
-                >Commercial</button
+                >Bubble.io</button
               >
               <button
                 :id="$id(tabId)"
                 @click="tabButtonClicked($el);"
                 type="button"
                 class="relative z-20 inline-flex items-center justify-center w-full h-8 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
-                >Residential</button
+                >WordPress</button
               >
               <div
                 x-ref="tabMarker"
@@ -106,25 +106,25 @@ const features = [
                 <section
                   class="text-xs font-mono mt-4 rounded-3xl hadow-2xl overflow-hidden h-full p-4">
                   <Code
-                    code={`// Commercial Electrician Knowledge
+                    code={`// Bubble.io Developer Skills
 
-const industrialControls = {
-  plcProgramming: ['Ladder Logic', 'Function Block', 'Structured Text'],
-  motorControls: ['VFD Configuration', 'Soft Starters', 'Motor Protection'],
-  buildingAutomation: {
-    lighting: 'DALI Protocol',
-    hvac: 'BACnet Integration',
-    security: 'Access Control Systems'
+const bubbleDevelopment = {
+  frontEnd: {
+    design: ['Responsive Design', 'Custom Styles', 'Reusable Elements'],
+    workflow: ['Page Logic', 'User Actions', 'Conditional States']
   },
-  powerDistribution: ['Switchgear', 'Transformers', 'Load Calculations']
+  dataManagement: {
+    database: ['Data Types', 'Relations', 'Privacy Rules'],
+    api: ['API Connector', 'External APIs', 'Webhooks']
+  },
+  plugins: ['Analytics', 'Payment Processing', 'SEO']
 };
 
-// Required Certifications
-
-const certifications = [
-  'Journeyman Electrician License',
-  'OSHA Safety Certification',
-  'PLC Programming Certificate'
+// Core Competencies
+const skills = [
+  'Visual Programming',
+  'Database Design',
+  'API Integration'
 ];`}
                     lang="js"
                     theme="css-variables"
@@ -140,29 +140,36 @@ const certifications = [
                 <section
                   class="text-xs font-mono mt-4 rounded-3xl hadow-2xl overflow-hidden h-full p-4">
                   <Code
-                    code={`// Residential Electrician Knowledge
+                    code={`
+// WordPress Developer Skills
 
-const residentialSystems = {
-  smartHome: {
-    automation: ['Lutron', 'Control4', 'HomeKit'],
-    security: ['Cameras', 'Alarms', 'Access Control'],
-    entertainment: ['Whole-House Audio', 'Home Theater']
-  },
-  electrical: {
-    service: ['Panel Upgrades', 'Circuit Installation'],
-    renewable: ['Solar Integration', 'Battery Backup'],
-    lighting: ['LED Systems', 'Dimming Controls']
+class WordPressExpertise {
+  private $themes = [
+    'customization' => ['Elementor', 'Divi', 'Gutenberg'],
+    'development' => ['Child Themes', 'Custom Templates', 'Hooks']
+  ];
+  
+  private $plugins = [
+    'ecommerce' => 'WooCommerce',
+    'forms' => 'Gravity Forms',
+    'seo' => 'Yoast SEO'
+  ];
+
+  private $core_skills = [
+    'PHP Basics',
+    'WordPress CLI',
+    'Database Management'
+  ];
+
+  public function getRequiredKnowledge() {
+    return [
+      'Theme Customization',
+      'Plugin Configuration',
+      'Site Optimization'
+    ];
   }
-};
-
-// Common Tasks
-
-const dailyWork = [
-  'Code Compliance Checks',
-  'Troubleshooting',
-  'Installation Planning'
-];`}
-                    lang="js"
+}`}
+                    lang="php"
                     theme="css-variables"
                   />
                 </section>

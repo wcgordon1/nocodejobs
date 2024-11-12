@@ -3,13 +3,13 @@ import { Code } from "astro/components";
 // Define the features data
 const features = [
   {
-    title: "Security Systems",
+    title: "Mobile Development",
     description:
-      "Network security, access control, and video surveillance programming.",
+      "FlutterFlow experts building cross-platform mobile apps visually.",
   },
   {
-    title: "PLC Controls",
-    description: "Industrial automation and process control programming.",
+    title: "Automation",
+    description: "Zapier specialists creating complex workflow automations.",
   },
 ];
 ---
@@ -19,20 +19,20 @@ const features = [
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-start">
         <div>
           <span class="text-sm font-medium text-slate-300 tracking-wide uppercase"
-            >Specialized Programming</span
+            >No Code Development</span
           >
           <h2
             class="text-white font-semibold tracking-tight lg:text-5xl mt-6 text-3xl">
-            Advanced Electrical Programming
+            Modern No Code Platforms
           </h2>
           <p class="text-slate-300 mt-5 text-balance">
-            Modern electrical systems require specialized programming knowledge.
-            From security systems to industrial automation, electrical programmers
-            combine traditional electrical skills with software expertise.
+            Today's no code platforms enable rapid development of sophisticated applications.
+            From mobile apps to complex automations, no code developers combine visual development
+            with technical expertise.
             <br />
             <br />
-            Each specialty requires deep understanding of specific protocols,
-            programming languages and industry standards.
+            Each platform requires deep understanding of its capabilities, best practices
+            and integration patterns.
           </p>
           <ul
             role="list"
@@ -79,14 +79,14 @@ const features = [
                 @click="tabButtonClicked($el);"
                 type="button"
                 class="relative z-20 inline-flex items-center justify-center w-full h-8 px-3 text-sm font-medium transition-all rounded-full cursor-pointer whitespace-nowrap"
-                >Security</button
+                >FlutterFlow</button
               >
               <button
                 :id="$id(tabId)"
                 @click="tabButtonClicked($el);"
                 type="button"
                 class="relative z-20 inline-flex items-center justify-center w-full h-8 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
-                >PLC</button
+                >Zapier</button
               >
               <div
                 x-ref="tabMarker"
@@ -104,32 +104,37 @@ const features = [
                 <section
                   class="text-xs font-mono shadow-3xl mt-4 rounded-2xl overflowhidden h-full bg-[#14162a] p-4">
                   <Code
-                    code={`// Security System Programming
+                    code={`// FlutterFlow Developer Skills
 
-const securitySystem = {
-  languages: ['Python', 'C++', 'JavaScript'],
-  protocols: ['TCP/IP', 'ONVIF', 'RTSP'],
-  systems: {
-    accessControl: {
-      readers: ['RFID', 'Biometric', 'KeyCard'],
-      software: ['Lenel', 'S2', 'Genetec']
-    },
-    videoSurveillance: {
-      cameras: ['IP', 'PTZ', 'Thermal'],
-      vms: ['Milestone', 'Genetec', 'Avigilon']
-    },
-    intrusion: ['Motion Detection', 'Glass Break', 'Door Contacts']
-  },
-  networking: ['VLANs', 'Port Security', 'Firewall Config']
-};
+class FlutterFlowExpertise {
+  final Map<String, List<String>> visualDevelopment = {
+    'ui_design': ['Responsive Layouts', 'Custom Widgets', 'Animations'],
+    'state_management': ['MobX', 'Provider', 'Riverpod'],
+    'backend': ['Firebase', 'Supabase', 'REST APIs']
+  };
 
-// Required Certifications
-const certifications = [
-  'CompTIA Security+',
-  'CCNA Security',
-  'Axis Certification'
-];`}
-                    lang="js"
+  final Map<String, dynamic> customCode = {
+    'languages': ['Dart', 'JavaScript'],
+    'custom_functions': ['Actions', 'Computed Values', 'Custom Widgets'],
+    'integrations': ['Authentication', 'Payments', 'Storage']
+  };
+
+  List<String> requiredSkills = [
+    'Flutter Fundamentals',
+    'Visual Programming',
+    'State Management',
+    'API Integration',
+    'Custom Code Extensions'
+  ];
+
+  // Core Development Areas
+  void buildResponsiveApps() {
+    // Design system implementation
+    // Component architecture
+    // Cross-platform optimization
+  }
+}`}
+                    lang="dart"
                     theme="css-variables"
                   />
                 </section>
@@ -142,40 +147,50 @@ const certifications = [
                 <section
                   class="text-xs font-mono mt-4 rounded-3xl shadow-2xl overflow-hidden h-full bg-[#14162a] p-4">
                   <Code
-                    code={`// PLC Control Programming
+                    code={`# Zapier Integration Development
 
-const plcSystems = {
-  languages: {
-    iec61131: [
-      'Ladder Logic',
-      'Function Block',
-      'Structured Text',
-      'Sequential Function Charts'
-    ]
-  },
-  platforms: {
-    hardware: ['Allen Bradley', 'Siemens', 'Omron', 'Schneider'],
-    software: ['Studio 5000', 'TIA Portal', 'CX-Programmer']
-  },
-  communications: {
-    industrial: ['Ethernet/IP', 'Profinet', 'Modbus TCP'],
-    fieldbus: ['DeviceNet', 'Profibus', 'CC-Link']
-  },
-  skills: [
-    'HMI Development',
-    'Process Control',
-    'Motion Control',
-    'SCADA Integration'
-  ]
-};
+class ZapierExpertise:
+    def __init__(self):
+        self.automation_skills = {
+            'workflow_design': [
+                'Multi-step Zaps',
+                'Conditional Logic',
+                'Nested Workflows'
+            ],
+            'integrations': {
+                'apis': ['REST', 'GraphQL', 'Webhooks'],
+                'platforms': ['CRM', 'Marketing', 'Databases']
+            },
+            'custom_development': [
+                'Python Scripts',
+                'Code Steps',
+                'API Creation'
+            ]
+        }
+        
+        self.core_competencies = [
+            'API Understanding',
+            'Data Transformation',
+            'Error Handling',
+            'Testing & Monitoring'
+        ]
 
-// Safety Standards
-const standards = [
-  'ISA/IEC 62443',
-  'NFPA 79',
-  'ISO 13849'
-];`}
-                    lang="js"
+    def build_enterprise_workflows(self):
+        """
+        Enterprise automation capabilities:
+        - Complex data mappings
+        - Multi-app orchestration
+        - Error recovery patterns
+        """
+        pass
+
+# Required Tools
+tools = [
+    'Zapier Platform CLI',
+    'REST API Tools',
+    'Version Control'
+]`}
+                    lang="python"
                     theme="css-variables"
                   />
                 </section>

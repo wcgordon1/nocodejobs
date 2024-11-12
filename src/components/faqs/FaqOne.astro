@@ -2,48 +2,62 @@
 // Define the FAQ data
 const faqs = [
   {
-    question: "How do I post a job on Best Electrician Jobs?",
-    answer: "Simply select a pricing plan that fits your needs and click 'Post a Job'. We manage the wording and formatting of your job posting to ensure it's optimized for search engines and attracts qualified candidates. This includes updating Job Titles, Locations, and Frequency of Updates to ensure the right candidates see your job posting.",
+    question: "How do I post a job on No Code Jobs?",
+    answer: "Simply select a pricing plan that fits your needs and click 'Post a Job'. We manage the wording and formatting of your job posting to ensure it's optimized for search engines and attracts qualified no-code developers. This includes updating Job Titles, Locations, and Required Skills to ensure the right candidates see your job posting.",
   },
   {
-    question: "What makes Best Electrician Jobs different from general job boards?",
-    answer: "We specialize exclusively in electrical industry jobs, connecting you with qualified and licensed electricians. Our platform is designed specifically for electrical contractors and companies, with features tailored to electrical hiring needs.",
+    question: "What makes No Code Jobs different from general job boards?", 
+    answer: "We specialize exclusively in no-code development jobs, connecting you with qualified developers skilled in platforms like Bubble, Webflow, FlutterFlow and more. Our platform is designed specifically for companies hiring no-code talent, with features tailored to the unique needs of visual development roles.",
+  },
+  {
+    question: "What types of no-code roles can I post?",
+    answer: "You can post any no-code development role including Bubble developers, Webflow designers, FlutterFlow developers, Glide app creators, Airtable experts, automation specialists and more. We support both full-time and contract positions.",
   },
   {
     question: "How long will my job posting remain active?",
     answer: "Job posting duration varies by plan - Basic listings run for 30 days, Growth plan listings for 60 days, and Enterprise listings for 90 days. You can always renew or extend listings as needed.",
   },
   {
-    question: "Can I edit my job posting after it's live?",
-    answer: "Yes, you can edit your job posting at any time during its active period. This includes updating job requirements, location, compensation, or any other details to ensure your listing stays current.",
-  },
-  {
-    question: "How do I screen and manage applicants?",
-    answer: "All plans include access to our candidate dashboard where you can review applications, resumes, and credentials. Growth and Enterprise plans include additional features like applicant tracking systems and custom hiring workflows.",
+    question: "How do I screen no-code developer candidates?",
+    answer: "All plans include access to our candidate dashboard where you can review applications, portfolios, and platform certifications. Growth and Enterprise plans include additional features like skills assessments and technical screening tools specific to no-code platforms.",
   },
   {
     question: "What kind of support do you offer?",
-    answer: "Support varies by plan - Basic includes email support, Growth adds phone support, and Enterprise includes 24/7 priority support with a dedicated account manager. We're here to help you find the right electricians for your team.",
+    answer: "Support varies by plan - Basic includes email support, Growth adds phone support, and Enterprise includes 24/7 priority support with a dedicated account manager. We're here to help you find the right no-code talent for your team.",
   },
 ];
+
+// Generate structured data for FAQs
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
 ---
 
+<!-- Add structured data to head -->
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
 <section class="bg-white">
-  <div
-    class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
+  <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
     <h2 class="inline-flex items-center text-blue-600">
       <span class="text-base font-medium tracking-tight">FAQ</span>
     </h2>
-    <h2
-      class="text-purple-900 font-semibold tracking-tight lg:text-5xl mt-6 text-3xl">
+    <h2 class="text-purple-900 font-semibold tracking-tight lg:text-5xl mt-6 text-3xl">
       Frequent questions and answers
     </h2>
 
-    <div
-      class="gap-x-2 gap-y-14 lg:gap-12 grid grid-cols-1 lg:grid-cols-3 mt-12">
+    <div class="gap-x-2 gap-y-14 lg:gap-12 grid grid-cols-1 lg:grid-cols-3 mt-12">
       {
         faqs.map((faq) => (
-          <div >
+          <div>
             <div class="space-y-3">
               <div>
                 <p class="font-semibold text-purple-900 lg:mt-0">

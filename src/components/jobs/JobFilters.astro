@@ -3,9 +3,11 @@ import { getCollection } from "astro:content";
 
 const allJobs = await getCollection("jobs");
 
-// Get unique teams and categories
+// Get unique teams
 const teams = [...new Set(allJobs.map(job => job.data.team))].sort();
-const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory))].sort();
+
+// Get unique categories (flattened from arrays)
+const categories = [...new Set(allJobs.flatMap(job => job.data.occupationalCategory))].sort();
 ---
 
 <div class="lg:sticky lg:top-8">
@@ -62,7 +64,7 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
             <input 
               type="radio" 
               name="category-filter" 
-              value={category.toString()} 
+              value={category} 
               class="text-blue-600 focus:ring-blue-500 size-3"
             >
             <span class="text-slate-500 text-sm">{category}</span>
@@ -99,11 +101,11 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
 
     jobItems.forEach(item => {
       const team = item.dataset.team || '';
-      const category = item.dataset.category || '';
+      const categories = item.dataset.category ? JSON.parse(item.dataset.category) : [];
       const salary = parseInt(item.dataset.salary || '0');
 
       const matchesTeam = !activeFilters.team || team === activeFilters.team;
-      const matchesCategory = !activeFilters.category || category === activeFilters.category;
+      const matchesCategory = !activeFilters.category || categories.includes(activeFilters.category);
 
       item.style.display = (matchesTeam && matchesCategory) ? '' : 'none';
 

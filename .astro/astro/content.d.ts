@@ -322,6 +322,13 @@ declare module 'astro:content' {
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
+"astro-dev-remote-id-we2133.md": {
+	id: "astro-dev-remote-id-we2133.md";
+  slug: "astro-dev-remote-id-we2133";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
 };
 "posts": {
 "Journeyman-Electrician-Job-Description.md": {

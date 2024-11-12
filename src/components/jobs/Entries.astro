@@ -10,7 +10,7 @@ interface Props {
   salary: string;
   type: string;
   description: string;
-  category: string;
+  category: string[];
   featured: boolean;
   datePosted: string;
 }
@@ -30,6 +30,9 @@ const {
   featured,
   datePosted
 } = Astro.props;
+
+// Get salary value for sorting
+const salaryValue = parseInt(salary.match(/\d+/)?.[0] || "0");
 ---
 
 <li 
@@ -38,8 +41,8 @@ const {
   data-location={location}
   data-team={team}
   data-description={description}
-  data-category={category}
-  data-salary={salary.replace(/[^0-9]/g, '')}
+  data-category={JSON.stringify(category)}
+  data-salary={salaryValue}
   data-featured={featured}
 >
   <a href={url} class="group block hover:bg-slate-50 p-4 sm:p-6 rounded-2xl transition-colors">
@@ -72,7 +75,11 @@ const {
             {position}
           </dd>
           <dd class="text-xs text-slate-500 text-right">
-            {location}
+            {new Date(datePosted).toLocaleDateString('en-US', {
+              month: '2-digit',
+              day: '2-digit',
+              year: 'numeric'
+            })}
           </dd>
         </div>
 
@@ -91,16 +98,12 @@ const {
         <!-- Team and Date -->
         <div class="flex items-center gap-x-4">
           <dt class="sr-only">Team and Date</dt>
-          <dd class="text-sm font-medium tracking-wide text-blue-600">
+          <dd class="text-xs font-medium tracking-wide text-blue-600">
             {team}
           </dd>
           <dd class="text-xs text-slate-500">
-            Posted: 
-            {new Date(datePosted).toLocaleDateString('en-US', {
-              month: '2-digit',
-              day: '2-digit',
-              year: 'numeric'
-            })}
+            {location}
+            
           </dd>
         </div>
       </dl>

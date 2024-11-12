@@ -21,8 +21,9 @@ function formatSalary(baseSalary) {
   const { currency, minValue, maxValue, unitText } = baseSalary;
   return `${currency} ${minValue.toLocaleString()}-${maxValue.toLocaleString()} per ${unitText.toLowerCase()}`;
 }
-const pageTitle = "Best Electrician Jobs Open Positions";
-const pageDescription = "Electrican Apprentice/Journeyman, Fire Protection, Controls, Voice/Data, Audio/Visual, Solar, and Security Installer, Technician, Project Manager, and more jobs.";
+
+const pageTitle = "No Code Jobs Open Positions";
+const pageDescription = "Find no-code development jobs for Bubble, Webflow, FlutterFlow, and more platforms. Remote and on-site positions available.";
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
@@ -60,23 +61,31 @@ const pageDescription = "Electrican Apprentice/Journeyman, Fire Protection, Cont
         <div class="lg:w-2/4 mt-8 lg:mt-0 mb-24">
           <ul role="list" class="job-list divide-y divide-slate-100">
             {
-              sortedPosts.map((post) => (
-                <Entries
-                  url={"/jobs/" + post.slug}
-                  position={post.data.position}
-                  location={post.data.location}
-                  team={post.data.team}
-                  company={post.data.hiringOrganization.name}
-                  companyLogo={post.data.hiringOrganization.logo}
-                  companySlug={post.data.hiringOrganization.name.toLowerCase().replace(/\s+/g, '-')}
-                  salary={formatSalary(post.data.baseSalary)}
-                  type={post.data.employmentType}
-                  description={post.data.description}
-                  category={post.data.occupationalCategory}
-                  featured={post.data.featured}
-                  datePosted={post.data.datePosted}
-                />
-              ))
+              sortedPosts.map((post) => {
+                // Calculate the raw salary value for sorting
+                const minSalary = post.data.baseSalary.minValue;
+                const maxSalary = post.data.baseSalary.maxValue;
+                const avgSalary = (minSalary + maxSalary) / 2;
+                
+                return (
+                  <Entries
+                    url={"/jobs/" + post.slug}
+                    position={post.data.position}
+                    location={post.data.location}
+                    team={post.data.team}
+                    company={post.data.hiringOrganization.name}
+                    companyLogo={post.data.hiringOrganization.logo}
+                    companySlug={post.data.hiringOrganization.name.toLowerCase().replace(/\s+/g, '-')}
+                    salary={formatSalary(post.data.baseSalary)}
+                    type={post.data.employmentType}
+                    description={post.data.description}
+                    category={post.data.occupationalCategory}
+                    featured={post.data.featured}
+                    datePosted={post.data.datePosted}
+                    data-salary={avgSalary.toString()}
+                  />
+                );
+              })
             }
           </ul>
         </div>
@@ -86,8 +95,9 @@ const pageDescription = "Electrican Apprentice/Journeyman, Fire Protection, Cont
             <div class="bg-slate-50 rounded-3xl p-4 lg:p-6">
               <div>
                 <h3 class="text-lg font-medium text-purple-900">No Code Jobs</h3>
-                <p class="text-slate-500 text-sm mt-2">Where No Coders Find Jobs.</p>
-                <p class="text-slate-500 text-sm mt-2">Indeed & ZipRecruiter not working? Give us a try.</p>
+                <p class="text-slate-500 text-sm mt-4">All jobs are syndicated to Google Jobs (150 million searches per month).</p>
+                <p class="text-slate-500 text-sm mt-4">We distribute through our internal technical job board network, and publish to our Reddit, X, & LinkedIn Communities.</p>
+
               </div>
               <div class="mt-6">
                 <a 

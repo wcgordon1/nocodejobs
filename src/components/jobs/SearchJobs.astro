@@ -66,12 +66,16 @@
           location: item.dataset.location,
           team: item.dataset.team,
           description: item.dataset.description,
-          category: item.dataset.category
+          category: item.dataset.category ? JSON.parse(item.dataset.category) : []
         };
 
-        const matchesSearch = !searchTerm || Object.values(jobData).some(value => 
-          value && value.toLowerCase().includes(searchTerm)
-        );
+        const matchesSearch = !searchTerm || 
+          Object.entries(jobData).some(([key, value]) => {
+            if (key === 'category' && Array.isArray(value)) {
+              return value.some(cat => cat.toLowerCase().includes(searchTerm));
+            }
+            return value && value.toString().toLowerCase().includes(searchTerm);
+          });
 
         item.style.display = matchesSearch ? '' : 'none';
       });

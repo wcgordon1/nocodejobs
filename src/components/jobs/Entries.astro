@@ -12,6 +12,7 @@ interface Props {
   description: string;
   category: string;
   featured: boolean;
+  datePosted: string;
 }
 
 const { 
@@ -26,7 +27,8 @@ const {
   type,
   description,
   category,
-  featured
+  featured,
+  datePosted
 } = Astro.props;
 ---
 
@@ -40,11 +42,9 @@ const {
   data-salary={salary.replace(/[^0-9]/g, '')}
   data-featured={featured}
 >
-  <div class="group relative py-6 sm:rounded-2xl">
-    <div
-      class="absolute -inset-x-4 -inset-y-px bg-slate-50 opacity-0 group-hover:opacity-100 sm:-inset-x-6 rounded-2xl lg:-inset-x-8 duration-200">
-    </div>
-    <div class="relative flex items-center">
+  <a href={url} class="group block hover:bg-slate-50 p-4 sm:p-6 rounded-2xl transition-colors">
+    <div class="relative flex items-center w-full">
+      <!-- Company Logo -->
       <div class="relative size-12 sm:size-14 flex-none">
         <img
           class="absolute inset-0 size-full object-contain"
@@ -54,64 +54,58 @@ const {
         <div class="absolute inset-0 rounded-full ring-1 ring-inset ring-slate-200/10">
         </div>
       </div>
-      <dl class="ml-4 flex flex-auto flex-wrap gap-y-1 gap-x-2 overflow-hidden sm:ml-6 sm:grid sm:grid-cols-[auto_1fr_auto_auto] sm:items-center">
-        <div class="col-span-2 mr-2.5 flex-none sm:mr-0">
+
+      <!-- Text Content - Make it take full remaining width -->
+      <dl class="ml-4 flex-1 flex flex-col gap-y-2 sm:ml-6">
+        <!-- Company Name -->
+        <div>
           <dt class="sr-only">Company</dt>
-          <dd class="text-xs font-medium tracking-wide text-blue-600 uppercase">
-            <a href={`/company/${companySlug}`} class="hover:text-blue-700">
-              {company}
-            </a>
+          <dd class="text-sm font-medium text-blue-600">
+            {company}
           </dd>
         </div>
-        <div class="col-start-3 row-start-2 -ml-2.5 flex-auto sm:ml-0 sm:pl-6">
-          <dt class="sr-only">Location</dt>
-          <dd class="flex items-center text-sm text-slate-500" data-location>
-            <svg
-              viewBox="0 0 2 2"
-              aria-hidden="true"
-              class="mr-2 size-1 flex-none fill-slate-400 sm:hidden">
-              <circle cx="1" cy="1" r="1"></circle>
-            </svg>
+
+        <!-- Title and Location -->
+        <div class="flex items-center justify-between">
+          <dt class="sr-only">Title and Location</dt>
+          <dd class="text-base font-semibold text-purple-900 flex-1">
+            {position}
+          </dd>
+          <dd class="text-sm text-slate-500 text-right">
             {location}
           </dd>
         </div>
-        <div class="col-span-2 col-start-1 w-full flex-none">
-          <dt class="sr-only">Position</dt>
-          <dd class="text-purple-900 font-semibold text-lg" data-position>
-            <a href={url} class="hover:text-blue-600">
-              <span class="absolute -inset-x-4 inset-y-[calc(-1*(theme(spacing.6)+1px))] sm:-inset-x-6 sm:rounded-2xl lg:-inset-x-8">
-              </span>
-              {position}
-            </a>
-          </dd>
-        </div>
-        <div class="col-start-1 mr-2.5 flex-none">
-          <dt class="sr-only">Type</dt>
-          <dd class="text-sm text-slate-500" data-type>
+
+        <!-- Employment Type and Salary -->
+        <div class="flex items-center gap-x-4">
+          <dt class="sr-only">Employment Type</dt>
+          <dd class="text-xs text-slate-500">
             {type}
           </dd>
-        </div>
-        <div class="col-span-3 -ml-2.5 flex-none">
           <dt class="sr-only">Salary</dt>
-          <dd class="flex items-center text-sm text-slate-500">
-            <svg
-              viewBox="0 0 2 2"
-              aria-hidden="true"
-              class="mr-2 size-1 flex-none fill-slate-400">
-              <circle cx="1" cy="1" r="1"></circle>
-            </svg>
+          <dd class="flex items-center text-xs text-slate-500">
             {salary}
           </dd>
         </div>
-        <div class="col-span-2 mr-2.5 flex-none sm:mr-0">
-          <dt class="sr-only">Team</dt>
-          <dd class="text-xs font-medium tracking-wide text-blue-600 uppercase" data-team>
+
+        <!-- Team and Date -->
+        <div class="flex items-center gap-x-4">
+          <dt class="sr-only">Team and Date</dt>
+          <dd class="text-xs font-medium tracking-wide text-blue-600">
             {team}
+          </dd>
+          <dd class="text-xs text-slate-500">
+            Posted: 
+            {new Date(datePosted).toLocaleDateString('en-US', {
+              month: '2-digit',
+              day: '2-digit',
+              year: 'numeric'
+            })}
           </dd>
         </div>
       </dl>
     </div>
-  </div>
+  </a>
 </li>
 
 <!-- No Results Message -->

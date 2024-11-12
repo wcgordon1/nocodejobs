@@ -12,7 +12,7 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
   <div class="bg-slate-50 rounded-3xl p-4 lg:p-6">
     <!-- Salary Sort -->
     <div class="pl-3">
-      <h3 class="text-lg font-medium text-purple-900 mb-2">Pay</h3>
+      <h3 class="ttext-base font-medium text-purple-900 mb-2">Pay</h3>
       <div class="flex lg:flex-col flex-wrap gap-3 lg:gap-1">
         <label class="flex items-center space-x-2">
           <input 
@@ -37,7 +37,7 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
 
     <!-- Teams Filter -->
     <div class="pl-3">
-      <h3 class="text-lg font-medium text-purple-900 mt-2 mb-2">Setting</h3>
+      <h3 class="text-base font-medium text-purple-900 mt-2 mb-2">Setting</h3>
       <div class="flex lg:flex-col flex-wrap gap-3 lg:gap-1">
         {teams.map((team) => (
           <label class="flex items-center space-x-2">
@@ -55,7 +55,7 @@ const categories = [...new Set(allJobs.map(job => job.data.occupationalCategory)
 
     <!-- Categories Filter -->
     <div class="pl-3">
-      <h3 class="text-lg font-medium text-purple-900 mt-2 mb-2">Experience</h3>
+      <h3 class="text-base font-medium text-purple-900 mt-2 mb-2">Platform</h3>
       <div class="flex lg:flex-col flex-wrap gap-3 lg:gap-1">
         {categories.map((category) => (
           <label class="flex items-center space-x-2">

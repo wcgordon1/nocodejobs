@@ -1,24 +1,24 @@
 ---
-position: "Apprentice Electrician"
+position: "Wordpress Developer"
 # Start of Selection
 description: "Berg Electric is seeking a motivated individual to join our team as an Apprentice Electrician in San Francisco. This is an excellent opportunity to start your career in the electrical trade with a company known for its commitment to quality, safety, and innovation."
 # End of Selection
-location: "Morgan Hill, CA"
-team: "Commercial"
+location: "Newport Beach, CA"
+team: "Remote"
 datePosted: "2024-11-10T00:00:00Z"
 validThrough: "2025-01-30T00:00"
 employmentType: "FULL_TIME"
 hiringOrganization: 
-  name: "Berg Electric"
-  sameAs: "https://www.berg-electric.com/"
-  logo: "https://pbs.twimg.com/profile_images/1433515221495123981/lN1y0hEr_400x400.png"
+  name: "Warm Websites"
+  sameAs: "https://warmwebsites.com"
+  logo: "/images/w-w.png"
 jobLocation:
   streetAddress: "123 Main Street"  
   # City
-  addressLocality: "Morgan Hill"
+  addressLocality: "Newport Beach"
   # State   
   addressRegion: "CA"
-  postalCode: "95037"
+  postalCode: "92660"
   addressCountry: "USA"
 baseSalary:
   currency: "USD"
@@ -27,10 +27,10 @@ baseSalary:
   maxValue: 30
   unitText: "Hour"
 experienceRequirements: "seniorLevel"
-occupationalCategory: "Apprentice"
+occupationalCategory: "Wordpress"
 identifier:
-  name: "Berg Electric"
-  value: "APP-ELECTRICIAN-fdsa242"
+  name: "Warm Websites"
+  value: "WORDPRESS-DEVELOPER-fdsa242"
 featured: false
 email: ['will@bestelectricianjobs.com']
 ---

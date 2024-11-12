@@ -60,31 +60,32 @@ const jobsCollection = defineCollection({
     hiringOrganization: z.object({
       name: z.string(),
       sameAs: z.string(),
-      logo: z.string(),
+      logo: z.string()
     }),
     jobLocation: z.object({
       streetAddress: z.string(),
       addressLocality: z.string(),
       addressRegion: z.string(),
       postalCode: z.string(),
-      addressCountry: z.string(),
+      addressCountry: z.string()
     }),
     baseSalary: z.object({
       currency: z.string(),
       value: z.number(),
       minValue: z.number(),
       maxValue: z.number(),
-      unitText: z.string(),
+      unitText: z.string()
     }),
     experienceRequirements: z.string(),
-    occupationalCategory: z.string(),
+    occupationalCategory: z.array(z.string()),
     identifier: z.object({
       name: z.string(),
-      value: z.string(),
+      value: z.string()
     }),
-    featured: z.boolean().default(false),
-    email: z.array(z.string()),
-  }),
+    featured: z.boolean(),
+    remote: z.boolean(),
+    email: z.array(z.string())
+  })
 });
 const postsCollection = defineCollection({
   schema: z.object({

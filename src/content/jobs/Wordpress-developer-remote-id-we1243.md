@@ -27,12 +27,13 @@ baseSalary:
   maxValue: 30
   unitText: "Hour"
 experienceRequirements: "seniorLevel"
-occupationalCategory: "Wordpress"
+occupationalCategory: ["Wordpress", "Bubble.io"]
 identifier:
   name: "Warm Websites"
   value: "WORDPRESS-DEVELOPER-fdsa242"
 featured: false
-email: ['will@bestelectricianjobs.com']
+remote: true
+email: ['will@nocodejobs.org']
 ---
 
 ### Job Description

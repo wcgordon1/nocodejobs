@@ -25,7 +25,7 @@ export async function POST({ request }) {
     const resumeContent = Buffer.from(resumeArrayBuffer).toString('base64');
 
     const data = await resend.emails.send({
-      from: 'Application Alert <application@bestelectricianmail.com>',
+      from: 'Application Alert <no-reply@mail.nocodejobs.org>',
       to: emails,
       subject: `New Job Application: ${jobTitle} from ${name}`,
       text: `
@@ -49,7 +49,7 @@ Thank you!
 
 *This is an automated email.*
 
-will@bestelectricianjobs.com
+no-reply@mail.nocodejobs.org
       `,
       attachments: [
         {

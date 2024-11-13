@@ -345,16 +345,16 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"best-paying-electrician-jobs.md": {
-	id: "best-paying-electrician-jobs.md";
-  slug: "best-paying-electrician-jobs";
+"how-to-get-an-interview-as-a-no-code-devloper.md": {
+	id: "how-to-get-an-interview-as-a-no-code-devloper.md";
+  slug: "how-to-get-an-interview-as-a-no-code-devloper";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"how-to-find-electrician-jobs.md": {
-	id: "how-to-find-electrician-jobs.md";
-  slug: "how-to-find-electrician-jobs";
+"how-to-hire-a-bubbl-io-developer.md": {
+	id: "how-to-hire-a-bubbl-io-developer.md";
+  slug: "how-to-hire-a-bubbl-io-developer";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">

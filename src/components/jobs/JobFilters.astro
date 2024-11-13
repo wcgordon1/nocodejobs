@@ -98,6 +98,7 @@ const categories = [...new Set(allJobs.flatMap(job => job.data.occupationalCateg
 
   function filterJobs() {
     const jobItems = document.querySelectorAll<HTMLElement>('.job-item');
+    const jobList = document.querySelector<HTMLElement>('.job-list');
 
     jobItems.forEach(item => {
       const team = item.dataset.team || '';
@@ -110,10 +111,7 @@ const categories = [...new Set(allJobs.flatMap(job => job.data.occupationalCateg
       item.style.display = (matchesTeam && matchesCategory) ? '' : 'none';
 
       // Handle salary sorting
-      if (activeFilters.salary) {
-        const jobList = document.querySelector<HTMLElement>('.job-list');
-        if (!jobList) return;
-
+      if (activeFilters.salary && jobList) {
         const items = Array.from(jobList.children) as HTMLElement[];
         items.sort((a, b) => {
           const salaryA = parseInt(a.dataset.salary || '0');
@@ -126,7 +124,36 @@ const categories = [...new Set(allJobs.flatMap(job => job.data.occupationalCateg
     });
   }
 
-  // Event Listeners
+  // Store original order of jobs
+  const jobList = document.querySelector('.job-list');
+  const originalOrder = jobList ? Array.from(jobList.children) : [];
+
+  document.getElementById('resetFilters')?.addEventListener('click', () => {
+    // Reset filters
+    activeFilters = { salary: null, team: null, category: null };
+    
+    // Reset radio buttons
+    document.querySelectorAll('input[type="radio"]')
+      .forEach(radio => {
+        (radio as HTMLInputElement).checked = false;
+      });
+    
+    // Reset search
+    document.dispatchEvent(new CustomEvent('resetSearch'));
+    
+    // Show all jobs
+    document.querySelectorAll<HTMLElement>('.job-item')
+      .forEach(item => {
+        item.style.display = '';
+      });
+
+    // Restore original order
+    if (jobList && originalOrder.length > 0) {
+      originalOrder.forEach(item => jobList.appendChild(item));
+    }
+  });
+
+  // Event Listeners for filters remain the same...
   const radioGroups = ['salary-sort', 'team-filter', 'category-filter'];
   
   radioGroups.forEach(group => {
@@ -138,16 +165,5 @@ const categories = [...new Set(allJobs.flatMap(job => job.data.occupationalCateg
         filterJobs();
       });
     });
-  });
-
-  document.getElementById('resetFilters')?.addEventListener('click', () => {
-    activeFilters = { salary: null, team: null, category: null };
-    document.querySelectorAll<HTMLInputElement>('input[type="radio"]')
-      .forEach(radio => radio.checked = false);
-    
-    // Dispatch custom event for search reset
-    document.dispatchEvent(new CustomEvent('resetSearch'));
-    
-    filterJobs();
   });
 </script> 

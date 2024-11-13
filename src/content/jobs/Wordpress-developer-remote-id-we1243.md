@@ -1,12 +1,12 @@
 ---
 position: "Wordpress Developer"
 # Start of Selection
-description: "Berg Electric is seeking a motivated individual to join our team as an Apprentice Electrician in San Francisco. This is an excellent opportunity to start your career in the electrical trade with a company known for its commitment to quality, safety, and innovation."
+description: "At Warm Websites, we are dedicated to connecting professionals across various industries through specialized job boards. We are on the lookout for a skilled WordPress Developer to spearhead an exciting project aimed at building a job board for electricians. This assignment will serve as a demo test to evaluate your technical abilities and determine if you're a fit for our future projects. The project details include building a job board for electricians using a tech stack consisting of WordPress, Elementor Pro, Envato Elements Kit (optional), WP-Job-Manager (Bundle), Tiny Giant Elementor Connector, and WooCommerce. The compensation for the project is a flat rate of $500, and all required plugins and necessary access will be supplied."
 # End of Selection
 location: "Newport Beach, CA"
 team: "Remote"
-datePosted: "2024-11-10T00:00:00Z"
-validThrough: "2025-01-30T00:00"
+datePosted: "2024-11-11T00:00:00Z"
+validThrough: "2025-02-11T00:00"
 employmentType: "FULL_TIME"
 hiringOrganization: 
   name: "Warm Websites"
@@ -27,68 +27,49 @@ baseSalary:
   maxValue: 30
   unitText: "Hour"
 experienceRequirements: "seniorLevel"
-occupationalCategory: ["Wordpress", "Bubble.io"]
+occupationalCategory: ["Wordpress", "Bubble"]
 identifier:
   name: "Warm Websites"
   value: "WORDPRESS-DEVELOPER-fdsa242"
-featured: false
+featured: true
 remote: true
 email: ['will@nocodejobs.org']
 ---
 
-### Job Description
+## Warm Websites is Hiring: WordPress Developer
 
-**Berg Electric** is looking for motivated and ambitious **Apprentice Electricians** to join our team in **Morgan Hill, CA**. This role provides a unique opportunity to develop your skills in the electrical trade while working on diverse and challenging projects in the residential, commercial, and industrial sectors. At Berg Electric, we pride ourselves on being industry leaders in safety, quality, and innovation, and we are committed to investing in our employees' growth and career advancement.
+### Overview
+At **Warm Websites**, we are dedicated to connecting professionals across various industries through specialized job boards. We are on the lookout for a skilled **WordPress Developer** to spearhead an exciting project aimed at building a job board for electricians. This assignment will serve as a demo test to evaluate your technical abilities and determine if you're a fit for our future projects.
 
-As an Apprentice Electrician, you will work alongside experienced journeyman electricians, learning hands-on in real-world environments. Whether you’re just starting your electrical career or seeking to advance, Berg Electric offers the training, mentorship, and projects that will help you develop into a highly skilled professional.
+### Project Details
+- **Type**: Job Board for Electricians
+- **Tech Stack**:
+  - **WordPress**
+  - **Elementor Pro**
+  - **Envato Elements Kit** (optional)
+  - **WP-Job-Manager (Bundle)**
+  - **Tiny Giant Elementor Connector**
+  - **WooCommerce**
+- **Compensation**: Flat rate of $500 for the complete project
+- **Resources Provided**: All required plugins and necessary access will be supplied.
 
-#### Key Responsibilities:
+### Responsibilities
+- **Setup and Configuration**: Establish the WordPress environment and implement the necessary plugins and configurations as specified.
+- **Custom Development**: Tailor the job board functionalities to facilitate the specific needs of electricians, ensuring robust, user-friendly navigation and interfaces.
+- **Integration**: Seamlessly integrate WooCommerce and other relevant plugins to enhance the functionality of the job board, focusing on a smooth user experience for both job seekers and employers.
+- **Testing and Deployment**: Thoroughly test the job board for performance issues, bugs, and usability before deploying it live.
 
-- **Assist journeyman electricians** in installing, maintaining, and repairing electrical systems, including wiring, circuit breakers, outlets, lighting, and control systems.
-- **Install wiring and conduits**: You will be responsible for assisting in the installation of various electrical wiring, conduits, and raceways. This will include both low and high-voltage electrical systems in a wide range of projects, from new construction to retrofitting older buildings.
-- **Learn to read and interpret electrical blueprints and schematics**: A key component of your apprenticeship will be understanding how to read, analyze, and interpret electrical blueprints, diagrams, and schematics under the supervision of licensed electricians.
-- **Help with the installation of electrical fixtures**: As an apprentice, you’ll learn how to install outlets, switches, light fixtures, panel boards, and other electrical components, ensuring that all installations are code-compliant.
-- **Gain hands-on experience with various electrical tools and equipment**: Under the direction of a journeyman, you’ll use industry-standard tools such as conduit benders, wire strippers, voltmeters, and power drills. You’ll also learn about advanced equipment used in specialized electrical installations.
-- **Participate in safety training and adhere to all safety protocols**: Electrical work can be hazardous, and safety is our top priority at Berg Electric. You’ll participate in ongoing safety training programs and are expected to strictly follow OSHA guidelines, company safety protocols, and wear proper PPE at all times.
-- **Collaborate with team members on complex projects**: You will work as part of a larger team, contributing to electrical installations in large-scale commercial and industrial environments. This includes learning how to troubleshoot complex electrical problems under pressure and developing your problem-solving skills.
-- **Attend required apprenticeship classes and complete coursework**: As part of your role, you’ll be enrolled in an approved apprenticeship program. You’ll be expected to attend classes, complete required coursework, and apply what you learn on the job.
-- **Support daily site operations**: You will assist in maintaining clean and organized job sites, ensuring all tools, materials, and equipment are accounted for and safely stored. You’ll help set up work areas and prepare for installations.
-- **Follow quality control procedures**: Ensuring all work is done to the highest standards is critical to Berg Electric. You will assist in verifying the accuracy and quality of electrical installations and repairs to comply with electrical codes, industry regulations, and project specifications.
-- **Contribute to timely project completion**: Meeting deadlines is essential in this industry. You’ll assist journeymen in ensuring that all tasks are completed on time while maintaining high standards of workmanship and safety.
+### Qualifications
+- **Proven Experience**: Previous work on similar WordPress projects, specifically with job boards. Links to past projects or a portfolio that includes similar work will be highly beneficial.
+- **Technical Proficiency**: Strong command over WordPress, Elementor Pro, and familiarity with WP-Job-Manager, Tiny Giant Elementor Connector, and WooCommerce.
+- **Problem-Solving Skills**: Ability to troubleshoot and solve issues that arise during the development and deployment phases.
+- **Communication**: Excellent written and verbal communication skills.
 
-#### Qualifications:
+### How to Apply
+Please send your resume and a brief cover letter, along with links to any job boards you have developed using WordPress and the mentioned tech stack, to [our email](mailto:apply@warmwebsites.com). Make sure to highlight relevant projects.
 
-- **High school diploma or equivalent**: A fundamental education is required, and additional coursework in technical subjects, like math and physics, is highly beneficial.
-- **Enrollment in or willingness to enroll in a recognized electrical apprenticeship program**: Apprentices must commit to completing the necessary training through a state or federally recognized program.
-- **Basic understanding of electrical theory and safety practices**: While training will be provided, some foundational knowledge of electrical systems, voltage, currents, and safety practices is expected.
-- **Strong work ethic and eagerness to learn**: We are seeking apprentices who are dedicated to growing in the field, who are willing to put in the effort to learn and advance their skills.
-- **Good physical condition and ability to work in various environments**: Electrical work can be physically demanding and often requires lifting, bending, climbing, and working in confined spaces.
-- **Valid driver's license and reliable transportation**: Due to the varied nature of job sites, apprentices must be able to travel to different project locations.
-- **Effective communication skills**: You should be able to follow instructions and collaborate with team members and supervisors effectively.
-- **Problem-solving skills**: The ability to think critically and find solutions to complex issues will help you excel in this position.
+### About Warm Websites
+**Warm Websites** specializes in creating tailored job boards and other web solutions that connect skilled professionals with the right opportunities. We value innovation, quality, and the continuous development of our technologies to serve various industries effectively.
 
-#### Preferred Qualifications:
+We are excited to see what you can bring to our team and look forward to reviewing your application!
 
-- **Previous construction or electrical experience**: While not required, any previous hands-on experience in construction, HVAC, or electrical systems is a significant advantage.
-- **Familiarity with electrical codes**: Basic knowledge of the National Electrical Code (NEC) and local building codes is a plus.
-- **OSHA safety training certification**: Prior safety certifications, especially in the construction industry, are desirable.
-- **Experience using power tools and electrical testing equipment**: The more familiarity you have with electrical tools, the quicker you’ll be able to contribute to the team.
-
-#### Benefits:
-
-At Berg Electric, we believe in offering comprehensive benefits that not only reward you for your hard work but also ensure your long-term success and well-being.
-
-- **Competitive hourly rate**: Starting at $22 - $28/hr depending on experience and progress in the apprenticeship program, with opportunities for performance-based increases.
-- **Health, dental, and vision insurance**: Comprehensive health coverage for you and your family.
-- **401(k) with company match**: We offer a robust retirement savings plan with a generous company match to help secure your financial future.
-- **Paid apprenticeship training and education**: We fully support your education, covering the cost of tuition, books, and necessary materials for your apprenticeship courses.
-- **Opportunities for advancement within the company**: At Berg Electric, we are committed to promoting from within, providing pathways for apprentices to become journeymen, foremen, and even project managers.
-- **Paid time off (PTO)**: Earn paid time off as you work with the company, which can be used for vacation, illness, or personal days.
-- **Life and disability insurance**: We provide life insurance and both short-term and long-term disability coverage to give you peace of mind in case of unforeseen circumstances.
-- **Employee assistance program (EAP)**: Access to support services for mental health, financial advice, and other resources.
-
-#### Why Join Berg Electric?
-
-At **Berg Electric**, we are more than just an electrical contractor—we are a team dedicated to safety, innovation, and high-quality workmanship. With over four decades of experience, we have built a reputation for excellence in the electrical industry. Our commitment to investing in our employees means we offer a supportive and growth-oriented environment where you can thrive. As an **Apprentice Electrician**, you will have the opportunity to work on cutting-edge projects, gain valuable industry knowledge, and build a long-term career with a company that values your contributions. Join us and be part of an industry leader with exciting growth opportunities!
-
-Apply now and start your journey with **Berg Electric** in **Morgan Hill, CA**!

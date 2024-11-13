@@ -1,17 +1,21 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import HeaderAbout from "@/components/headers/HeaderAbout.astro";
 import FeatureEleven from "@/components/features/FeatureEleven.astro";
 import TestimonialFour from "@/components/testimonials/TestimonialFour.astro";
 import FeatureTwelve from "@/components/features/FeatureTwelve.astro";
 import FeatureFive from "@/components/features/FeatureFive.astro";
 import StatsTwo from "@/components/stats/StatsTwo.astro";
 import CtaThree from "@/components/cta/CtaThree.astro";
-import FaqTwo from "@/components/faqs/FaqTwo.astro";
+import HeaderThree from "@/components/headers/HeaderThree.astro";
+
 import FaqOne from "@/components/faqs/FaqOne.astro";
+const pageTitle = "Best Electrician Jobs | The #1 Platform for Hiring Qualified Electricians";
+const pageDescription = "Discover roles at innovative companies. Our recruiters connect talented professionals with opportunities that match their skills and aspirations.";
 ---
-<BaseLayout>
-  <HeaderAbout />
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+
+  <HeaderThree />
   <FeatureFive />
   <TestimonialFour />
   <FeatureTwelve />

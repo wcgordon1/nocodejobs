@@ -13,6 +13,7 @@ PER_DIEM: The job is paid by the day.
 OTHER: The job is a different type of position that's not covered by the other possible values.
 
 
+Frontmatter for Jobs
 ---
 position: "Wordpress Developer"
 # Start of Selection

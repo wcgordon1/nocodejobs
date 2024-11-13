@@ -33,7 +33,25 @@ const faqs = [
   },
   // Add more FAQs as needed
 ];
+
+// Generate structured data for FAQs
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
 ---
+
+<!-- Add structured data to head -->
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
 
 <section>
   <div

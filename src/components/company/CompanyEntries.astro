@@ -14,13 +14,20 @@ function truncateDescription(text: string, maxLength = 120) {
 
 <section class="bg-white">
   <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 pt-16 pb-18">
-    <div class="lg:pr-24 md:pr-12">
-      <span class="text-sm uppercase font-medium tracking-wide text-blue-600">
-        Best Electrician Jobs
-      </span>
-      <h2 class="text-purple-900 font-semibold mt-6 text-4xl lg:text-5xl tracking-tight mb-16">
+    <div class="lg:pr-24 md:pr-12 max-w-2xl">
+      <span class="text-sm uppercase font-medium tracking-wide text-blue-600 "
+        >No Code Jobs</span
+      >
+      <h2
+        class="text-purple-900 font-semibold mt-6 text-4xl lg:text-5xl tracking-tight">
         Featured Employers
       </h2>
+      <p class="text-slate-500 mt-5 lg:text-pretty mb-4">
+        Find the best No Code Developers for Bubble, Webflow, FlutterFlow, Glide, Airtable, AppGyver, and more.
+      </p>
+      <p class="text-blue-600 text-sm mt-5 lg:text-pretty mb-12">
+        Sponsor No Code Jobs to be featured here. 
+      </p>
     </div>
     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-16">
       {featuredCompanies.map((company) => (

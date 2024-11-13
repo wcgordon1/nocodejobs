@@ -151,33 +151,12 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"company": {
-"hal-hayes-electric.md": {
-	id: "hal-hayes-electric.md";
-  slug: "hal-hayes-electric";
-  body: string;
-  collection: "company";
-  data: any
-} & { render(): Render[".md"] };
-"salt-n-light-electric.md": {
-	id: "salt-n-light-electric.md";
-  slug: "salt-n-light-electric";
-  body: string;
-  collection: "company";
-  data: any
-} & { render(): Render[".md"] };
 "warmwebsites.md": {
 	id: "warmwebsites.md";
   slug: "warmwebsites";
   body: string;
   collection: "company";
-  data: any
-} & { render(): Render[".md"] };
-"west-coast-fire.md": {
-	id: "west-coast-fire.md";
-  slug: "west-coast-fire";
-  body: string;
-  collection: "company";
-  data: any
+  data: InferEntrySchema<"company">
 } & { render(): Render[".md"] };
 };
 "customers": {
@@ -186,21 +165,21 @@ declare module 'astro:content' {
   slug: "1";
   body: string;
   collection: "customers";
-  data: any
+  data: InferEntrySchema<"customers">
 } & { render(): Render[".md"] };
 "2.md": {
 	id: "2.md";
   slug: "2";
   body: string;
   collection: "customers";
-  data: any
+  data: InferEntrySchema<"customers">
 } & { render(): Render[".md"] };
 "3.md": {
 	id: "3.md";
   slug: "3";
   body: string;
   collection: "customers";
-  data: any
+  data: InferEntrySchema<"customers">
 } & { render(): Render[".md"] };
 };
 "helpcenter": {
@@ -209,35 +188,35 @@ declare module 'astro:content' {
   slug: "1";
   body: string;
   collection: "helpcenter";
-  data: any
+  data: InferEntrySchema<"helpcenter">
 } & { render(): Render[".md"] };
 "2.md": {
 	id: "2.md";
   slug: "2";
   body: string;
   collection: "helpcenter";
-  data: any
+  data: InferEntrySchema<"helpcenter">
 } & { render(): Render[".md"] };
 "3.md": {
 	id: "3.md";
   slug: "3";
   body: string;
   collection: "helpcenter";
-  data: any
+  data: InferEntrySchema<"helpcenter">
 } & { render(): Render[".md"] };
 "4.md": {
 	id: "4.md";
   slug: "4";
   body: string;
   collection: "helpcenter";
-  data: any
+  data: InferEntrySchema<"helpcenter">
 } & { render(): Render[".md"] };
 "5.md": {
 	id: "5.md";
   slug: "5";
   body: string;
   collection: "helpcenter";
-  data: any
+  data: InferEntrySchema<"helpcenter">
 } & { render(): Render[".md"] };
 };
 "infopages": {
@@ -246,28 +225,28 @@ declare module 'astro:content' {
   slug: "bug-bounty";
   body: string;
   collection: "infopages";
-  data: any
+  data: InferEntrySchema<"infopages">
 } & { render(): Render[".md"] };
 "dpa.md": {
 	id: "dpa.md";
   slug: "dpa";
   body: string;
   collection: "infopages";
-  data: any
+  data: InferEntrySchema<"infopages">
 } & { render(): Render[".md"] };
 "privacy.md": {
 	id: "privacy.md";
   slug: "privacy";
   body: string;
   collection: "infopages";
-  data: any
+  data: InferEntrySchema<"infopages">
 } & { render(): Render[".md"] };
 "terms.md": {
 	id: "terms.md";
   slug: "terms";
   body: string;
   collection: "infopages";
-  data: any
+  data: InferEntrySchema<"infopages">
 } & { render(): Render[".md"] };
 };
 "integrations": {
@@ -276,42 +255,42 @@ declare module 'astro:content' {
   slug: "1";
   body: string;
   collection: "integrations";
-  data: any
+  data: InferEntrySchema<"integrations">
 } & { render(): Render[".md"] };
 "2.md": {
 	id: "2.md";
   slug: "2";
   body: string;
   collection: "integrations";
-  data: any
+  data: InferEntrySchema<"integrations">
 } & { render(): Render[".md"] };
 "3.md": {
 	id: "3.md";
   slug: "3";
   body: string;
   collection: "integrations";
-  data: any
+  data: InferEntrySchema<"integrations">
 } & { render(): Render[".md"] };
 "4.md": {
 	id: "4.md";
   slug: "4";
   body: string;
   collection: "integrations";
-  data: any
+  data: InferEntrySchema<"integrations">
 } & { render(): Render[".md"] };
 "5.md": {
 	id: "5.md";
   slug: "5";
   body: string;
   collection: "integrations";
-  data: any
+  data: InferEntrySchema<"integrations">
 } & { render(): Render[".md"] };
 "6.md": {
 	id: "6.md";
   slug: "6";
   body: string;
   collection: "integrations";
-  data: any
+  data: InferEntrySchema<"integrations">
 } & { render(): Render[".md"] };
 };
 "jobs": {
@@ -320,28 +299,42 @@ declare module 'astro:content' {
   slug: "wordpress-developer-remote-id-we1243";
   body: string;
   collection: "jobs";
-  data: any
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"head-of-design-webflow-id-ew2132.md": {
+	id: "head-of-design-webflow-id-ew2132.md";
+  slug: "head-of-design-webflow-id-ew2132";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
 "lead-bubble-dev-id-sd4892.md": {
 	id: "lead-bubble-dev-id-sd4892.md";
   slug: "lead-bubble-dev-id-sd4892";
   body: string;
   collection: "jobs";
-  data: any
+  data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
 "promp-engineer-glean-palo-alto-id-er234.md": {
 	id: "promp-engineer-glean-palo-alto-id-er234.md";
   slug: "promp-engineer-glean-palo-alto-id-er234";
   body: string;
   collection: "jobs";
-  data: any
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"senior-bubble-dev-india-id-we7293.md": {
+	id: "senior-bubble-dev-india-id-we7293.md";
+  slug: "senior-bubble-dev-india-id-we7293";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
 "sr-bubble-dev-voiced-id-we213.md": {
 	id: "sr-bubble-dev-voiced-id-we213.md";
   slug: "sr-bubble-dev-voiced-id-we213";
   body: string;
   collection: "jobs";
-  data: any
+  data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
 };
 "posts": {
@@ -350,21 +343,21 @@ declare module 'astro:content' {
   slug: "journeyman-electrician-job-description";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "best-paying-electrician-jobs.md": {
 	id: "best-paying-electrician-jobs.md";
   slug: "best-paying-electrician-jobs";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "how-to-find-electrician-jobs.md": {
 	id: "how-to-find-electrician-jobs.md";
   slug: "how-to-find-electrician-jobs";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 };
 
@@ -376,5 +369,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("../../src/content/config.js");
 }

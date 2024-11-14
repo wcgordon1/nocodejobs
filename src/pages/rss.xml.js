@@ -7,8 +7,8 @@ export async function GET(context) {
   const jobs = await getCollection('jobs');
   
   return rss({
-    title: 'Best Electrician Jobs',
-    description: 'Find the best electrician jobs - Commercial, Residential, and Industrial positions',
+    title: 'No Code Jobs',
+    description: 'No Code Jobs RSS Feed. Post our No Code Jobs to your Job Board!',
     site: context.site,
     items: jobs.map((job) => ({
       title: job.data.position,

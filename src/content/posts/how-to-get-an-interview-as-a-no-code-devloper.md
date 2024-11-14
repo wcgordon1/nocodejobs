@@ -10,7 +10,7 @@ avatar:
 image:
   url: "https://i.pinimg.com/564x/f3/56/71/f35671374c45021df13bb688c390a3a2.jpg"
   alt: "alt text goes here"
-tags: ["Electrician", "Jobs", "Apprentice", "Journeyman"]
+tags: ["No Code", "Jobs", "Interview"]
 ---
 
 In this guide, we will cover how to effectively email or message a company and what key elements to include to increase your chances of landing an interview. Much of this content is inspired by Erik Goins' insightful [Twitter thread](https://x.com/erikgoinsHQ/status/1619881714490445825).

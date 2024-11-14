@@ -63,7 +63,7 @@ identifier:
   value: "SENIOR-BUBBLE-DEVELOPER-fdsa242"
 featured: false
 remote: true
-email: ['will@nocodejobs.org']
+email: ['will@nocodejobs.org', 'will@tustinrecruiting.com']
 ---
 
 ### Overview at Blur Apps

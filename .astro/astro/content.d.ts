@@ -338,13 +338,6 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "posts": {
-"Journeyman-Electrician-Job-Description.md": {
-	id: "Journeyman-Electrician-Job-Description.md";
-  slug: "journeyman-electrician-job-description";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
 "how-to-get-an-interview-as-a-no-code-devloper.md": {
 	id: "how-to-get-an-interview-as-a-no-code-devloper.md";
   slug: "how-to-get-an-interview-as-a-no-code-devloper";

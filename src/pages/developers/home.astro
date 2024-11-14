@@ -3,9 +3,11 @@ import { getCollection } from "astro:content";
 const allPosts = await getCollection("developers");
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Entries from "@/components/integrations/Entries.astro";
+const pageTitle = "No Code Developers. Find your next no code job. Hire no code developers.";
+const pageDescription = "Discover the most in demand no code platforms and hire skilled no-code developers on our dedicated job board. Browse listings for Bubble, Webflow, Airtable, and other no-code platforms.";
 ---
 
-<BaseLayout>
+<BaseLayout title={pageTitle} description={pageDescription}>
   <section class="bg-white">
     <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
       <span class="text-sm uppercase font-medium tracking-wide text-blue-600"

@@ -1,5 +1,5 @@
 import { defineCollection, z } from "astro:content";
-const integrations = defineCollection({
+const developers = defineCollection({
   schema: z.object({
     integration: z.string(),
     description: z.string(),
@@ -10,6 +10,10 @@ const integrations = defineCollection({
       value: z.string(),
       url: z.string().optional(),
     })),
+    devs: z.array(z.object({
+      name: z.string(),
+      url: z.string()
+    })).optional(),
     logo: z.object({
       url: z.string(),
       alt: z.string(),
@@ -118,7 +122,7 @@ const companyCollection = defineCollection({
 });
 
 export const collections = {
-  integrations: integrations,
+  developers: developers,
   helpcenter: helpcenter,
   customers: customers,
   infopages: infopages,

@@ -182,6 +182,36 @@ declare module 'astro:content' {
   data: InferEntrySchema<"customers">
 } & { render(): Render[".md"] };
 };
+"developers": {
+"bubble-developers.md": {
+	id: "bubble-developers.md";
+  slug: "bubble-developers";
+  body: string;
+  collection: "developers";
+  data: InferEntrySchema<"developers">
+} & { render(): Render[".md"] };
+"glide-developers.md": {
+	id: "glide-developers.md";
+  slug: "glide-developers";
+  body: string;
+  collection: "developers";
+  data: InferEntrySchema<"developers">
+} & { render(): Render[".md"] };
+"softr-developers.md": {
+	id: "softr-developers.md";
+  slug: "softr-developers";
+  body: string;
+  collection: "developers";
+  data: InferEntrySchema<"developers">
+} & { render(): Render[".md"] };
+"webflow-developers.md": {
+	id: "webflow-developers.md";
+  slug: "webflow-developers";
+  body: string;
+  collection: "developers";
+  data: InferEntrySchema<"developers">
+} & { render(): Render[".md"] };
+};
 "helpcenter": {
 "1.md": {
 	id: "1.md";
@@ -247,50 +277,6 @@ declare module 'astro:content' {
   body: string;
   collection: "infopages";
   data: InferEntrySchema<"infopages">
-} & { render(): Render[".md"] };
-};
-"integrations": {
-"1.md": {
-	id: "1.md";
-  slug: "1";
-  body: string;
-  collection: "integrations";
-  data: InferEntrySchema<"integrations">
-} & { render(): Render[".md"] };
-"2.md": {
-	id: "2.md";
-  slug: "2";
-  body: string;
-  collection: "integrations";
-  data: InferEntrySchema<"integrations">
-} & { render(): Render[".md"] };
-"3.md": {
-	id: "3.md";
-  slug: "3";
-  body: string;
-  collection: "integrations";
-  data: InferEntrySchema<"integrations">
-} & { render(): Render[".md"] };
-"4.md": {
-	id: "4.md";
-  slug: "4";
-  body: string;
-  collection: "integrations";
-  data: InferEntrySchema<"integrations">
-} & { render(): Render[".md"] };
-"5.md": {
-	id: "5.md";
-  slug: "5";
-  body: string;
-  collection: "integrations";
-  data: InferEntrySchema<"integrations">
-} & { render(): Render[".md"] };
-"6.md": {
-	id: "6.md";
-  slug: "6";
-  body: string;
-  collection: "integrations";
-  data: InferEntrySchema<"integrations">
 } & { render(): Render[".md"] };
 };
 "jobs": {

@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-const allPosts = await getCollection("integrations");
+const allPosts = await getCollection("developers");
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Entries from "@/components/integrations/Entries.astro";
 ---
@@ -9,16 +9,26 @@ import Entries from "@/components/integrations/Entries.astro";
   <section class="bg-white">
     <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
       <span class="text-sm uppercase font-medium tracking-wide text-blue-600"
-        >integrations</span
+        >developers</span
       >
       <h2
         class="text-purple-900 font-semibold tracking-tight lg:text-5xl text-3xl lg:text-balance mt-6">
-        Find an Integration
+        No Code Platforms
       </h2>
-      <p class="text-slate-500 mt-5 lg:text-pretty">
-        Extend and automate your workflow by using integrations for your
-        favorite tools.
-      </p>
+      <p class="text-slate-500 mt-5 lg:text-pretty max-w-3xl">
+        The no code platforms with the highest demand. If you don’t find a job that fits, send us your resume. We connect with businesses daily and would be glad to assist you.      </p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 mb-24">
+        <a
+          class="text-white items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-500 hover:bg-blue-600 w-auto"
+          href="/articles">
+          Useful Articles
+        </a>
+        <a
+          class="text-blue-600 items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-50 hover:bg-blue-100 w-auto"
+          href="/contact">
+          Send us your Resume
+        </a>
+      </div>
       <div>
         <ul
           role="list"
@@ -26,7 +36,7 @@ import Entries from "@/components/integrations/Entries.astro";
           {
             allPosts.slice().map((post) => (
               <Entries
-                url={"/integrations/" + post.slug}
+                url={"/developers/" + post.slug}
                 integration={post.data.integration}
                 description={post.data.description}
                 alt={post.data.integration}
@@ -40,24 +50,27 @@ import Entries from "@/components/integrations/Entries.astro";
     </div>
   </section>
   <section class="bg-slate-50">
-    <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
+    <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24 mt-24">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
           <h2 class="text-purple-900 font-semibold tracking-tight text-3xl">
-            Ready to get connected?
+            Get started with No Code Jobs
           </h2>
           <div class="max-w-xl mt-6">
             <p class="text-slate-500">
-              Contact us to learn more about working with partners.
+              Browse our active positions or post a job to reach our network of skilled no code developers.
             </p>
           </div>
-          <div class="mt-10">
+          <div class="mt-10 flex flex-col sm:flex-row gap-4">
             <a
               class="text-white items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-500 hover:bg-blue-600 w-auto"
-              title="link to your page"
-              aria-label="your label"
-              href="/submit">
-              Contact Spazio Bianco
+              href="/open-positions">
+              Open Positions
+            </a>
+            <a
+              class="text-blue-600 items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-50 hover:bg-blue-100 w-auto"
+              href="/post-a-job">
+              Post a Job
             </a>
           </div>
         </div>
@@ -85,19 +98,19 @@ import Entries from "@/components/integrations/Entries.astro";
                       </svg>
                     </div>
                     <p class="mt-5 font-semibold text-purple-900 lg:mt-0">
-                      Read customer stories
+                      Customer Success
                     </p>
                   </div>
                   <p class="text-sm text-slate-500 mt-5">
-                    See how Spazio Bianco is helping businesses of all sizes.
+                    See how we've helped developers and businesses like yours.
                   </p>
                   <p class="mt-5">
                     <a
-                      title="link to your page"
-                      aria-label="your label"
+                      title="No Code Developer Testimonials"
+                      aria-label="No Code Developer Testimonials"
                       href=""
                       class="text-blue-500 hover:text-blue-600 inline-flex items-center group">
-                      See all stories
+                      View Testimonials
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -133,19 +146,19 @@ import Entries from "@/components/integrations/Entries.astro";
                       </svg>
                     </div>
                     <p class="mt-5 font-semibold text-purple-900 lg:mt-0">
-                      Become a partner
+                      Helpful Articles
                     </p>
                   </div>
                   <p class="text-sm text-slate-500 mt-5">
-                    Interested in becoming one of our partners?
+                    Articles and Guides to help you in your no code journey.
                   </p>
                   <p class="mt-5">
                     <a
-                      title="link to your page"
-                      aria-label="your label"
-                      href="/about"
+                      title="No Code Articles"
+                      aria-label="No Code Articles"
+                      href="/articles"
                       class="text-blue-500 hover:text-blue-600 inline-flex items-center group">
-                      Learn more
+                      Read Articles
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"

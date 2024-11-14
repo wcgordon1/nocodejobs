@@ -1,4 +1,20 @@
 ---
+import { getCollection } from "astro:content";
+
+// Get all unique platforms from jobs
+const allJobs = await getCollection("jobs");
+const platforms = [...new Set(allJobs.flatMap(job => 
+  job.data.occupationalCategory.map(cat => {
+    // Remove domain extensions and convert to lowercase first
+    const cleanPlatform = cat.toLowerCase().replace(/\.(io|com|org|net)$/i, '');
+    // Capitalize first letter of each word
+    return cleanPlatform
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  })
+))].sort();
+
 const footerSections = [
   {
     title: "Navigation",
@@ -33,27 +49,11 @@ const footerSections = [
     ],
   },
   {
-    title: "Socials",
-    links: [
-      {
-        href: "https://www.reddit.com/r/NoCodeJobs/",
-        label: "Reddit",
-        target: "_blank",
-        rel: "noopener noreferrer",
-      },
-      {
-        href: "https://x.com/NoCodeJobsOrg",
-        label: "Twitter/X",
-        target: "_blank",
-        rel: "noopener noreferrer",
-      },
-      {
-        href: "https://www.linkedin.com/company/nocodejobsorg/",
-        label: "LinkedIn",
-        target: "_blank",
-        rel: "noopener noreferrer",
-      },
-    ],
+    title: "Jobs",
+    links: platforms.map(platform => ({
+      href: `/jobs/${platform.toLowerCase()}-jobs`,
+      label: `${platform} Jobs`,
+    })),
   },
 ];
 ---

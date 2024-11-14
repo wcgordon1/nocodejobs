@@ -1,0 +1,125 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import PlatformSearch from "@/components/platforms/PlatformSearch.astro";
+import PlatformEntries from "@/components/platforms/PlatformEntries.astro";
+import CtaWack from "@/components/cta/CtaWack.astro";
+
+// Get all unique platforms from jobs
+export async function getStaticPaths() {
+  const allJobs = await getCollection("jobs");
+  const platforms = [...new Set(allJobs.flatMap(job => 
+    job.data.occupationalCategory.map(cat => {
+      // Remove domain extensions and convert to lowercase
+      const cleanPlatform = cat.toLowerCase().replace(/\.(io|com|org|net)$/i, '');
+      return cleanPlatform;
+    })
+  ))];
+
+  return platforms.map(platform => ({
+    params: { platform },
+  }));
+}
+
+// Get the platform from the URL and remove "-jobs"
+const { platform } = Astro.params;
+const cleanPlatform = platform.replace('-jobs', '');
+
+// Capitalize the first letter of the platform name
+const displayPlatform = cleanPlatform.charAt(0).toUpperCase() + cleanPlatform.slice(1);
+
+// Get all jobs and filter for this platform
+const allJobs = await getCollection("jobs");
+const platformJobs = allJobs.filter(job => 
+  job.data.occupationalCategory.some(cat => 
+    cat.toLowerCase().replace(/\.(io|com|org|net)$/i, '') === cleanPlatform
+  )
+).sort((a, b) => {
+  if (a.data.featured && !b.data.featured) return -1;
+  if (!a.data.featured && b.data.featured) return 1;
+  return new Date(b.data.datePosted).getTime() - new Date(a.data.datePosted).getTime();
+});
+
+// Format salary for display
+function formatSalary(baseSalary) {
+  const { currency, minValue, maxValue, unitText } = baseSalary;
+  return `${currency} ${minValue.toLocaleString()}-${maxValue.toLocaleString()} per ${unitText.toLowerCase()}`;
+}
+
+// SEO
+const pageTitle = `${displayPlatform} Developer Jobs | No Code Jobs`;
+const pageDescription = `Find ${displayPlatform} developer jobs. Remote and on-site positions available for ${displayPlatform} developers.`;
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <section>
+    <header class="px-8 mx-auto max-w-7xl lg:px-16 xl:px-24 pt-8">
+      <div class="p-8 lg:px-20 lg:py-32 rounded-3xl bg-gradient-to-tr from-purple-900 via-purple-800 to-blue-700">
+        <div class="text-center max-w-xl mx-auto">
+          <span class="text-white text-sm leading-6 px-4 py-2 relative bg-white/10 ring-1 ring-white/20 rounded-full">
+            {displayPlatform} Jobs
+          </span>
+          <h1 class="text-white font-semibold tracking-tight lg:text-5xl mt-8 text-3xl lg:text-balance">
+            {displayPlatform} Jobs
+          </h1>
+          <p class="text-slate-300 mt-5 lg:text-pretty">
+            Find the best {displayPlatform} developer jobs. Browse our curated list of {displayPlatform} opportunities.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24">
+      <div class="lg:-mt-24 -mt-11">
+        <PlatformSearch />
+      </div>
+      
+      <div class="mt-4 lg:mt-12 lg:flex lg:gap-x-16">
+        <div class="lg:w-3/4 mt-8 lg:mt-0 mb-24">
+          <ul role="list" class="job-list divide-y divide-slate-100">
+            {platformJobs.map((post) => (
+              <PlatformEntries
+                url={"/jobs/" + post.slug}
+                position={post.data.position}
+                location={post.data.location}
+                team={post.data.team}
+                company={post.data.hiringOrganization.name}
+                companyLogo={post.data.hiringOrganization.logo}
+                companySlug={post.data.hiringOrganization.name.toLowerCase().replace(/\s+/g, '-')}
+                salary={formatSalary(post.data.baseSalary)}
+                type={post.data.employmentType}
+                description={post.data.description}
+                category={post.data.occupationalCategory}
+                featured={post.data.featured}
+                datePosted={post.data.datePosted}
+                remote={post.data.remote}
+              />
+            ))}
+          </ul>
+        </div>
+
+        <div class="lg:w-1/4">
+          <div class="lg:sticky lg:top-8">
+            <div class="bg-slate-50 rounded-3xl p-4 lg:p-6">
+              <div>
+                <h3 class="text-lg font-medium text-purple-900">{displayPlatform} Jobs</h3>
+                <p class="text-slate-500 text-sm mt-4">
+                  All {displayPlatform} jobs are syndicated to Google Jobs and our job board network.
+                </p>
+              </div>
+              <div class="mt-6">
+                <a 
+                  href="/post-a-job" 
+                  class="w-full text-white bg-blue-500 hover:bg-blue-600 font-medium py-2 rounded-full inline-block text-center"
+                >
+                  Post a {displayPlatform} Job
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <CtaWack />
+</BaseLayout> 

@@ -1,0 +1,143 @@
+---
+interface Props {
+  url: string;
+  position: string;
+  location: string;
+  team: string;
+  company: string;
+  companyLogo: string;
+  companySlug: string;
+  salary: string;
+  type: string;
+  description: string;
+  category: string[];
+  featured: boolean;
+  datePosted: string;
+  remote?: boolean;
+}
+
+const { 
+  url, 
+  position, 
+  location, 
+  team, 
+  company, 
+  companyLogo,
+  companySlug,
+  salary,
+  type,
+  description,
+  category,
+  featured,
+  datePosted,
+  remote = false
+} = Astro.props;
+
+// Get salary value for sorting
+const salaryValue = Number.parseInt(salary.match(/\d+/)?.[0] || "0");
+
+// Format location based on remote status
+const displayLocation = remote ? "USA" : location;
+---
+
+<li 
+  class={`job-item ${featured ? 'featured' : ''}`}
+  data-position={position}
+  data-location={displayLocation}
+  data-team={team}
+  data-description={description}
+  data-category={JSON.stringify(category)}
+  data-salary={salaryValue}
+  data-featured={featured}
+>
+  <a href={url} class="group block hover:bg-slate-50 p-4 sm:p-6 rounded-2xl transition-colors">
+    <div class="relative flex items-center w-full">
+      <!-- Company Logo -->
+      <div class="relative size-12 sm:size-14 flex-none">
+        <img
+          class="absolute inset-0 size-full object-contain"
+          src={companyLogo}
+          alt={`${company} logo`}
+        />
+        <div class="absolute inset-0 rounded-full ring-1 ring-inset ring-slate-200/10">
+        </div>
+      </div>
+
+      <!-- Text Content -->
+      <dl class="ml-4 flex-1 flex flex-col gap-y-2 sm:ml-6">
+        <!-- Company Name -->
+        <div>
+          <dt class="sr-only">Company</dt>
+          <dd class="text-sm font-medium text-blue-600">
+            {company}
+          </dd>
+        </div>
+
+        <!-- Title and Location -->
+        <div class="flex items-center justify-between">
+          <dt class="sr-only">Title and Location</dt>
+          <dd class="text-base font-semibold text-purple-900 flex-1">
+            {position}
+          </dd>
+          <dd class="text-xs text-slate-500 text-right">
+            {new Date(datePosted).toLocaleDateString('en-US', {
+              month: '2-digit',
+              day: '2-digit',
+              year: 'numeric'
+            })}
+          </dd>
+        </div>
+
+        <!-- Employment Type and Salary -->
+        <div class="flex items-center gap-x-4">
+          <dt class="sr-only">Employment Type</dt>
+          <dd class="text-xs text-slate-500">
+            {type}
+          </dd>
+          <dt class="sr-only">Salary</dt>
+          <dd class="flex items-center text-xs text-slate-500">
+            {salary}
+          </dd>
+        </div>
+
+        <!-- Team and Location -->
+        <div class="flex items-center gap-x-4">
+          <dt class="sr-only">Team and Location</dt>
+          <dd class="text-xs font-medium tracking-wide text-blue-600">
+            {team}
+          </dd>
+          <dd class="text-xs text-slate-500">
+            {displayLocation}
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </a>
+</li>
+
+<style>
+  .featured {
+    position: relative;
+    background-color: rgb(243 244 246 / 0.2);
+    border-radius: 1rem;
+  }
+  
+  .featured::before {
+    content: "Featured";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    background-color: rgb(59 130 246);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    pointer-events: none;
+  }
+
+  .featured .group:hover::before {
+    z-index: 1;
+  }
+</style> 

@@ -4,14 +4,15 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 const allPosts = await getCollection("posts");
 const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())].sort((a, b) => a.localeCompare(b));
 const pageTitle = "Tag Index";
+const pageDescription = "Discover top opportunities and hire skilled no-code developers on our dedicated job board. Browse listings for Bubble, Webflow, Airtable, and other no-code platforms. Hire no code developers.";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} description={pageDescription}>
   <section>
     <div
       class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-12 items-start">
       <h1 class="font-semibold text-purple-900 mt-6 text-3xl lg:mx-auto">
-        Best Electrician Jobs Article Tags
+        No Code Jobs Article Tags
       </h1>
       <ol role="list" class="mt-16 space-y-10 sm:space-y-16">
         <li>

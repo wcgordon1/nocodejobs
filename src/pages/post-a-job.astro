@@ -6,8 +6,11 @@ import TestimonialTwo from "@/components/testimonials/TestimonialTwo.astro";
 import FaqOne from "@/components/faqs/FaqOne.astro";
 import CtaOne from "@/components/cta/CtaOne.astro";
 import PricingThree from "@/components/pricing/PricingThree.astro";
+const pageTitle = "No Code Developer Job Board. Find your next no code job. Hire no code developers.";
+const pageDescription = "Discover top opportunities and hire skilled no-code developers on our dedicated job board. Browse listings for Bubble, Webflow, Airtable, and other no-code platforms. Hire no code developers.";
 ---
-<BaseLayout>
+
+<BaseLayout title={pageTitle} description={pageDescription}>
   <PricingOne />  
   <PricingThree />
   <Pform />

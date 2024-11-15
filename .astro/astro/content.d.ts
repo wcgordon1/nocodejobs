@@ -301,6 +301,13 @@ declare module 'astro:content' {
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
+"product-manager-bubble-brazil-id-jw8293.md": {
+	id: "product-manager-bubble-brazil-id-jw8293.md";
+  slug: "product-manager-bubble-brazil-id-jw8293";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
 "product-manager-bubble-canada-id-md1823.md": {
 	id: "product-manager-bubble-canada-id-md1823.md";
   slug: "product-manager-bubble-canada-id-md1823";

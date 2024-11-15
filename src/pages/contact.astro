@@ -28,6 +28,34 @@ const pageDescription = "Discover top opportunities and hire skilled no-code dev
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "image": "https://www.nocodejobs.org/images/nolh.png",
+      "url": "https://www.nocodejobs.org",
+      "sameAs": [
+        "https://www.reddit.com/r/NoCodeJobs/",
+        "https://www.linkedin.com/company/nocodejobsorg/",
+        "https://x.com/NoCodeJobsOrg"
+      ],
+      "logo": "https://www.nocodejobs.org/images/dl.png",
+      "name": "No Code Jobs",
+      "description": "A comprehensive job board for no-code developers, featuring jobs for Bubble, Webflow, Softr, Adalo, Flutter Flow, Framer, and Glide experts.",
+      "email": "hello@nocodejobs.org",
+      "telephone": "+1-949-214-2387",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Street",
+        "addressLocality": "Newport Beach",
+        "addressCountry": "USA",
+        "addressRegion": "CA",
+        "postalCode": "92661"
+      }
+    }
+  </script>
+
   <section>
     <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
       <div class="flex flex-col gap-12 lg:gap-24">

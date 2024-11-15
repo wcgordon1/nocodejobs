@@ -301,6 +301,13 @@ declare module 'astro:content' {
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
+"product-manager-bubble-canada-id-md1823.md": {
+	id: "product-manager-bubble-canada-id-md1823.md";
+  slug: "product-manager-bubble-canada-id-md1823";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
 "promp-engineer-glean-palo-alto-id-er234.md": {
 	id: "promp-engineer-glean-palo-alto-id-er234.md";
   slug: "promp-engineer-glean-palo-alto-id-er234";

@@ -45,11 +45,11 @@ hiringOrganization:
 jobLocation:
   streetAddress: "123 Main Street"  
   # City
-  addressLocality: "Des Moines"
+  addressLocality: "Punjab"
   # State   
-  addressRegion: "IA"
-  postalCode: "50309"
-  addressCountry: "USA"
+  addressRegion: "IN"
+  postalCode: "140401"
+  addressCountry: "India"
 baseSalary:
   currency: "USD"
   value: 45

@@ -1,0 +1,74 @@
+---
+// Define the FAQ data
+const faqs = [
+  {
+    question: "How do I build a strong no-code portfolio that gets interviews?",
+    answer: "Create 3-4 high-quality projects that demonstrate real-world problem-solving. Include a SaaS application, an e-commerce site, and an automation project. Document your build process, showcase metrics like user growth or revenue, and create video demos. Host your portfolio on a custom Webflow or Bubble site to demonstrate your skills firsthand.",
+  },
+  {
+    question: "What's the best way to prepare for no-code technical interviews?",
+    answer: "Focus on three key areas: 1) Platform expertise - be ready to explain your technical decisions and workflow in your primary no-code tool, 2) Problem-solving - prepare to whiteboard solutions and discuss architecture choices, 3) Business impact - quantify the results and ROI of your previous projects. Practice explaining complex features in simple terms.",
+  },
+  {
+    question: "Should I work for an agency or go in-house as a no-code developer?",
+    answer: "Agencies offer diverse project experience and faster skill development, typically paying $50-100/hour for experienced developers. In-house roles provide deeper product ownership and stability, with salaries ranging $80-150K. Consider starting at an agency to build your portfolio, then transition in-house once you have strong expertise in a specific platform.",
+  },
+  {
+    question: "How do I transition from traditional development to no-code?",
+    answer: "Start by mastering one major platform (Bubble, Webflow, or FlutterFlow) and build a clone of a popular app. Leverage your existing development knowledge of databases, APIs, and architecture. Join no-code communities on Discord and Twitter. Create content showing how to solve traditional coding problems using no-code tools.",
+  },
+  {
+    question: "What's the most effective way to negotiate no-code developer rates?",
+    answer: "Research market rates for your chosen platform ($50-150/hour depending on experience). Document concrete metrics from past projects like development time saved or revenue generated. Highlight specialized skills like API integrations or custom workflows. Consider value-based pricing for projects where you can directly impact business outcomes.",
+  },
+  {
+    question: "Which no-code platform should I specialize in for the highest paying jobs?",
+    answer: "Bubble consistently offers the highest rates ($80-150/hour) due to its power and complexity. Webflow specialists can earn $60-120/hour, especially with custom CMS builds. FlutterFlow is emerging with strong demand. Choose based on: 1) Market demand in job boards, 2) Your background (design vs technical), 3) Type of projects you enjoy building.",
+  }
+];
+
+// Generate structured data for FAQs
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+---
+
+<!-- Add structured data to head -->
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
+<section class="bg-white">
+  <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
+    <h2 class="inline-flex items-center text-blue-600">
+      <span class="text-base font-medium tracking-tight">How To</span>
+    </h2>
+    <h2 class="text-purple-900 font-semibold tracking-tight lg:text-5xl mt-6 text-3xl">
+      Getting Hired as a No Code Developer
+    </h2>
+
+    <div class="gap-x-2 gap-y-14 lg:gap-12 grid grid-cols-1 lg:grid-cols-3 mt-12">
+      {
+        faqs.map((faq) => (
+          <div>
+            <div class="space-y-3">
+              <div>
+                <p class="font-semibold text-purple-900 lg:mt-0">
+                  {faq.question}
+                </p>
+              </div>
+              <p class="text-sm text-slate-500 mt-5">{faq.answer}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 const allPosts = await getCollection("developers");
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Entries from "@/components/integrations/Entries.astro";
+import FaqThree from "@/components/faqs/FaqThree.astro";
 const pageTitle = "No Code Developers. Find your next no code job. Hire no code developers.";
 const pageDescription = "Discover the most in demand no code platforms and hire skilled no-code developers on our dedicated job board. Browse listings for Bubble, Webflow, Airtable, and other no-code platforms.";
 ---
@@ -51,6 +52,7 @@ const pageDescription = "Discover the most in demand no code platforms and hire 
       </div>
     </div>
   </section>
+  <FaqThree />
   <section class="bg-slate-50">
     <div class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24 mt-24">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">

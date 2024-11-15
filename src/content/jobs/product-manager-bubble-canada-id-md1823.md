@@ -57,7 +57,7 @@ remote: true
 email: ['will@nocodejobs.org']
 ---
 
-**Compensation**: Starting at $4,000/month USD + Performance Bonuses  
+**Compensation**: Starting at $4,000+ /month USD + Performance Bonuses  
 **Location**: Remote (Company based in Canada)  
 **Commitment**: Full-time, 40+ hours per week  
 
@@ -86,7 +86,7 @@ As a **Product Manager**, you will be a key leader in our team, overseeing the d
 - Strong problem-solving skills and a proactive approach to addressing challenges.
 
 ## Compensation & Benefits
-- Starting salary of **$4,000/month USD** with opportunities for performance-based bonuses.
+- Starting salary of **$4,000+ /month USD** with opportunities for performance-based bonuses.
 - Full-time role with a commitment of **40+ hours per week**.
 - Fully remote position, offering flexibility to work from anywhere.
 - Opportunity to work with a dynamic team and help build industry-leading SaaS applications.

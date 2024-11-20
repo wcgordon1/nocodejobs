@@ -343,6 +343,13 @@ declare module 'astro:content' {
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
+"jr-webflow-pm-id-br-9378.md": {
+	id: "jr-webflow-pm-id-br-9378.md";
+  slug: "jr-webflow-pm-id-br-9378";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
 "lead-bubble-dev-id-sd4892.md": {
 	id: "lead-bubble-dev-id-sd4892.md";
   slug: "lead-bubble-dev-id-sd4892";
@@ -402,6 +409,34 @@ declare module 'astro:content' {
 "sr-bubble-dev-voiced-id-we213.md": {
 	id: "sr-bubble-dev-voiced-id-we213.md";
   slug: "sr-bubble-dev-voiced-id-we213";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"webflow-dev-buenos-aires-id-nd9302.md": {
+	id: "webflow-dev-buenos-aires-id-nd9302.md";
+  slug: "webflow-dev-buenos-aires-id-nd9302";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"webflow-dev-mexico-city-id-qu-2933.md": {
+	id: "webflow-dev-mexico-city-id-qu-2933.md";
+  slug: "webflow-dev-mexico-city-id-qu-2933";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"webflow-developer-ny-id-gh5894.md": {
+	id: "webflow-developer-ny-id-gh5894.md";
+  slug: "webflow-developer-ny-id-gh5894";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"webflow-developer-sd-id-gl8127.md": {
+	id: "webflow-developer-sd-id-gl8127.md";
+  slug: "webflow-developer-sd-id-gl8127";
   body: string;
   collection: "jobs";
   data: InferEntrySchema<"jobs">

@@ -5,8 +5,8 @@ description: "Glean is seeking a motivated individual to join our team as an Pro
 # End of Selection
 location: "Palo Alto, CA"
 team: "On Site"
-datePosted: "2024-11-11T00:00:00Z"
-validThrough: "2025-02-11T00:00"
+datePosted: "2024-11-20T00:00:00Z"
+validThrough: "2025-02-20T00:00:00Z"
 employmentType: "FULL_TIME"
 hiringOrganization: 
   name: "Glean"
@@ -27,7 +27,7 @@ baseSalary:
   maxValue: 165000
   unitText: "YEAR"
 experienceRequirements: "seniorLevel"
-occupationalCategory: ["Prompt Engineering"]
+occupationalCategory: ["AI"]
 identifier:
   name: "Glean"
   value: "PROMPT-ENGINEER-fdsa242"

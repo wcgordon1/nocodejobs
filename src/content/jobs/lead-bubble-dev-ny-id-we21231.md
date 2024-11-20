@@ -33,11 +33,11 @@ We do more than just build great products for clients - we also actively build o
 We have several internal projects including @atomicfusion and Collab Fusion in the works and plan to organically develop our own venture studio wing as well.
 We’re heavily invested in the startup space and work closely with founders that tend to go on to do great things. You’ll have the opportunity to work on all of this and more."
 # End of Selection
-location: "Punjab, India"
+location: "New York, NY"
 team: "Remote"
 datePosted: "2024-11-20T00:00:00Z"
 validThrough: "2025-02-20T00:00:00Z"
-employmentType: "CONTRACTOR"
+employmentType: "FULL_TIME"
 hiringOrganization: 
   name: "Blur Apps"
   sameAs: "https://blurapps.com/"
@@ -45,22 +45,22 @@ hiringOrganization:
 jobLocation:
   streetAddress: "123 Main Street"  
   # City
-  addressLocality: "Punjab"
+  addressLocality: "New York"
   # State   
-  addressRegion: "IN"
-  postalCode: "140401"
-  addressCountry: "India"
+  addressRegion: "NY"
+  postalCode: "10001"
+  addressCountry: "USA"
 baseSalary:
   currency: "USD"
-  value: 45
+  value: 48
   minValue: 40 
-  maxValue: 50
+  maxValue: 55
   unitText: "HOUR"
 experienceRequirements: "seniorLevel"
 occupationalCategory: ["Bubble"]
 identifier:
   name: "Blur Apps"
-  value: "SENIOR-BUBBLE-DEVELOPER-fdsa242"
+  value: "LEAD-BUBBLE-DEVELOPER-1221231"
 featured: false
 remote: true
 email: ['will@nocodejobs.org', 'will@tustinrecruiting.com']

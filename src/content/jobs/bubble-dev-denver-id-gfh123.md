@@ -1,5 +1,5 @@
 ---
-position: "Sr. Bubble No Code Developer"
+position: "Bubble No Code Developer"
 # Start of Description
 description: "VoicedIQ® is the industry leader in Government Bid Intelligence for companies in the United States. Our unique solution supports thousands of contractor executives to help their teams gain insights into target government customers and ultimately win new public sector contracts. We support many of the fastest-growing small and mid-sized businesses in the industry, as well as major brands like Google, IBM, Northrop Grumman, Leidos, Deloitte, Accenture, and more. We continue to attract several thousand subscribers who use our application to obtain market information not available elsewhere. We are seeking more Bubble.io developer talent to help us leverage new technologies and development practices while building some exciting new features, as well as supporting us with ongoing maintenance updates (workflow optimization, database organization, bug fixes, etc.).
 
@@ -46,7 +46,7 @@ Postmark, an email marketing tool
 Other plug-ins & integrations"
 # End of Description
 
-location: "Jacksonville, FL"
+location: "Denver, CO"
 team: "Remote"
 datePosted: "2024-11-20T00:00:00Z"
 validThrough: "2025-02-20T00:00:00Z"
@@ -58,10 +58,10 @@ hiringOrganization:
 jobLocation:
   streetAddress: "123 Main Street"  
   # City
-  addressLocality: "Jacksonville"
+  addressLocality: "Denver"
   # State   
-  addressRegion: "FL"
-  postalCode: "32202"
+  addressRegion: "CO"
+  postalCode: "80202"
   addressCountry: "USA"
 baseSalary:
   currency: "USD"

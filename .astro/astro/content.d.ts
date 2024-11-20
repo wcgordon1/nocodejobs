@@ -287,6 +287,55 @@ declare module 'astro:content' {
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
+"airtable-expert-id-hg9837.md": {
+	id: "airtable-expert-id-hg9837.md";
+  slug: "airtable-expert-id-hg9837";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"airtable-no-code-dev-id-ma11423.md": {
+	id: "airtable-no-code-dev-id-ma11423.md";
+  slug: "airtable-no-code-dev-id-ma11423";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"airtable-no-code-philippines-idmf1259.md": {
+	id: "airtable-no-code-philippines-idmf1259.md";
+  slug: "airtable-no-code-philippines-idmf1259";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"bubble-dev-denver-id-gfh123.md": {
+	id: "bubble-dev-denver-id-gfh123.md";
+  slug: "bubble-dev-denver-id-gfh123";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"bubble-dev-seattle-idfh123.md": {
+	id: "bubble-dev-seattle-idfh123.md";
+  slug: "bubble-dev-seattle-idfh123";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"flutterflow-dev-ca-id-mg8940.md": {
+	id: "flutterflow-dev-ca-id-mg8940.md";
+  slug: "flutterflow-dev-ca-id-mg8940";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"general-ai-surge-sf-id-12fh32.md": {
+	id: "general-ai-surge-sf-id-12fh32.md";
+  slug: "general-ai-surge-sf-id-12fh32";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
 "head-of-design-webflow-id-ew2132.md": {
 	id: "head-of-design-webflow-id-ew2132.md";
   slug: "head-of-design-webflow-id-ew2132";
@@ -297,6 +346,13 @@ declare module 'astro:content' {
 "lead-bubble-dev-id-sd4892.md": {
 	id: "lead-bubble-dev-id-sd4892.md";
   slug: "lead-bubble-dev-id-sd4892";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"lead-bubble-dev-ny-id-we21231.md": {
+	id: "lead-bubble-dev-ny-id-we21231.md";
+  slug: "lead-bubble-dev-ny-id-we21231";
   body: string;
   collection: "jobs";
   data: InferEntrySchema<"jobs">
@@ -315,6 +371,13 @@ declare module 'astro:content' {
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
+"product-manager-remote-ca-id-212-32.md.md": {
+	id: "product-manager-remote-ca-id-212-32.md.md";
+  slug: "product-manager-remote-ca-id-212-32md";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
 "promp-engineer-glean-palo-alto-id-er234.md": {
 	id: "promp-engineer-glean-palo-alto-id-er234.md";
   slug: "promp-engineer-glean-palo-alto-id-er234";
@@ -329,9 +392,30 @@ declare module 'astro:content' {
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 } & { render(): Render[".md"] };
+"senior-bubble-developer-austin-idgg455.md": {
+	id: "senior-bubble-developer-austin-idgg455.md";
+  slug: "senior-bubble-developer-austin-idgg455";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
 "sr-bubble-dev-voiced-id-we213.md": {
 	id: "sr-bubble-dev-voiced-id-we213.md";
   slug: "sr-bubble-dev-voiced-id-we213";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"webflow-pm-remote-id-fj123.md": {
+	id: "webflow-pm-remote-id-fj123.md";
+  slug: "webflow-pm-remote-id-fj123";
+  body: string;
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+} & { render(): Render[".md"] };
+"weweb-developer-ca-id-mg5849.md": {
+	id: "weweb-developer-ca-id-mg5849.md";
+  slug: "weweb-developer-ca-id-mg5849";
   body: string;
   collection: "jobs";
   data: InferEntrySchema<"jobs">

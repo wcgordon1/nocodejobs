@@ -26,8 +26,8 @@ Compensation: Contract, with potential for full-time based on performance"
 # End of Selection
 location: "Des Moines, IA"
 team: "Remote"
-datePosted: "2024-11-11T00:00:00Z"
-validThrough: "2025-02-11T00:00"
+datePosted: "2024-11-20T00:00:00Z"
+validThrough: "2025-02-20T00:00:00Z"
 employmentType: "CONTRACTOR"
 hiringOrganization: 
   name: "Bridgewood Creative"

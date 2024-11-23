@@ -25,6 +25,7 @@ export default defineConfig({
     skipInline: false,
     drafts: true
   },
-  site: 'https://nocodejobs.org',
+  site: 'https://www,nocodejobs.org',
+  trailingSlash: 'never', // Enforce no trailing slash
   integrations: [tailwind(), sitemap(), mdx()]
 });

@@ -61,6 +61,14 @@ const jobSchema = {
 ---
 
 <BaseLayout title={seoTitle} description={seoDescription}>
+  <meta name="robots" content="index, follow" slot="head" />
+  
+  <link 
+    rel="canonical" 
+    href={new URL(Astro.url.pathname, Astro.site).toString()}
+    slot="head"
+  />
+  
   <script type="application/ld+json" set:html={JSON.stringify(jobSchema)} />
   
   <section>

@@ -1,251 +1,65 @@
 ---
-
-
-
 import BaseLayout from "./BaseLayout.astro";
-
 import CtaOne from "@/components/cta/CtaOne.astro";
-
-
-
-
-
-
-
 const { frontmatter } = Astro.props;
 
-
-
-
-
-
-
 // Create dynamic SEO title and description
-
-
-
 const seoTitle = frontmatter.title;
-
-
-
 const seoDescription = frontmatter.description.length > 160 
-
-
-
   ? `${frontmatter.description.substring(0, 157)}...`
-
-
-
   : frontmatter.description;
-
-
-
-
-
-
-
 // Get the current URL for mainEntityOfPage
-
-
-
 const currentUrl = Astro.url;
-
-
-
-
-
-
-
 // Convert the content to plain text for articleBody
-
-
-
 const articleBody = await Astro.slots.render('default');
-
-
-
 const plainTextContent = articleBody.replace(/<[^>]*>/g, '');
-
-
-
-
-
-
-
 // Create the JSON-LD data
-
-
-
 const jsonLd = {
-
-
-
   "@context": "https://schema.org",
-
-
-
   "@type": "BlogPosting",
-
-
-
   "mainEntityOfPage": {
-
-
-
     "@type": "WebPage",
-
-
-
     "@id": currentUrl
-
-
-
   },
-
-
-
   "headline": frontmatter.title,
-
-
-
   "datePublished": frontmatter.pubDate.toISOString(),
-
-
-
   "dateModified": frontmatter.modDate,
-
-
-
   "author": {
-
-
-
     "@type": "Person",
-
-
-
     "name": frontmatter.author,
-
-
-
     "url": "https://nocodejobs.org/about"
-
-
-
   },
-
-
-
   "publisher": {
-
-
-
     "@type": "Organization",
-
-
-
     "name": "No Code Jobs",
-
-
-
     "logo": {
-
-
-
       "@type": "ImageObject",
-
-
-
       "url": "https://nocodejobs.org/logo.png"
-
-
-
     }
-
-
-
   },
-
-
-
   "description": frontmatter.description,
-
-
-
   "articleBody": plainTextContent,
-
-
-
   "keywords": frontmatter.tags,
-
-
-
   "inLanguage": "en-US",
-
-
-
   "isAccessibleForFree": true,
-
-
-
   "image": {
-
-
-
     "@type": "ImageObject",
-
-
-
     "url": frontmatter.image.url,
-
-
-
     "height": "800",
-
-
-
     "width": "1200"
-
-
-
   },
-
-
-
   "mainEntity": {
-
-
-
     "@type": "Thing",
-
-
-
     "name": frontmatter.title
-
-
-
   }
-
-
-
 };
-
-
-
-
-
-
 
 ---
 
-
-
-
-
-
-
 <BaseLayout title={seoTitle} description={seoDescription}>
-
+  <Fragment slot="head">
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).toString()} />
+  </Fragment>
 
 
   <div class="fixed top-0 left-0 right-0 h-1 bg-slate-100 z-50">

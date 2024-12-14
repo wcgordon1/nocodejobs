@@ -55,7 +55,7 @@ description: >-
   integrations
 location: 'Denver, CO'
 team: Remote
-datePosted: '2024-12-12T08:41:49Z'
+datePosted: '2024-12-13T08:41:49Z'
 validThrough: '2025-02-10T08:41:49Z'
 employmentType: FULL_TIME
 hiringOrganization:
@@ -81,7 +81,7 @@ occupationalCategory:
 identifier:
   name: VoicedIQ
   value: BUBBLE-DEVELOPER-fdsa242
-featured: false
+featured: true
 remote: true
 email:
   - will@nocodejobs.org

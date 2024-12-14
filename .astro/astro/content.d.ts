@@ -441,9 +441,23 @@ declare module 'astro:content' {
   collection: "jobs";
   data: any
 } & { render(): Render[".md"] };
+"webflow-dev-usa-id-jj3910.md": {
+	id: "webflow-dev-usa-id-jj3910.md";
+  slug: "webflow-dev-usa-id-jj3910";
+  body: string;
+  collection: "jobs";
+  data: any
+} & { render(): Render[".md"] };
 "webflow-developer-ny-id-gh5894.md": {
 	id: "webflow-developer-ny-id-gh5894.md";
   slug: "webflow-developer-ny-id-gh5894";
+  body: string;
+  collection: "jobs";
+  data: any
+} & { render(): Render[".md"] };
+"webflow-developer-remote-usa-id-bb4821.md": {
+	id: "webflow-developer-remote-usa-id-bb4821.md";
+  slug: "webflow-developer-remote-usa-id-bb4821";
   body: string;
   collection: "jobs";
   data: any

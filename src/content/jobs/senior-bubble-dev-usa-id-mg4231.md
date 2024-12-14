@@ -1,5 +1,5 @@
 ---
-position: Senior Bubble.io Developer
+position: Bubble Developer No Code
 description: >-
   We’re reorganizing the team at Blur Apps  to enable our growth in the startups
   space. We’re looking for a Rockstar Bubble Developer to join Blur Apps and
@@ -62,7 +62,7 @@ occupationalCategory:
   - Bubble
 identifier:
   name: Blur Apps
-  value: SENIOR-BUBBLE-DEVELOPER-fdsa242
+  value: SENIOR-BUBBLE-DEVELOPER-mg4231
 featured: false
 remote: true
 email:

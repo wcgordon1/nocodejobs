@@ -350,6 +350,13 @@ declare module 'astro:content' {
   collection: "jobs";
   data: any
 } & { render(): Render[".md"] };
+"jr-bubble-dev-india-onsite-id-bb4892.md": {
+	id: "jr-bubble-dev-india-onsite-id-bb4892.md";
+  slug: "jr-bubble-dev-india-onsite-id-bb4892";
+  body: string;
+  collection: "jobs";
+  data: any
+} & { render(): Render[".md"] };
 "jr-webflow-pm-id-br-9378.md": {
 	id: "jr-webflow-pm-id-br-9378.md";
   slug: "jr-webflow-pm-id-br-9378";
@@ -367,6 +374,13 @@ declare module 'astro:content' {
 "lead-bubble-dev-ny-id-we21231.md": {
 	id: "lead-bubble-dev-ny-id-we21231.md";
   slug: "lead-bubble-dev-ny-id-we21231";
+  body: string;
+  collection: "jobs";
+  data: any
+} & { render(): Render[".md"] };
+"no-code-jobs-bubble-id-mg3901.md": {
+	id: "no-code-jobs-bubble-id-mg3901.md";
+  slug: "no-code-jobs-bubble-id-mg3901";
   body: string;
   collection: "jobs";
   data: any
@@ -485,6 +499,13 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "posts": {
+"creating-apps-without-coding.md": {
+	id: "creating-apps-without-coding.md";
+  slug: "creating-apps-without-coding";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
 "how-to-get-an-interview-as-a-no-code-devloper.md": {
 	id: "how-to-get-an-interview-as-a-no-code-devloper.md";
   slug: "how-to-get-an-interview-as-a-no-code-devloper";
@@ -495,6 +516,34 @@ declare module 'astro:content' {
 "how-to-hire-a-bubbl-io-developer.md": {
 	id: "how-to-hire-a-bubbl-io-developer.md";
   slug: "how-to-hire-a-bubbl-io-developer";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
+"no-code-app-development-platform.md": {
+	id: "no-code-app-development-platform.md";
+  slug: "no-code-app-development-platform";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
+"no-code-software-development.md": {
+	id: "no-code-software-development.md";
+  slug: "no-code-software-development";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
+"no-code-vs-low-code.md": {
+	id: "no-code-vs-low-code.md";
+  slug: "no-code-vs-low-code";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
+"no-code-web-development.md": {
+	id: "no-code-web-development.md";
+  slug: "no-code-web-development";
   body: string;
   collection: "posts";
   data: any

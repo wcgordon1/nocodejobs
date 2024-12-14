@@ -1,6 +1,6 @@
 ---
-pubDate: 2024-10-20
-modDate: "2024-10-24T00:00:00Z"
+pubDate: 2024-06-20
+modDate: "2024-06-20T00:00:00Z"
 author: Will Gordon
 title: How to Hire a Bubble.io Developer
 description: "This comprehensive guide will walk you through the process of hiring a Bubble.io developer, ensuring you find the right talent to bring your project to life."

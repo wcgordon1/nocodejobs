@@ -1,6 +1,6 @@
 ---
-pubDate: 2024-11-11
-modDate: "2024-11-11T00:00:00Z"
+pubDate: 2024-07-30
+modDate: "2024-07-30T00:00:00Z"
 author: Will Gordon
 title: How to get an Interview as a No Code Developer
 description: "In this guide we are going to cover how to email/message a company and what to include to increase your success at landing an interview."

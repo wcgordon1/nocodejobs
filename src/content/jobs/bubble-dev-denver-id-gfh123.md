@@ -1,82 +1,90 @@
 ---
-position: "Bubble No Code Developer"
-# Start of Description
-description: "VoicedIQ® is the industry leader in Government Bid Intelligence for companies in the United States. Our unique solution supports thousands of contractor executives to help their teams gain insights into target government customers and ultimately win new public sector contracts. We support many of the fastest-growing small and mid-sized businesses in the industry, as well as major brands like Google, IBM, Northrop Grumman, Leidos, Deloitte, Accenture, and more. We continue to attract several thousand subscribers who use our application to obtain market information not available elsewhere. We are seeking more Bubble.io developer talent to help us leverage new technologies and development practices while building some exciting new features, as well as supporting us with ongoing maintenance updates (workflow optimization, database organization, bug fixes, etc.).
+position: Bubble No Code Developer
+description: >-
+  VoicedIQ® is the industry leader in Government Bid Intelligence for companies
+  in the United States. Our unique solution supports thousands of contractor
+  executives to help their teams gain insights into target government customers
+  and ultimately win new public sector contracts. We support many of the
+  fastest-growing small and mid-sized businesses in the industry, as well as
+  major brands like Google, IBM, Northrop Grumman, Leidos, Deloitte, Accenture,
+  and more. We continue to attract several thousand subscribers who use our
+  application to obtain market information not available elsewhere. We are
+  seeking more Bubble.io developer talent to help us leverage new technologies
+  and development practices while building some exciting new features, as well
+  as supporting us with ongoing maintenance updates (workflow optimization,
+  database organization, bug fixes, etc.).
 
 
 
-While we have an ongoing need for platform developer support, some of the initial responsibilities include support in the following areas:
+  While we have an ongoing need for platform developer support, some of the
+  initial responsibilities include support in the following areas:
 
 
 
-Optimizing our database to increase app speed and user experience
-Providing ongoing maintenance and bug fixes
-Working with our design & executive teams to develop new feature needs
-Continuing to improve and maintain platform security functions and processes
-Adding payment features to streamline the purchase of new products or licenses
-Building new data feed features leveraging external APIs
+  Optimizing our database to increase app speed and user experience Providing
+  ongoing maintenance and bug fixes Working with our design & executive teams to
+  develop new feature needs Continuing to improve and maintain platform security
+  functions and processes Adding payment features to streamline the purchase of
+  new products or licenses Building new data feed features leveraging external
+  APIs
 
 
-Position Requirements:
-Must live and be authorized to work within the United States
-Able to work in a fully remote environment
-Proven experience building and maintaining application(s) in Bubble.io platforms
-Deep understanding of Bubble.io logic and design best practices
-Structured analytical and process-oriented thinking
-Strong verbal and written communication skills
-Ability to work independently as well as part of a team
-Experience using online tools for project management and communication
-Because of the synchronous nature of our work, we require that employees’ remote working locations be in the United States Eastern or Central time zones only.
-Highly Desirable Traits and Technology Experience:
-3+ years of experience with Bubble.io and low-code development
-Database architecting and administration
-Experience connecting APIs and simplifying collected data
-Comfortable interviewing users and studying metrics to identify problems and areas of improvement within the application
-Bachelor’s degree or equivalent experience
-Experience with back-end and front-end development
+  Position Requirements: Must live and be authorized to work within the United
+  States Able to work in a fully remote environment Proven experience building
+  and maintaining application(s) in Bubble.io platforms Deep understanding of
+  Bubble.io logic and design best practices Structured analytical and
+  process-oriented thinking Strong verbal and written communication skills
+  Ability to work independently as well as part of a team Experience using
+  online tools for project management and communication Because of the
+  synchronous nature of our work, we require that employees’ remote working
+  locations be in the United States Eastern or Central time zones only. Highly
+  Desirable Traits and Technology Experience: 3+ years of experience with
+  Bubble.io and low-code development Database architecting and administration
+  Experience connecting APIs and simplifying collected data Comfortable
+  interviewing users and studying metrics to identify problems and areas of
+  improvement within the application Bachelor’s degree or equivalent experience
+  Experience with back-end and front-end development
 
 
-Helpful Experience with following complimentary Bubble.io technology:
+  Helpful Experience with following complimentary Bubble.io technology:
 
 
 
-Algolia, an AI-powered search and discovery system
-Inspectlet, video monitoring software
-Postmark, an email marketing tool
-Other plug-ins & integrations"
-# End of Description
-
-location: "Denver, CO"
-team: "Remote"
-datePosted: "2024-11-20T00:00:00Z"
-validThrough: "2025-02-20T00:00:00Z"
-employmentType: "FULL_TIME"
-hiringOrganization: 
-  name: "VoicedIQ"
-  sameAs: "https://voicediq.com"
-  logo: "https://images.squarespace-cdn.com/content/v1/5d23ae890b7dee000180ec51/b320cb1a-20e6-4e4c-b184-dd8bac9eb6bf/VoicedIQr+Black.png?format=750w"
+  Algolia, an AI-powered search and discovery system Inspectlet, video
+  monitoring software Postmark, an email marketing tool Other plug-ins &
+  integrations
+location: 'Denver, CO'
+team: Remote
+datePosted: '2024-12-12T08:41:49Z'
+validThrough: '2025-02-10T08:41:49Z'
+employmentType: FULL_TIME
+hiringOrganization:
+  name: VoicedIQ
+  sameAs: 'https://voicediq.com'
+  logo: >-
+    https://images.squarespace-cdn.com/content/v1/5d23ae890b7dee000180ec51/b320cb1a-20e6-4e4c-b184-dd8bac9eb6bf/VoicedIQr+Black.png?format=750w
 jobLocation:
-  streetAddress: "123 Main Street"  
-  # City
-  addressLocality: "Denver"
-  # State   
-  addressRegion: "CO"
-  postalCode: "80202"
-  addressCountry: "USA"
+  streetAddress: 123 Main Street
+  addressLocality: Denver
+  addressRegion: CO
+  postalCode: '80202'
+  addressCountry: USA
 baseSalary:
-  currency: "USD"
+  currency: USD
   value: 45
-  minValue: 40  
+  minValue: 40
   maxValue: 55
-  unitText: "HOUR"
-experienceRequirements: "seniorLevel"
-occupationalCategory: ["Bubble"]
+  unitText: HOUR
+experienceRequirements: seniorLevel
+occupationalCategory:
+  - Bubble
 identifier:
-  name: "VoicedIQ"
-  value: "BUBBLE-DEVELOPER-fdsa242"
+  name: VoicedIQ
+  value: BUBBLE-DEVELOPER-fdsa242
 featured: false
 remote: true
-email: ['will@nocodejobs.org']
+email:
+  - will@nocodejobs.org
 ---
 
 

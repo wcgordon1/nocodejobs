@@ -1,69 +1,73 @@
 ---
-position: "Senior Bubble.io Developer"
-# Start of Selection
-description: "We’re reorganizing the team at Blur Apps  to enable our growth in the startups space. We’re looking for a Rockstar Bubble Developer to join Blur Apps and help some of the world’s most inspiring founders launch kickass startups! We’d like to add this developer to the team in the coming few weeks.
+position: Senior Bubble.io Developer
+description: >-
+  We’re reorganizing the team at Blur Apps  to enable our growth in the startups
+  space. We’re looking for a Rockstar Bubble Developer to join Blur Apps and
+  help some of the world’s most inspiring founders launch kickass startups! We’d
+  like to add this developer to the team in the coming few weeks.
 
-About the team
+  About the team
 
-We are a fast growing agency working closely with top early-stage startups
-We collaborate with founders to convert their vision to user-ready products
-We are a small team and you will be working directly with me [ @ranjit ]
-We are restructuring the team and you can be at the core of a new group of talented Bubblers
-Our expectation
+  We are a fast growing agency working closely with top early-stage startups We
+  collaborate with founders to convert their vision to user-ready products We
+  are a small team and you will be working directly with me [ @ranjit ] We are
+  restructuring the team and you can be at the core of a new group of talented
+  Bubblers Our expectation
 
-At least 1 year or more of Bubble development experience
-You’ve planned, built and scaled at least 2 Bubble applications to a minimum of 1k users per app within the last year
-Proficiency in connecting third-party APIs, webhooks, and plugins
-Capability to translate design concepts into pixel-perfect Bubble applications
-Comfortable working both independently and collaboratively
-Compensation and flexibility
+  At least 1 year or more of Bubble development experience You’ve planned, built
+  and scaled at least 2 Bubble applications to a minimum of 1k users per app
+  within the last year Proficiency in connecting third-party APIs, webhooks, and
+  plugins Capability to translate design concepts into pixel-perfect Bubble
+  applications Comfortable working both independently and collaboratively
+  Compensation and flexibility
 
-$40 - $50/hour
-You can work from anywhere, and manage your time according to your own schedule
-You’ll be given the opportunity to take one more responsibility over time and help grow the team
-Bonus skills
+  $40 - $50/hour You can work from anywhere, and manage your time according to
+  your own schedule You’ll be given the opportunity to take one more
+  responsibility over time and help grow the team Bonus skills
 
-Fluent in Javascript and any Javascript frameworks
-Have experience with implementing AI and LLMs in apps
-Are proficient with other nocode tools like Xano and Framer
-Being a plugin developer and/or a traditional code developer is a plus.
-Let us know!
-Why us?
-We do more than just build great products for clients - we also actively build our own products.
-We have several internal projects including @atomicfusion and Collab Fusion in the works and plan to organically develop our own venture studio wing as well.
-We’re heavily invested in the startup space and work closely with founders that tend to go on to do great things. You’ll have the opportunity to work on all of this and more."
-# End of Selection
-location: "Austin, TX"
-team: "Remote"
-datePosted: "2024-11-20T00:00:00Z"
-validThrough: "2025-02-20T00:00:00Z"
-employmentType: "FULL_TIME"
-hiringOrganization: 
-  name: "Blur Apps"
-  sameAs: "https://blurapps.com/"
-  logo: "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F8d6d318cb1c67bc0b84ee11b83349e08.cdn.bubble.io%2Ff1707394005610x495759504272951040%2Fblur_apps_logo.jpeg?w=48&h=48&auto=compress&dpr=2&fit=max"
+  Fluent in Javascript and any Javascript frameworks Have experience with
+  implementing AI and LLMs in apps Are proficient with other nocode tools like
+  Xano and Framer Being a plugin developer and/or a traditional code developer
+  is a plus. Let us know! Why us? We do more than just build great products for
+  clients - we also actively build our own products. We have several internal
+  projects including @atomicfusion and Collab Fusion in the works and plan to
+  organically develop our own venture studio wing as well. We’re heavily
+  invested in the startup space and work closely with founders that tend to go
+  on to do great things. You’ll have the opportunity to work on all of this and
+  more.
+location: 'Austin, TX'
+team: Remote
+datePosted: '2024-12-13T11:34:37Z'
+validThrough: '2025-02-11T11:34:37Z'
+employmentType: FULL_TIME
+hiringOrganization:
+  name: Blur Apps
+  sameAs: 'https://blurapps.com/'
+  logo: >-
+    https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F8d6d318cb1c67bc0b84ee11b83349e08.cdn.bubble.io%2Ff1707394005610x495759504272951040%2Fblur_apps_logo.jpeg?w=48&h=48&auto=compress&dpr=2&fit=max
 jobLocation:
-  streetAddress: "123 Main Street"  
-  # City
-  addressLocality: "Austin"
-  # State   
-  addressRegion: "TX"
-  postalCode: "78701"
-  addressCountry: "USA"
+  streetAddress: 123 Main Street
+  addressLocality: Austin
+  addressRegion: TX
+  postalCode: '78701'
+  addressCountry: USA
 baseSalary:
-  currency: "USD"
+  currency: USD
   value: 48
-  minValue: 40 
+  minValue: 40
   maxValue: 55
-  unitText: "HOUR"
-experienceRequirements: "seniorLevel"
-occupationalCategory: ["Bubble"]
+  unitText: HOUR
+experienceRequirements: seniorLevel
+occupationalCategory:
+  - Bubble
 identifier:
-  name: "Blur Apps"
-  value: "SENIOR-BUBBLE-DEVELOPER-1221231"
+  name: Blur Apps
+  value: SENIOR-BUBBLE-DEVELOPER-1221231
 featured: false
 remote: true
-email: ['will@nocodejobs.org', 'will@tustinrecruiting.com']
+email:
+  - will@nocodejobs.org
+  - will@tustinrecruiting.com
 ---
 
 ### Overview at Blur Apps

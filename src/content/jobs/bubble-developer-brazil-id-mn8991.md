@@ -1,5 +1,5 @@
 ---
-position: Bubble.io Developer
+position: Senior Bubble.io Developer
 description: >-
   We’re reorganizing the team at Blur Apps  to enable our growth in the startups
   space. We’re looking for a Rockstar Bubble Developer to join Blur Apps and
@@ -35,34 +35,34 @@ description: >-
   invested in the startup space and work closely with founders that tend to go
   on to do great things. You’ll have the opportunity to work on all of this and
   more.
-location: 'Seattle, WA'
+location: 'Rio de Janeiro, RJ'
 team: Remote
-datePosted: '2024-12-12T20:13:01Z'
-validThrough: '2025-02-10T20:13:01Z'
-employmentType: FULL_TIME
+datePosted: '2024-12-13T19:23:24Z'
+validThrough: '2025-02-11T19:23:24Z'
+employmentType: CONTRACTOR
 hiringOrganization:
   name: Blur Apps
   sameAs: 'https://blurapps.com/'
   logo: >-
     https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F8d6d318cb1c67bc0b84ee11b83349e08.cdn.bubble.io%2Ff1707394005610x495759504272951040%2Fblur_apps_logo.jpeg?w=48&h=48&auto=compress&dpr=2&fit=max
 jobLocation:
-  streetAddress: 123 Main Street
-  addressLocality: Seattle
-  addressRegion: WA
-  postalCode: '98101'
-  addressCountry: USA
+  streetAddress: 1000 1st St
+  addressLocality: Rio de Janeiro
+  addressRegion: RJ
+  postalCode: '22280-000'
+  addressCountry: Brazil
 baseSalary:
   currency: USD
-  value: 48
+  value: 45
   minValue: 40
-  maxValue: 55
+  maxValue: 50
   unitText: HOUR
 experienceRequirements: seniorLevel
 occupationalCategory:
   - Bubble
 identifier:
   name: Blur Apps
-  value: BUBBLE-DEVELOPER-fh123
+  value: SENIOR-BUBBLE-DEVELOPER-fdsa242
 featured: false
 remote: true
 email:

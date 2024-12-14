@@ -1,39 +1,47 @@
 ---
-position: "Lead Bubble Developer"
-# Start of Selection
-description: "At Warm Websites, we are dedicated to connecting professionals across various industries through specialized job boards. We are on the lookout for a skilled WordPress Developer to spearhead an exciting project aimed at building a job board for electricians. This assignment will serve as a demo test to evaluate your technical abilities and determine if you're a fit for our future projects. The project details include building a job board for electricians using a tech stack consisting of WordPress, Elementor Pro, Envato Elements Kit (optional), WP-Job-Manager (Bundle), Tiny Giant Elementor Connector, and WooCommerce. The compensation for the project is a flat rate of $500, and all required plugins and necessary access will be supplied."
-# End of Selection
-location: "Newport Beach, CA"
-team: "Remote"
-datePosted: "2024-11-20T00:00:00Z"
-validThrough: "2025-02-20T00:00:00Z"
-employmentType: "FULL_TIME"
-hiringOrganization: 
-  name: "Warm Websites"
-  sameAs: "https://warmwebsites.com"
-  logo: "/images/w-w.png"
+position: Lead Bubble Developer
+description: >-
+  At Warm Websites, we are dedicated to connecting professionals across various
+  industries through specialized job boards. We are on the lookout for a skilled
+  WordPress Developer to spearhead an exciting project aimed at building a job
+  board for electricians. This assignment will serve as a demo test to evaluate
+  your technical abilities and determine if you're a fit for our future
+  projects. The project details include building a job board for electricians
+  using a tech stack consisting of WordPress, Elementor Pro, Envato Elements Kit
+  (optional), WP-Job-Manager (Bundle), Tiny Giant Elementor Connector, and
+  WooCommerce. The compensation for the project is a flat rate of $500, and all
+  required plugins and necessary access will be supplied.
+location: 'Newport Beach, CA'
+team: Remote
+datePosted: '2024-12-12T14:27:25Z'
+validThrough: '2025-02-10T14:27:25Z'
+employmentType: FULL_TIME
+hiringOrganization:
+  name: Warm Websites
+  sameAs: 'https://warmwebsites.com'
+  logo: /images/w-w.png
 jobLocation:
-  streetAddress: "123 Main Street"  
-  # City
-  addressLocality: "Newport Beach"
-  # State   
-  addressRegion: "CA"
-  postalCode: "92660"
-  addressCountry: "USA"
+  streetAddress: 123 Main Street
+  addressLocality: Newport Beach
+  addressRegion: CA
+  postalCode: '92660'
+  addressCountry: USA
 baseSalary:
-  currency: "USD"
+  currency: USD
   value: 55
-  minValue: 50    
+  minValue: 50
   maxValue: 60
-  unitText: "Hour"
-experienceRequirements: "seniorLevel"
-occupationalCategory: ["Bubble"]
+  unitText: Hour
+experienceRequirements: seniorLevel
+occupationalCategory:
+  - Bubble
 identifier:
-  name: "Warm Websites"
-  value: "LEAD-BUBBLE-DEVELOPER-fdsa242"
+  name: Warm Websites
+  value: LEAD-BUBBLE-DEVELOPER-fdsa242
 featured: true
 remote: true
-email: ['will@nocodejobs.org']
+email:
+  - will@nocodejobs.org
 ---
 
 ### Job Overview

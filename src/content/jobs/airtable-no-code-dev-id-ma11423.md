@@ -1,75 +1,86 @@
 ---
-position: "Airtable Developer"
-# Start of Description
-description: "We are seeking a Junior Airtable / No-Code Developer to join our growing team and work on exciting projects for U.S.-based clients. This is an excellent opportunity for individuals passionate about problem-solving and logic-oriented development.
+position: Airtable Developer
+description: >-
+  We are seeking a Junior Airtable / No-Code Developer to join our growing team
+  and work on exciting projects for U.S.-based clients. This is an excellent
+  opportunity for individuals passionate about problem-solving and
+  logic-oriented development.
 
 
 
-Responsibilities
+  Responsibilities
 
-Collaborate with Project Managers to develop solutions in Airtable tailored to client needs.
-Document and explain the logic behind built solutions to the Project Manager.
-Build and deliver high-quality no-code solutions with precision and clarity.
-
-
-Must-Haves
-
-Education: Degree in Industrial Engineering or similar, demonstrating critical and logical thinking capabilities.
-Experience: 3+ years in a relevant field, with demonstrated problem-solving skills.
+  Collaborate with Project Managers to develop solutions in Airtable tailored to
+  client needs. Document and explain the logic behind built solutions to the
+  Project Manager. Build and deliver high-quality no-code solutions with
+  precision and clarity.
 
 
-Key Traits:
+  Must-Haves
 
-Structured and organized mindset, ensuring clarity and thoroughness in solution development and documentation.
-Strong problem-solving abilities and a logical approach to challenges.
-
-
-Preferred Qualifications and Skills
-
-Airtable: Prior experience with Airtable is highly desired. If you don’t have experience, you will receive hands-on training to master Airtable, as our client solutions are primarily built using this platform.
-Proficiency with Google Sheets or Excel.
-Coding experience is strongly preferred. 
-Familiarity with other no-code tools like Zapier, Make.com, document signing services, and integrating AI in business processes.
+  Education: Degree in Industrial Engineering or similar, demonstrating critical
+  and logical thinking capabilities. Experience: 3+ years in a relevant field,
+  with demonstrated problem-solving skills.
 
 
-Growth Opportunities: As you demonstrate increasing capabilities with Airtable, you can advance to senior roles, take ownership of projects, and even lead a team of developers as a Project Manager.
+  Key Traits:
+
+  Structured and organized mindset, ensuring clarity and thoroughness in
+  solution development and documentation. Strong problem-solving abilities and a
+  logical approach to challenges.
+
+
+  Preferred Qualifications and Skills
+
+  Airtable: Prior experience with Airtable is highly desired. If you don’t have
+  experience, you will receive hands-on training to master Airtable, as our
+  client solutions are primarily built using this platform. Proficiency with
+  Google Sheets or Excel. Coding experience is strongly preferred.  Familiarity
+  with other no-code tools like Zapier, Make.com, document signing services, and
+  integrating AI in business processes.
+
+
+  Growth Opportunities: As you demonstrate increasing capabilities with
+  Airtable, you can advance to senior roles, take ownership of projects, and
+  even lead a team of developers as a Project Manager.
 
 
 
-If you are a logic-oriented individual with a passion for technology and problem-solving, we’d love to hear from you! Apply now and embark on a career with significant growth potential."
-# End of Description
-
-location: "Los Angeles, CA"
-team: "Remote"
-datePosted: "2024-11-20T00:00:00Z"
-validThrough: "2025-02-20T00:00:00Z"
-employmentType: "FULL_TIME"
-hiringOrganization: 
-  name: "BoltFlow"
-  sameAs: "https://boltflow.io/"
-  logo: "https://media.licdn.com/dms/image/v2/D4D0BAQECj463JOOMtw/company-logo_200_200/company-logo_200_200/0/1705084719312/boltflow_logo?e=1740009600&v=beta&t=CZqMzCRjMAqsBRSuReFUF5iRBqdtUeKqQ_EcM_Sl18s"
+  If you are a logic-oriented individual with a passion for technology and
+  problem-solving, we’d love to hear from you! Apply now and embark on a career
+  with significant growth potential.
+location: 'Los Angeles, CA'
+team: Remote
+datePosted: '2024-12-12T16:22:37Z'
+validThrough: '2025-02-10T16:22:37Z'
+employmentType: FULL_TIME
+hiringOrganization:
+  name: BoltFlow
+  sameAs: 'https://boltflow.io/'
+  logo: >-
+    https://media.licdn.com/dms/image/v2/D4D0BAQECj463JOOMtw/company-logo_200_200/company-logo_200_200/0/1705084719312/boltflow_logo?e=1740009600&v=beta&t=CZqMzCRjMAqsBRSuReFUF5iRBqdtUeKqQ_EcM_Sl18s
 jobLocation:
-  streetAddress: "123 Main Street"  
-  # City
-  addressLocality: "Los Angeles"
-  # State   
-  addressRegion: "CA"
-  postalCode: "90038"
-  addressCountry: "USA"
+  streetAddress: 123 Main Street
+  addressLocality: Los Angeles
+  addressRegion: CA
+  postalCode: '90038'
+  addressCountry: USA
 baseSalary:
-  currency: "USD"
+  currency: USD
   value: 45
-  minValue: 40  
+  minValue: 40
   maxValue: 55
-  unitText: "HOUR"
-experienceRequirements: "seniorLevel"
-occupationalCategory: ["Airtable"]
+  unitText: HOUR
+experienceRequirements: seniorLevel
+occupationalCategory:
+  - Airtable
 identifier:
-  name: "BoltFlow"
-  value: "AIRTABLE-NO-CODE-DEVELOPER-ma11423"
+  name: BoltFlow
+  value: AIRTABLE-NO-CODE-DEVELOPER-ma11423
 featured: false
 remote: true
-email: ['will@nocodejobs.org']
+email:
+  - will@nocodejobs.org
 ---
 ## Job Opportunity: Junior Airtable / No-Code Developer  
 

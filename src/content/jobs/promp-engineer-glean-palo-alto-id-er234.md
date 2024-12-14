@@ -1,39 +1,42 @@
 ---
-position: "Prompt Engineer"
-# Start of Selection
-description: "Glean is seeking a motivated individual to join our team as an Prompt Engineer in Palo Alto. This is an excellent opportunity to start your career in the Prompt Engineering with a company known for its commitment to quality, safety, and innovation."
-# End of Selection
-location: "Palo Alto, CA"
-team: "On Site"
-datePosted: "2024-11-20T00:00:00Z"
-validThrough: "2025-02-20T00:00:00Z"
-employmentType: "FULL_TIME"
-hiringOrganization: 
-  name: "Glean"
-  sameAs: "https://glean.com"
-  logo: "https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/66ded1bc82df72f2e1d56eb7_Glean%20Logomark%20Blue.svg"
+position: Prompt Engineer
+description: >-
+  Glean is seeking a motivated individual to join our team as an Prompt Engineer
+  in Palo Alto. This is an excellent opportunity to start your career in the
+  Prompt Engineering with a company known for its commitment to quality, safety,
+  and innovation.
+location: 'Palo Alto, CA'
+team: On Site
+datePosted: '2024-12-13T03:53:49Z'
+validThrough: '2025-02-11T03:53:49Z'
+employmentType: FULL_TIME
+hiringOrganization:
+  name: Glean
+  sameAs: 'https://glean.com'
+  logo: >-
+    https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/66ded1bc82df72f2e1d56eb7_Glean%20Logomark%20Blue.svg
 jobLocation:
-  streetAddress: "123 Main Street"  
-  # City
-  addressLocality: "Newport Beach"
-  # State   
-  addressRegion: "CA"
-  postalCode: "92660"
-  addressCountry: "USA"
+  streetAddress: 123 Main Street
+  addressLocality: Newport Beach
+  addressRegion: CA
+  postalCode: '92660'
+  addressCountry: USA
 baseSalary:
-  currency: "USD"
+  currency: USD
   value: 140000
-  minValue: 120000    
+  minValue: 120000
   maxValue: 165000
-  unitText: "YEAR"
-experienceRequirements: "seniorLevel"
-occupationalCategory: ["AI"]
+  unitText: YEAR
+experienceRequirements: seniorLevel
+occupationalCategory:
+  - AI
 identifier:
-  name: "Glean"
-  value: "PROMPT-ENGINEER-fdsa242"
+  name: Glean
+  value: PROMPT-ENGINEER-fdsa242
 featured: false
 remote: false
-email: ['will@nocodejobs.org']
+email:
+  - will@nocodejobs.org
 ---
 
 ### About Glean

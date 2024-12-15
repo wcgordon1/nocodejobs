@@ -51,7 +51,9 @@ const jobSchema = {
     "currency": frontmatter.baseSalary.currency,
     "value": {
       "@type": "QuantitativeValue",
-      "minValue": frontmatter.baseSalary.minValue
+      "minValue": frontmatter.baseSalary.minValue,
+      "maxValue": frontmatter.baseSalary.maxValue,
+      "unitText": frontmatter.baseSalary.unitText
     }
   }
 };

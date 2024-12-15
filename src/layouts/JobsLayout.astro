@@ -51,9 +51,7 @@ const jobSchema = {
     "currency": frontmatter.baseSalary.currency,
     "value": {
       "@type": "QuantitativeValue",
-      "minValue": frontmatter.baseSalary.minValue,
-      "maxValue": frontmatter.baseSalary.maxValue,
-      "unitText": frontmatter.baseSalary.unitText
+      "minValue": frontmatter.baseSalary.minValue
     }
   }
 };
@@ -153,7 +151,7 @@ const jobSchema = {
 
               <div>
                 <h3 class="text-lg font-medium text-purple-900 pt-2">
-                  Role
+                  Setting
                 </h3>
                 <p class="text-slate-500 mt-1">{frontmatter.team}</p>
               </div>

@@ -378,6 +378,13 @@ declare module 'astro:content' {
   collection: "jobs";
   data: any
 } & { render(): Render[".md"] };
+"ncj-contract-bubble-dev-sf-id-bf9281.md": {
+	id: "ncj-contract-bubble-dev-sf-id-bf9281.md";
+  slug: "ncj-contract-bubble-dev-sf-id-bf9281";
+  body: string;
+  collection: "jobs";
+  data: any
+} & { render(): Render[".md"] };
 "no-code-jobs-bubble-id-mg3901.md": {
 	id: "no-code-jobs-bubble-id-mg3901.md";
   slug: "no-code-jobs-bubble-id-mg3901";

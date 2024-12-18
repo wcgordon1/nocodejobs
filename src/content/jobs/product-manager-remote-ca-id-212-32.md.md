@@ -1,46 +1,44 @@
 ---
 position: Product Manager
 description: >-
-  We are a fast-scaling, process-driven company specializing in building
-  high-quality SaaS applications using no-code platforms like **Bubble**,
-  **Webflow**, and **Flutterflow**. Our team is dedicated to turning ideas into
+  Scaling Process is seeking a Product Manager. This is a remote position based
+  in Brazil. Compensation: Starting at $4,000+ /month USD + Performance Bonuses
+  Location: Remote (Company based in Canada) Commitment: Full-time, 40+ hours
+  per week About Us We are a fast-scaling, process-driven company specializing
+  in building high-quality SaaS applications using no-code platforms like
+  Bubble, Webflow, and Flutterflow. Our team is dedicated to turning ideas into
   successful products that can quickly scale, attract users, and raise funding.
-  We’re seeking a talented **Product Manager** to help us deliver investor-ready
-  applications at an impressive speed.
-
-  ## Role Overview As a Product Manager, you will be a key leader in our team,
-  overseeing the design, development, and launch of successful SaaS
-  applications. You will use your expertise in product design and no-code
-  platforms to manage projects from concept to completion, ensuring client
-  satisfaction and delivering exceptional results. Key Responsibilities - Lead
-  end-to-end product development for **SaaS applications** using **Bubble**,
-  **Webflow**, and **Flutterflow**. - Collaborate with clients to gather
+  We’re seeking a talented Product Manager to help us deliver investor-ready
+  applications at an impressive speed. Role Overview As a Product Manager, you
+  will be a key leader in our team, overseeing the design, development, and
+  launch of successful SaaS applications. You will use your expertise in product
+  design and no-code platforms to manage projects from concept to completion,
+  ensuring client satisfaction and delivering exceptional results. Key
+  Responsibilities Lead end-to-end product development for SaaS applications
+  using Bubble, Webflow, and Flutterflow. Collaborate with clients to gather
   requirements, provide strategic product insights, and create actionable
-  development plans. - Oversee the technical architecture and design process,
-  ensuring seamless user experiences and scalable solutions. - Manage multiple
+  development plans. Oversee the technical architecture and design process,
+  ensuring seamless user experiences and scalable solutions. Manage multiple
   projects concurrently, maintaining high standards of quality and meeting
-  deadlines. - Serve as the primary point of contact for clients, demonstrating
-  excellent client-facing skills and providing regular project updates. - Work
+  deadlines. Serve as the primary point of contact for clients, demonstrating
+  excellent client-facing skills and providing regular project updates. Work
   closely with cross-functional teams, including designers and developers, to
-  streamline the product development process. - Identify potential risks and
-  proactively address issues to keep projects on track. - Contribute to product
-  strategy and help define the vision for future projects.
-
-  Required Qualifications - Proven experience in **product management** with a
-  focus on SaaS applications. - Strong **technical background** with hands-on
-  experience in no-code platforms, specifically **Bubble** (preferred),
-  **Webflow**, or Flutterflow**. - Demonstrated ability to lead and deliver
-  complex projects in a fast-paced environment. - Exceptional client-facing and
-  communication skills, with the ability to translate client needs into
-  actionable plans. - Experience managing end-to-end product lifecycles, from
-  initial concept through launch. - Strong problem-solving skills and a
-  proactive approach to addressing challenges.
-
-  Compensation & Benefits - Starting salary of **$4,000+ /month USD** with
-  opportunities for performance-based bonuses. - Full-time role with a
-  commitment of **40+ hours per week**. - Fully remote position, offering
-  flexibility to work from anywhere. - Opportunity to work with a dynamic team
-  and help build industry-leading SaaS applications.
+  streamline the product development process. Identify potential risks and
+  proactively address issues to keep projects on track. Contribute to product
+  strategy and help define the vision for future projects. Required
+  Qualifications Proven experience in product management with a focus on SaaS
+  applications. Strong technical background with hands-on experience in no-code
+  platforms, specifically Bubble (preferred), Webflow, or Flutterflow.
+  Demonstrated ability to lead and deliver complex projects in a fast-paced
+  environment. Exceptional client-facing and communication skills, with the
+  ability to translate client needs into actionable plans. Experience managing
+  end-to-end product lifecycles, from initial concept through launch. Strong
+  problem-solving skills and a proactive approach to addressing challenges.
+  Compensation & Benefits Starting salary of $4,000+ /month USD with
+  opportunities for performance-based bonuses. Full-time role with a commitment
+  of 40+ hours per week. Fully remote position, offering flexibility to work
+  from anywhere. Opportunity to work with a dynamic team and help build
+  industry-leading SaaS applications.
 location: 'Rio de Janeiro, RJ'
 team: Remote
 datePosted: '2024-12-18T02:56:41.540Z'

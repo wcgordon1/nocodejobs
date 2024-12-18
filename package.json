@@ -1,6 +1,7 @@
 {
   "name": "@nocodejobs",
   "version": "0.0.1",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -9,7 +10,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "update-dates": "node scripts/update-dates.js",
-    "update-descriptions": "node scripts/update-descriptions.js"
+    "update-descriptions": "node scripts/update-descriptions.js",
+    "update-descriptions-plain": "node scripts/update-descriptions-plain.js"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.0",
@@ -27,6 +29,7 @@
     "astro-devtool-breakpoints": "^0.3.0",
     "astro-scroll-observer": "^0.5.3",
     "dotenv": "^16.4.7",
+    "gray-matter": "^4.0.3",
     "openai": "^4.77.0",
     "resend": "^4.0.1-alpha.0",
     "sharp": "^0.33.3",

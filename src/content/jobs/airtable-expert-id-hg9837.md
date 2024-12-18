@@ -51,8 +51,8 @@ description: >-
   with significant growth potential.
 location: 'Johannesburg, South Africa'
 team: Remote
-datePosted: '2024-12-12T18:17:49Z'
-validThrough: '2025-02-10T18:17:49Z'
+datePosted: '2024-12-17T16:01:50.585Z'
+validThrough: '2025-01-30T16:01:50.585Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: BoltFlow

@@ -37,8 +37,8 @@ description: >-
   more.
 location: 'Punjab, India'
 team: Remote
-datePosted: '2024-12-13T17:20:13Z'
-validThrough: '2025-02-11T17:20:13Z'
+datePosted: '2024-12-16T17:12:33.580Z'
+validThrough: '2025-01-26T17:12:33.580Z'
 employmentType: CONTRACTOR
 hiringOrganization:
   name: Blur Apps

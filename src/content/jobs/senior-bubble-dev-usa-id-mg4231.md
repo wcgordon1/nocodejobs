@@ -37,8 +37,8 @@ description: >-
   more.
 location: 'San Jose, CA'
 team: Remote
-datePosted: '2024-12-13T15:20:13Z'
-validThrough: '2025-02-11T15:20:13Z'
+datePosted: '2024-12-18T10:08:22.702Z'
+validThrough: '2025-01-24T10:08:22.702Z'
 employmentType: CONTRACTOR
 hiringOrganization:
   name: Blur Apps

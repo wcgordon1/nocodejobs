@@ -82,8 +82,8 @@ description: >-
   parents.
 location: 'Buenos Aires, Argentina'
 team: Remote
-datePosted: '2024-12-14T01:01:01Z'
-validThrough: '2025-02-12T01:01:01Z'
+datePosted: '2024-12-16T18:35:51.541Z'
+validThrough: '2025-01-25T18:35:51.541Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Eppo

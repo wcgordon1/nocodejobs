@@ -34,8 +34,8 @@ description: >-
   scrappy
 location: 'San Francisco, CA'
 team: Remote
-datePosted: '2024-12-13T23:05:49Z'
-validThrough: '2025-02-11T23:05:49Z'
+datePosted: '2024-12-18T09:52:48.981Z'
+validThrough: '2025-01-18T09:52:48.981Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Surge

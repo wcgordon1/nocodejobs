@@ -82,8 +82,8 @@ description: >-
   parents.
 location: 'New York, NY'
 team: Remote
-datePosted: '2024-12-13T01:58:37Z'
-validThrough: '2025-02-11T01:58:37Z'
+datePosted: '2024-12-18T07:29:31.509Z'
+validThrough: '2025-01-17T07:29:31.509Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Eppo

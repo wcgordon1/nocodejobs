@@ -51,8 +51,8 @@ description: >-
   with significant growth potential.
 location: 'Los Angeles, CA'
 team: Remote
-datePosted: '2024-12-12T16:22:37Z'
-validThrough: '2025-02-10T16:22:37Z'
+datePosted: '2024-12-17T12:43:53.790Z'
+validThrough: '2025-01-19T12:43:53.790Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: BoltFlow

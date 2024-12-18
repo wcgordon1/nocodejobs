@@ -37,8 +37,8 @@ description: >-
   more.
 location: 'Rio de Janeiro, RJ'
 team: Remote
-datePosted: '2024-12-13T19:23:24Z'
-validThrough: '2025-02-11T19:23:24Z'
+datePosted: '2024-12-18T00:40:56.588Z'
+validThrough: '2025-01-26T00:40:56.588Z'
 employmentType: CONTRACTOR
 hiringOrganization:
   name: Blur Apps
@@ -49,7 +49,7 @@ jobLocation:
   streetAddress: 1000 1st St
   addressLocality: Rio de Janeiro
   addressRegion: RJ
-  postalCode: '22280-000'
+  postalCode: 22280-000
   addressCountry: Brazil
 baseSalary:
   currency: USD

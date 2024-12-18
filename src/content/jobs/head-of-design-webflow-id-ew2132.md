@@ -36,8 +36,8 @@ description: >-
   Contract, with potential for full-time based on performance
 location: 'Des Moines, IA'
 team: Remote
-datePosted: '2024-12-13T05:49:01Z'
-validThrough: '2025-02-11T05:49:01Z'
+datePosted: '2024-12-17T11:34:44.610Z'
+validThrough: '2025-01-16T11:34:44.610Z'
 employmentType: CONTRACTOR
 hiringOrganization:
   name: Bridgewood Creative

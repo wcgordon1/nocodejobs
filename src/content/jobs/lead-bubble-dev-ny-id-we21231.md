@@ -37,8 +37,8 @@ description: >-
   more.
 location: 'New York, NY'
 team: Remote
-datePosted: '2024-12-12T04:51:25Z'
-validThrough: '2025-02-10T04:51:25Z'
+datePosted: '2024-12-17T05:15:23.870Z'
+validThrough: '2025-01-20T05:15:23.870Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Blur Apps

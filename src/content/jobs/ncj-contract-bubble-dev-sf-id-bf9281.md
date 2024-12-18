@@ -1,17 +1,20 @@
 ---
 position: Remote Bubble Developer
 description: >-
-  No Code Jobs is a leading job board for no-code enthusiasts and professionals. We've recently partnered with an external client to develop an innovative multi-tenant marketplace app. This is your chance to work on a niche, cutting-edge project that connects **independent pet trainers with pet owners seeking customized training plans**.  
+  No Code Jobs is a leading job board for no-code enthusiasts and professionals.
+  We've recently partnered with an external client to develop an innovative
+  multi-tenant marketplace app. This is your chance to work on a niche,
+  cutting-edge project that connects **independent pet trainers with pet owners
+  seeking customized training plans**.  
 location: 'San Francisco, CA'
 team: On Site
-datePosted: '2024-12-15T04:51:25Z'
-validThrough: '2025-02-10T04:51:25Z'
+datePosted: '2024-12-16T20:57:43.257Z'
+validThrough: '2025-01-24T20:57:43.257Z'
 employmentType: CONTRACTOR
 hiringOrganization:
   name: No Code Jobs
   sameAs: 'https://www.nocodejobs.org'
-  logo: >-
-    /images/dl.png
+  logo: /images/dl.png
 jobLocation:
   streetAddress: 123 Main Street
   addressLocality: San Francisco

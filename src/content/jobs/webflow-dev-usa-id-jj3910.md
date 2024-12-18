@@ -1,23 +1,26 @@
 ---
-position: Contract Webflow Developer 
+position: Contract Webflow Developer
 description: >-
-  Talkspace is undergoing an exciting rebrand and website consolidation. We’re looking for a talented Webflow developer to help transition our WordPress content to Webflow and create a cohesive, high-quality website that reflects our updated brand. This role will play a critical part in the rebranding process, enhancing site functionality, and merging old Webflow projects into a single, streamlined site.
-  
-  What We’re Looking For:
-  Strong experience in Webflow, with a proven ability to lead projects independently.
-  Expertise in SEO optimization and UI/UX best practices.
-  A proactive problem-solver who can identify missing elements, ask the right questions, and map out actionable next steps.
+  Talkspace is undergoing an exciting rebrand and website consolidation. We’re
+  looking for a talented Webflow developer to help transition our WordPress
+  content to Webflow and create a cohesive, high-quality website that reflects
+  our updated brand. This role will play a critical part in the rebranding
+  process, enhancing site functionality, and merging old Webflow projects into a
+  single, streamlined site.
 
+  What We’re Looking For: Strong experience in Webflow, with a proven ability to
+  lead projects independently. Expertise in SEO optimization and UI/UX best
+  practices. A proactive problem-solver who can identify missing elements, ask
+  the right questions, and map out actionable next steps.
 location: 'San Francisco, CA'
 team: Remote
-datePosted: '2024-12-13T22:20:13Z'
-validThrough: '2025-02-11T22:20:13Z'
+datePosted: '2024-12-17T07:35:14.901Z'
+validThrough: '2025-01-16T07:35:14.901Z'
 employmentType: CONTRACTOR
 hiringOrganization:
   name: Talkspace
   sameAs: 'https://www.talkspace.com/'
-  logo: >-
-    /images/talks.png
+  logo: /images/talks.png
 jobLocation:
   streetAddress: 1000 1st St
   addressLocality: San Francisco
@@ -27,7 +30,7 @@ jobLocation:
 baseSalary:
   currency: USD
   value: 45
-  minValue: 55  
+  minValue: 55
   maxValue: 65
   unitText: HOUR
 experienceRequirements: seniorLevel

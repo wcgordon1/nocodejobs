@@ -37,8 +37,8 @@ description: >-
   more.
 location: 'Seattle, WA'
 team: Remote
-datePosted: '2024-12-12T20:13:01Z'
-validThrough: '2025-02-10T20:13:01Z'
+datePosted: '2024-12-17T21:55:49.982Z'
+validThrough: '2025-01-21T21:55:49.982Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Blur Apps

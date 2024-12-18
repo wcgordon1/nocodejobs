@@ -55,8 +55,8 @@ description: >-
   integrations
 location: 'Jacksonville, FL'
 team: Remote
-datePosted: '2024-12-12T12:32:13Z'
-validThrough: '2025-02-10T12:32:13Z'
+datePosted: '2024-12-18T12:15:42.958Z'
+validThrough: '2025-01-19T12:15:42.958Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: VoicedIQ

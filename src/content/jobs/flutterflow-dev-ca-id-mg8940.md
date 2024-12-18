@@ -73,8 +73,8 @@ description: >-
   de gagner un prix.
 location: 'Quebec City, Quebec'
 team: Remote
-datePosted: '2024-12-12T10:37:01Z'
-validThrough: '2025-02-10T10:37:01Z'
+datePosted: '2024-12-16T18:07:10.619Z'
+validThrough: '2025-01-26T18:07:10.619Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Neo Carbone

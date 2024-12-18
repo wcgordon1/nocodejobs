@@ -14,6 +14,7 @@ const jobSchema = {
   "@context": "https://schema.org/",
   "@type": "JobPosting",
   "title": frontmatter.position,
+  "directApply": true,
   "description": frontmatter.description,
   "identifier": {
     "@type": "PropertyValue",
@@ -55,7 +56,13 @@ const jobSchema = {
       "maxValue": frontmatter.baseSalary.maxValue,
       "unitText": frontmatter.baseSalary.unitText
     }
-  }
+  },
+    "workHours": "Flexible hours, 40 hours per week",
+    "applicationContact": {
+        "@type": "ContactPoint",
+        "email": "hello@nocodejobs.org",
+        "contactType": "HR Department"
+    }
 };
 ---
 

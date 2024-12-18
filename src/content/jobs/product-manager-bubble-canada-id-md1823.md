@@ -43,8 +43,8 @@ description: >-
   and help build industry-leading SaaS applications.
 location: 'Montreal, QC'
 team: Remote
-datePosted: '2024-12-12T02:56:13Z'
-validThrough: '2025-02-10T02:56:13Z'
+datePosted: '2024-12-17T22:07:57.925Z'
+validThrough: '2025-01-31T22:07:57.925Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Scaling Process

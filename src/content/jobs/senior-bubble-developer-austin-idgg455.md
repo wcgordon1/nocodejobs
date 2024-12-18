@@ -37,8 +37,8 @@ description: >-
   more.
 location: 'Austin, TX'
 team: Remote
-datePosted: '2024-12-13T11:34:37Z'
-validThrough: '2025-02-11T11:34:37Z'
+datePosted: '2024-12-16T20:11:02.960Z'
+validThrough: '2025-01-16T20:11:02.960Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Blur Apps

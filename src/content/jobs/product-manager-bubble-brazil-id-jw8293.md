@@ -43,8 +43,8 @@ description: >-
   and help build industry-leading SaaS applications.
 location: 'Rio de Janeiro, RJ'
 team: Remote
-datePosted: '2024-12-13T09:39:25Z'
-validThrough: '2025-02-11T09:39:25Z'
+datePosted: '2024-12-17T23:05:39.737Z'
+validThrough: '2025-01-31T23:05:39.737Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Scaling Process

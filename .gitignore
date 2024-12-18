@@ -21,3 +21,9 @@ pnpm-debug.log*
 
 #vercel
 .vercel/output/
+
+# Scripts and Config
+/scripts/config/.env.local
+/scripts/config/.env
+.env
+.env.*

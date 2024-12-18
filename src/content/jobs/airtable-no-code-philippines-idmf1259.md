@@ -51,8 +51,8 @@ description: >-
   with significant growth potential.
 location: 'Manila, Philippines'
 team: Remote
-datePosted: '2024-12-13T13:29:49Z'
-validThrough: '2025-02-11T13:29:49Z'
+datePosted: '2024-12-16T18:32:57.647Z'
+validThrough: '2025-01-19T18:32:57.647Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: BoltFlow

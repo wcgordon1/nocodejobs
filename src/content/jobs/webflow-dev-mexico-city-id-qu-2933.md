@@ -82,8 +82,8 @@ description: >-
   parents.
 location: 'Mexico City, Mexico'
 team: Remote
-datePosted: '2024-12-13T15:25:01Z'
-validThrough: '2025-02-11T15:25:01Z'
+datePosted: '2024-12-17T13:44:31.438Z'
+validThrough: '2025-01-26T13:44:31.438Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Eppo

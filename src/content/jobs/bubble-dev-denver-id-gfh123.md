@@ -55,8 +55,8 @@ description: >-
   integrations
 location: 'Denver, CO'
 team: Remote
-datePosted: '2024-12-13T08:41:49Z'
-validThrough: '2025-02-10T08:41:49Z'
+datePosted: '2024-12-18T12:34:24.419Z'
+validThrough: '2025-01-17T12:34:24.419Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: VoicedIQ

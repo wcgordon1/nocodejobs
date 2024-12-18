@@ -1,17 +1,20 @@
 ---
 position: Bubble Developer - Contract
 description: >-
-  No Code Jobs is a leading job board for no-code enthusiasts and professionals. We've recently partnered with an external client to develop an innovative multi-tenant marketplace app. This is your chance to work on a niche, cutting-edge project that connects **independent pet trainers with pet owners seeking customized training plans**.  
+  No Code Jobs is a leading job board for no-code enthusiasts and professionals.
+  We've recently partnered with an external client to develop an innovative
+  multi-tenant marketplace app. This is your chance to work on a niche,
+  cutting-edge project that connects **independent pet trainers with pet owners
+  seeking customized training plans**.  
 location: 'New York, NY'
 team: Remote
-datePosted: '2024-12-14T04:51:25Z'
-validThrough: '2025-02-10T04:51:25Z'
+datePosted: '2024-12-17T14:01:41.418Z'
+validThrough: '2025-01-28T14:01:41.418Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: No Code Jobs
   sameAs: 'https://www.nocodejobs.org'
-  logo: >-
-    /images/dl.png
+  logo: /images/dl.png
 jobLocation:
   streetAddress: 123 Main Street
   addressLocality: New York

@@ -7,8 +7,8 @@ description: >-
   and innovation.
 location: 'Palo Alto, CA'
 team: On Site
-datePosted: '2024-12-13T03:53:49Z'
-validThrough: '2025-02-11T03:53:49Z'
+datePosted: '2024-12-16T20:05:19.482Z'
+validThrough: '2025-01-16T20:05:19.482Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Glean

@@ -1,17 +1,22 @@
 ---
 position: Junior Bubble Developer
 description: >-
-  Infowind is looking for a Bubble.io Developer with a minimum of 1 year of hands-on experience to join our team in Indore, MP. You will be responsible for building, maintaining, and scaling web applications using Bubble.io. The ideal candidate should have a proven track record of integrating APIs, payment gateways, and deploying apps on Bubbles platform. You will work closely with our design and development teams to deliver seamless and robust solutions tailored to client needs.
+  Infowind is looking for a Bubble.io Developer with a minimum of 1 year of
+  hands-on experience to join our team in Indore, MP. You will be responsible
+  for building, maintaining, and scaling web applications using Bubble.io. The
+  ideal candidate should have a proven track record of integrating APIs, payment
+  gateways, and deploying apps on Bubbles platform. You will work closely with
+  our design and development teams to deliver seamless and robust solutions
+  tailored to client needs.
 location: 'Indore, MP'
 team: On Site
-datePosted: '2024-12-14T06:49:01Z'
-validThrough: '2025-01-11T05:49:01Z'
+datePosted: '2024-12-17T12:23:47.363Z'
+validThrough: '2025-01-18T12:23:47.363Z'
 employmentType: CONTRACTOR
 hiringOrganization:
   name: Infowind
   sameAs: 'https://www.infowindtech.com'
-  logo: >-
-    /images/inf.jpeg
+  logo: /images/inf.jpeg
 jobLocation:
   streetAddress: 123 Main Street
   addressLocality: Indore

@@ -13,8 +13,8 @@ description: >-
   required plugins and necessary access will be supplied.
 location: 'Newport Beach, CA'
 team: Remote
-datePosted: '2024-12-12T14:27:25Z'
-validThrough: '2025-02-10T14:27:25Z'
+datePosted: '2024-12-17T09:20:48.186Z'
+validThrough: '2025-01-16T09:20:48.186Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Warm Websites

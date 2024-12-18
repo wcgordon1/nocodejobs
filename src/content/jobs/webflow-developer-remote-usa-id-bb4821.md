@@ -1,19 +1,24 @@
 ---
-position: Remote Webflow Developer 
+position: Remote Webflow Developer
 description: >-
-  We are a small, dynamic team working primarily with tech and SaaS companies. Our focus goes beyond just building Webflow sites—we value long-term client relationships, continually refining and improving our clients’ websites. You can learn more about us on our YouTube channel.
-  
-  We prioritize innovation, scalability, and attention to detail. If you’re passionate about turning Figma designs into fluid, responsive Webflow websites and enhancing projects with custom code solutions, we’d love to have you join our team!
+  We are a small, dynamic team working primarily with tech and SaaS companies.
+  Our focus goes beyond just building Webflow sites—we value long-term client
+  relationships, continually refining and improving our clients’ websites. You
+  can learn more about us on our YouTube channel.
+
+  We prioritize innovation, scalability, and attention to detail. If you’re
+  passionate about turning Figma designs into fluid, responsive Webflow websites
+  and enhancing projects with custom code solutions, we’d love to have you join
+  our team!
 location: 'San Francisco, CA'
 team: Remote
-datePosted: '2024-12-13T23:50:18Z'
-validThrough: '2025-02-11T23:50:18Z'
+datePosted: '2024-12-16T23:27:43.503Z'
+validThrough: '2025-01-28T23:27:43.503Z'
 employmentType: CONTRACTOR
 hiringOrganization:
   name: Design Base Studio
   sameAs: 'https://designbase.com/'
-  logo: >-
-    /images/dd.png
+  logo: /images/dd.png
 jobLocation:
   streetAddress: 1210 W 10th St
   addressLocality: San Francisco

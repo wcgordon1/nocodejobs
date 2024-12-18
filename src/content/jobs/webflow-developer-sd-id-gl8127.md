@@ -82,8 +82,8 @@ description: >-
   parents.
 location: 'San Diego, CA'
 team: Remote
-datePosted: '2024-12-13T19:15:25Z'
-validThrough: '2025-02-11T19:15:25Z'
+datePosted: '2024-12-17T06:19:28.236Z'
+validThrough: '2025-01-23T06:19:28.236Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Eppo

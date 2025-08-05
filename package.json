@@ -11,7 +11,8 @@
     "astro": "astro",
     "update-dates": "node scripts/update-dates.js",
     "update-descriptions": "node scripts/update-descriptions.js",
-    "update-descriptions-plain": "node scripts/update-descriptions-plain.js"
+    "update-descriptions-plain": "node scripts/update-descriptions-plain.js",
+    "update-old": "node scripts/update-oldest-jobs.js"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.0",

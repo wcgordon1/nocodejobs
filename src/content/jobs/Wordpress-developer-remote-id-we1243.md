@@ -39,8 +39,8 @@ description: >-
   application!
 location: 'Newport Beach, CA'
 team: Remote
-datePosted: '2024-12-17T02:03:02.808Z'
-validThrough: '2025-01-16T02:03:02.808Z'
+datePosted: '2025-05-17T10:19:51.986Z'
+validThrough: '2025-06-24T10:19:51.986Z'
 employmentType: FULL_TIME
 hiringOrganization:
   name: Warm Websites

@@ -2,7 +2,7 @@
 pubDate: 2024-08-08
 modDate: "2024-08-08T00:00:00Z"
 author: Will Gordon
-title: No Code Software Developßment
+title: No Code Software Development
 description: "Discover key insights on no code vs low code, and choose the best path for fast, efficient development solutions."
 avatar:
   url: "/images/me.png"

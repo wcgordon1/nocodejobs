@@ -345,6 +345,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"popresume-best-ai-resume-and-interview-preparation-tool.md": {
+	id: "popresume-best-ai-resume-and-interview-preparation-tool.md";
+  slug: "popresume-best-ai-resume-and-interview-preparation-tool";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 
 	};

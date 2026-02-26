@@ -296,9 +296,30 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "posts": {
+"best-no-code-agencies.md": {
+	id: "best-no-code-agencies.md";
+  slug: "best-no-code-agencies";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "creating-apps-without-coding.md": {
 	id: "creating-apps-without-coding.md";
   slug: "creating-apps-without-coding";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"free-ats-resume-checker.md": {
+	id: "free-ats-resume-checker.md";
+  slug: "free-ats-resume-checker";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"free-cover-letter-checker.md": {
+	id: "free-cover-letter-checker.md";
+  slug: "free-cover-letter-checker";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">

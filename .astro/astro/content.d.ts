@@ -303,6 +303,20 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"free-wedding-vow-cards.md": {
+	id: "free-wedding-vow-cards.md";
+  slug: "free-wedding-vow-cards";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"free-wedding-vow-templates.md": {
+	id: "free-wedding-vow-templates.md";
+  slug: "free-wedding-vow-templates";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "how-to-get-an-interview-as-a-no-code-devloper.md": {
 	id: "how-to-get-an-interview-as-a-no-code-devloper.md";
   slug: "how-to-get-an-interview-as-a-no-code-devloper";
@@ -348,6 +362,20 @@ declare module 'astro:content' {
 "popresume-best-ai-resume-and-interview-preparation-tool.md": {
 	id: "popresume-best-ai-resume-and-interview-preparation-tool.md";
   slug: "popresume-best-ai-resume-and-interview-preparation-tool";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"practice-wedding-vows.md": {
+	id: "practice-wedding-vows.md";
+  slug: "practice-wedding-vows";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"wedding-vow-generator.md": {
+	id: "wedding-vow-generator.md";
+  slug: "wedding-vow-generator";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">

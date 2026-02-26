@@ -8,7 +8,7 @@ avatar:
   url: "/images/me.png"
   alt: "#_"
 image:
-  url: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop"
+  url: "/images/pr-new.png"
   alt: "alt text goes here"
 tags: ["Resume Builder", "AI Interview Prep", "ATS Optimization"]
 ---

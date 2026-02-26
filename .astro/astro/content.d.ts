@@ -303,6 +303,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"best-startup-lead-databases.md": {
+	id: "best-startup-lead-databases.md";
+  slug: "best-startup-lead-databases";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "creating-apps-without-coding.md": {
 	id: "creating-apps-without-coding.md";
   slug: "creating-apps-without-coding";
@@ -390,6 +397,13 @@ declare module 'astro:content' {
 "practice-wedding-vows.md": {
 	id: "practice-wedding-vows.md";
   slug: "practice-wedding-vows";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"startups-that-just-raised-funding.md": {
+	id: "startups-that-just-raised-funding.md";
+  slug: "startups-that-just-raised-funding";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
